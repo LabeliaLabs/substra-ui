@@ -1,0 +1,53 @@
+{
+  "name": "substra-ui",
+  "version": "0.0.1",
+  "description": "A shared UI components library for the Substra project.",
+  "main": "src/index.js",
+  "repository": "git@github.com:SubstraFoundation/substra-ui.git",
+  "author": "Jérémy Morel <jeremy.morel@owkin.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint --fix src",
+    "test": "jest",
+    "start:dev": "webpack-dev-server",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "test",
+    "eslint"
+  ],
+  "dependencies": {
+    "@emotion/styled": "10.0.11",
+    "babel-plugin-emotion": "^10.0.9",
+    "emotion": "10.0.9",
+    "prop-types": "latest",
+    "react": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.10",
+    "@types/jest": "24.0.13",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jest": "22.6.4",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0",
+    "jest": "^24.8.0",
+    "jest-emotion": "^10.0.11",
+    "pre-commit": "^1.2.2",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "react-testing-library": "^7.0.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}

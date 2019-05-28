@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render an actual button 1`] = `
+<button
+  className="css-10hh0l8"
+  disabled={false}
+/>
+`;
