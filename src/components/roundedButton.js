@@ -50,9 +50,9 @@ RoundedButton.propTypes = {
     disabled: PropTypes.bool,
     iconColor: PropTypes.string,
     iconColorDisabled: PropTypes.string,
-    Icon: PropTypes.element,
+    Icon: PropTypes.oneOfType([PropTypes.element, PropTypes.shape()]),
     children: PropTypes.node,
-    Button: PropTypes.element,
+    Button: PropTypes.oneOfType([PropTypes.element, PropTypes.shape()]),
 };
 
 

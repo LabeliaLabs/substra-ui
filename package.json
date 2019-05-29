@@ -8,8 +8,9 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
+    "build": "babel src -d dist",
     "eslint": "eslint --fix src",
-    "test": "jest",
+    "test": "jest src",
     "start:dev": "webpack-dev-server",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
@@ -21,11 +22,13 @@
   "dependencies": {
     "@emotion/styled": "10.0.11",
     "babel-plugin-emotion": "^10.0.9",
-    "emotion": "10.0.9",
+    "emotion": "^10.0.9",
     "prop-types": "latest",
     "react": "16.8.6"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@emotion/core": "^10.0.10",
