@@ -27,4 +27,6 @@ $ yarn link "substra-ui"
 $ yarn workspace ssr-package link "substra-ui"  
 ```
 
-Edit `package.json` in the `substra-ui` directory, change `"main": "dist/index.js",` into `"main": "src/index.js",`
+Then you'll need to make your WIP content available to substrafront by either:
+* editing `package.json` in the `substra-ui` directory, changing `"main": "dist/index.js",` into `"main": "src/index.js",`
+* or running `yarn build --watch` in the `substra-ui` directory 
