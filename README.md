@@ -23,8 +23,8 @@ $ yarn link
 In the `substrafront` directory:
 
 ```sh
-$ yarn link "substra-ui"
-$ yarn workspace ssr-package link "substra-ui"  
+$ yarn link "@substrafoundation/substra-ui"
+$ yarn workspace ssr-package link "@substrafoundation/substra-ui"  
 ```
 
 Then you'll need to make your WIP content available to substrafront by either:

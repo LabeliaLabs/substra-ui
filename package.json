@@ -1,5 +1,5 @@
 {
-  "name": "substra-ui",
+  "name": "@substrafoundation/substra-ui",
   "version": "0.0.1",
   "description": "A shared UI components library for the Substra project.",
   "main": "dist/index.js",
