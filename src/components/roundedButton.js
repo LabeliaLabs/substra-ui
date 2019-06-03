@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {css} from 'emotion';
 import styled from '@emotion/styled';
 import {blueGrey, ice, slate} from '../variables/colors';
 import {spacingExtraSmall, spacingNormal} from '../variables/spacing';
+import PropTypes from '../utils/propTypes';
 
 export const Button = styled.button`
     color: ${slate};
@@ -50,16 +50,15 @@ RoundedButton.propTypes = {
     disabled: PropTypes.bool,
     iconColor: PropTypes.string,
     iconColorDisabled: PropTypes.string,
-    Icon: PropTypes.oneOfType([PropTypes.element, PropTypes.shape()]),
+    Icon: PropTypes.component,
     children: PropTypes.node,
-    Button: PropTypes.oneOfType([PropTypes.element, PropTypes.shape()]),
+    Button: PropTypes.component,
 };
-
 
 RoundedButton.defaultProps = {
     disabled: false,
-    iconColor: blueGrey,
-    iconColorDisabled: slate,
+    iconColor: slate,
+    iconColorDisabled: blueGrey,
     Icon: null,
     children: null,
     Button,

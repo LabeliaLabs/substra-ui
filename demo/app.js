@@ -6,7 +6,7 @@ const CustomRoundedButton = styled.button`
     border: 1px solid red;
 `;
 
-const CustomRoundedButton2 = () => <button/>;
+const CustomRoundedButton2 = (props) => <button {...props}/>;
 
 const App = () => (
     <Fragment>
