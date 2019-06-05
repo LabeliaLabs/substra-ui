@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
-import {RoundedButton} from "../src";
+import {IconButton, RoundedButton} from "../src";
 import styled from "@emotion/styled";
+import Book from "../src/icons/book";
 
 const CustomRoundedButton = styled.button`
     border: 1px solid red;
@@ -15,6 +16,7 @@ const App = () => (
         <RoundedButton Button={CustomRoundedButton}>Custom</RoundedButton>
         <RoundedButton Button={CustomRoundedButton} disabled={true}>Custom isabled</RoundedButton>
         <RoundedButton Button={CustomRoundedButton2}>Custom 2</RoundedButton>
+        <IconButton Icon={Book}/>
     </Fragment>
 );
 

@@ -1,7 +1,9 @@
+// Components
+
 export {Button, RoundedButton} from './components/roundedButton';
-export * as colors from './variables/colors';
-export * as font from './variables/font';
-export * as spacing from './variables/spacing';
+export {IconButton, RoundButton} from './components/iconButton';
+
+// Icons
 
 export {default as Alert} from './icons/alert';
 export {default as Algo} from './icons/algo';
@@ -23,3 +25,9 @@ export {default as OwkestraLogo} from './icons/owkestraLogo';
 export {default as Permission} from './icons/permission';
 export {default as Search} from './icons/search';
 export {default as SubstraLogo} from './icons/substraLogo';
+
+// Variables
+
+export * as colors from './variables/colors';
+export * as font from './variables/font';
+export * as spacing from './variables/spacing';
