@@ -2,12 +2,12 @@
 
 A shared UI components library for the Substra project.
 
-## Testing setup
+## Storybook
 
-Before writing your tests, you may want to include the components in a test page. The demo app was made just for that. You can launch it using:
+We use [Storybook](https://storybook.js.org/) for component development and testing: 
 
 ```sh
-$ yarn start:dev 
+$ yarn storybook
 ```
 
 ## Development setup

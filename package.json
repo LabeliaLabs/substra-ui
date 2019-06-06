@@ -11,7 +11,6 @@
     "build": "babel src -d dist --ignore **/*.test.js --ignore **/*.stories.js",
     "eslint": "eslint --fix src",
     "test": "jest src",
-    "start:dev": "webpack-dev-server",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -23,11 +22,11 @@
   ],
   "dependencies": {
     "@emotion/styled": "10.0.11",
-    "babel-plugin-emotion": "^10.0.9",
-    "emotion": "^10.0.9",
+    "babel-plugin-emotion": "10.0.9",
+    "emotion": "10.0.9",
     "prop-types": "latest",
     "react": "16.8.6",
-    "react-is": "^16.8.6"
+    "react-is": "16.8.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -63,9 +62,6 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "react-testing-library": "^7.0.1",
-    "require-context.macro": "^1.0.4",
-    "webpack": "4.32.2",
-    "webpack-cli": "3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "require-context.macro": "^1.0.4"
   }
 }
