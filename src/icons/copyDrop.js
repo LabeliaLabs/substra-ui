@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate, tealish} from '../variables/colors';
 
 const CopyDrop = ({
-                       className, width, height, color, ...props
+                       className, width, height, color, secondaryColor, ...props
                    }) => (
                        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className} {...props}>
                            <g fill="none" fillRule="evenodd">
@@ -31,8 +32,8 @@ const CopyDrop = ({
                                <path fill="#FFF" d="M5.936 6.93h3.339v7.111H5.936z" />
                                <path fill={color} d="M15.448 6.743l-.743 4.285-3.542-3.542zM20.657 6.971l-.114 3.657L17 7.086z" />
                                <g transform="translate(13 14)">
-                                   <rect width="9.3" height="9.3" x=".35" y=".35" fill="#FFF" stroke="#1DBCC0" strokeWidth=".7" rx="2" />
-                                   <path fill="#1DBCC0" d="M4.9 8.313L1.75 2.7h6.3z" />
+                                   <rect width="9.3" height="9.3" x=".35" y=".35" fill="#FFF" stroke={secondaryColor} strokeWidth=".7" rx="2" />
+                                   <path fill={secondaryColor} d="M4.9 8.313L1.75 2.7h6.3z" />
                                </g>
                            </g>
                        </svg>
@@ -42,7 +43,8 @@ CopyDrop.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
+    secondaryColor: tealish,
 };
 
 CopyDrop.propTypes = {
@@ -50,6 +52,7 @@ CopyDrop.propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
     color: PropTypes.string,
+    secondaryColor: PropTypes.string,
 };
 
 export default CopyDrop;

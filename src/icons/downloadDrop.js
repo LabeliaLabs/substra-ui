@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate, tealish} from '../variables/colors';
 
 const DownloadDrop = ({
-                       className, width, height, color, ...props
+                       className, width, height, color, secondaryColor, ...props
                    }) => (
                        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" className={className} {...props}>
                            <g fill="none" fillRule="evenodd">
@@ -14,8 +15,8 @@ const DownloadDrop = ({
                                    <path d="M0 0h24v24H0z" />
                                </g>
                                <g transform="translate(13 14)">
-                                   <rect width="9.3" height="9.3" x=".35" y=".35" fill="#FFF" stroke="#1DBCC0" strokeWidth=".7" rx="2" />
-                                   <path fill="#1DBCC0" d="M4.9 8.313L1.75 2.7h6.3z" />
+                                   <rect width="9.3" height="9.3" x=".35" y=".35" fill="#FFF" stroke={secondaryColor} strokeWidth=".7" rx="2" />
+                                   <path fill={secondaryColor} d="M4.9 8.313L1.75 2.7h6.3z" />
                                </g>
                            </g>
                        </svg>
@@ -25,7 +26,8 @@ DownloadDrop.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
+    secondaryColor: tealish,
 };
 
 DownloadDrop.propTypes = {
@@ -33,6 +35,7 @@ DownloadDrop.propTypes = {
     width: PropTypes.number,
     height: PropTypes.number,
     color: PropTypes.string,
+    secondaryColor: PropTypes.string,
 };
 
 export default DownloadDrop;

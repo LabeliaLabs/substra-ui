@@ -1,0 +1,1363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots IconButton default 1`] = `
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-0:hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+<button
+  className="emotion-0 emotion-1"
+>
+  <svg
+    className=""
+    height={15}
+    viewBox="0 0 24 24"
+    width={15}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+      fill="#4B6073"
+      fillRule="nonzero"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Storyshots Icons default 1`] = `
+.emotion-72 {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-gap: 10px;
+}
+
+.emotion-0 {
+  grid-column: 1;
+  width: 50px;
+}
+
+.emotion-2 {
+  grid-column: 2;
+  margin: 0;
+}
+
+<dl
+  className="emotion-72 emotion-73"
+>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <mask
+          fill="#fff"
+          id="alert-b"
+        >
+          <path
+            d="M9.88 3.449a3.002 3.002 0 0 1 5.135 0l8.478 14.154a3 3 0 0 1-2.576 4.5H3.966a3 3 0 0 1-2.557-4.514l8.47-14.14zM3.132 18.603a1 1 0 0 0 .844 1.5h16.929a1 1 0 0 0 .863-1.486L13.302 4.48a1 1 0 0 0-1.709-.002l-8.46 14.124zm8.314-9.5a1 1 0 0 1 2 0v4a1 1 0 1 1-2 0v-4zm.293 7.707a1 1 0 1 1 1.414-1.414 1 1 0 0 1-1.414 1.414z"
+          />
+        </mask>
+        <g
+          fill="#4b6073"
+          mask="url(#alert-b)"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+        </g>
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Alert
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={25}
+      viewBox="0 0 50 25"
+      width={45}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M10.414 12l5.293-5.293a1 1 0 1 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L10.414 12z"
+          fill="#4b6073"
+        />
+        <g
+          transform="translate(27)"
+        >
+          <path
+            d="M13.586 12l-5.293 5.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L13.586 12z"
+            fill="#4b6073"
+          />
+        </g>
+        <g
+          transform="rotate(-70 24.855 -5.297)"
+        >
+          <path
+            d="M1.053 2.237H15.8c.582 0 1.053-.5 1.053-1.119C16.852.501 16.381 0 15.8 0H1.053C.472 0 0 .5 0 1.118c0 .618.472 1.119 1.053 1.119z"
+            fill="#4b6073"
+          />
+        </g>
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Algo
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="#4b6073"
+        fillRule="nonzero"
+      />
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Book
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="evenodd"
+      >
+        <path
+          d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Check
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M17 3h1a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h1a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2zM7 5H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2-2v2h6V3H9z"
+          fill="#4b6073"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Clipboard
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={22}
+      viewBox="0 0 22 22"
+      width={22}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="nonzero"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <path
+          d="M1.05,13.70625 L6,13.70625 L0.56015625,19.14375 C0.15703125,19.546875 0.15703125,20.1984375 0.56015625,20.6015625 C0.96328125,21.0046875 1.61484375,21.0046875 2.01796875,20.6015625 L7.5421875,15.0773438 L7.5421875,19.9851562 C7.5421875,20.5546875 8.00390625,21.0164062 8.5734375,21.0164062 C9.14296875,21.0164062 9.6046875,20.5546875 9.6046875,19.9851562 L9.6046875,12.6726563 C9.6046875,12.103125 9.14296875,11.6414062 8.5734375,11.6414062 L1.05,11.6414062 C0.48046875,11.6414062 0.01875,12.103125 0.01875,12.6726563 C0.01875,13.2421875 0.48046875,13.70625 1.05,13.70625 Z M12.440625,9.39375 L19.9640625,9.39375 C20.5335937,9.39375 20.9953125,8.93203125 20.9953125,8.3625 C20.9953125,7.79296875 20.5335937,7.33125 19.9640625,7.33125 L15.0164063,7.33125 L20.45625,1.89140625 C20.859375,1.48828125 20.859375,0.83671875 20.45625,0.43359375 C20.2546875,0.23203125 19.9898438,0.13125 19.7273438,0.13125 C19.4625,0.13125 19.2,0.23203125 18.9984375,0.43359375 L13.471875,5.9578125 L13.471875,1.05 C13.471875,0.48046875 13.0101563,0.01875 12.440625,0.01875 C11.8710938,0.01875 11.409375,0.48046875 11.409375,1.05 L11.409375,8.3625 C11.409375,8.93203125 11.8710938,9.39375 12.440625,9.39375 Z"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Collapse
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          transform="translate(5.009)"
+        >
+          <mask
+            fill="#fff"
+            id="copydrop-b"
+          >
+            <path
+              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+            />
+          </mask>
+          <path
+            d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+            fill="#000"
+            fillRule="nonzero"
+          />
+          <g
+            fill="#4b6073"
+            mask="url(#copydrop-b)"
+          >
+            <path
+              d="M0 0h18v20H0z"
+            />
+          </g>
+        </g>
+        <g
+          transform="translate(0 4.444)"
+        >
+          <mask
+            fill="#fff"
+            id="copydrop-d"
+          >
+            <path
+              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+            />
+          </mask>
+          <path
+            d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+            fill="#000"
+            fillRule="nonzero"
+          />
+          <g
+            fill="#4b6073"
+            mask="url(#copydrop-d)"
+          >
+            <path
+              d="M0 0h18v20H0z"
+            />
+          </g>
+        </g>
+        <path
+          d="M14.191 7.111h5.843v10.667h-5.843z"
+          fill="#4b6073"
+        />
+        <path
+          d="M9.183 1.778h5.843V8H9.183z"
+          fill="#4b6073"
+        />
+        <path
+          d="M8.348 1.778h5.843v4.444H8.348z"
+          fill="#4b6073"
+        />
+        <path
+          d="M6.42 12.444h7.847v7.111H6.42z"
+          fill="#FFF"
+        />
+        <path
+          d="M5.936 6.93h3.339v7.111H5.936z"
+          fill="#FFF"
+        />
+        <path
+          d="M15.448 6.743l-.743 4.285-3.542-3.542zM20.657 6.971l-.114 3.657L17 7.086z"
+          fill="#4b6073"
+        />
+        <g
+          transform="translate(13 14)"
+        >
+          <rect
+            fill="#FFF"
+            height="9.3"
+            rx="2"
+            stroke="#1dbcc0"
+            strokeWidth=".7"
+            width="9.3"
+            x=".35"
+            y=".35"
+          />
+          <path
+            d="M4.9 8.313L1.75 2.7h6.3z"
+            fill="#1dbcc0"
+          />
+        </g>
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    CopyDrop
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={29}
+      viewBox="0 0 28 29"
+      width={28}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          transform="translate(6)"
+        >
+          <mask
+            fill="#fff"
+            id="mask-copy"
+          >
+            <path
+              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+            />
+          </mask>
+          <g
+            fill="#4b6073"
+            mask="url(#mask-copy)"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </g>
+        </g>
+        <g
+          transform="translate(-1 6)"
+        >
+          <g
+            fill="#4b6073"
+          >
+            <path
+              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+            />
+          </g>
+        </g>
+        <path
+          d="M18 9h8v13h-8z"
+          fill="#4b6073"
+        />
+        <path
+          d="M11 2h8v8h-8z"
+          fill="#4b6073"
+        />
+        <path
+          d="M10 3h8v6h-8z"
+          fill="#4b6073"
+        />
+        <path
+          d="M8 16h10v9H8z"
+          fill="#FFF"
+        />
+        <path
+          d="M7 9h4v9H7z"
+          fill="#FFF"
+        />
+        <path
+          d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
+          fill="#4b6073"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    CopySimple
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={25}
+      viewBox="0 0 23 25"
+      width={23}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="nonzero"
+        stroke="#4b6073"
+      >
+        <path
+          d="M11.552 1c2.967 0 5.688.448 7.584 1.222.948.366 1.73.814 2.226 1.302.494.449.741.938.741 1.426 0 .489-.247.936-.741 1.425-.495.448-1.278.896-2.226 1.303-1.937.733-4.616 1.222-7.584 1.222S5.864 8.41 3.968 7.678c-.948-.366-1.731-.814-2.226-1.303C1.247 5.886 1 5.44 1 4.95c0-.488.248-.937.742-1.426.495-.447 1.278-.895 2.226-1.302C5.905 1.448 8.584 1 11.552 1z"
+        />
+        <path
+          d="M1 6c.083.117.206.195.289.311.577.506 1.442.974 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.388 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.857-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 11.02 1 10.592 1 10.125V6z"
+        />
+        <path
+          d="M1 11c.083.117.206.194.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.078.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.7-4.616 1.168-7.584 1.168s-5.688-.468-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 16.02 1 15.592 1 15.125V11z"
+        />
+        <path
+          d="M1 16c.083.117.206.195.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 21.02 1 20.592 1 20.125V16z"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Dataset
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <mask
+          fill="#fff"
+          id="downloaddrop-b"
+        >
+          <path
+            d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+          />
+        </mask>
+        <path
+          d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+          fill="#000"
+          fillRule="nonzero"
+        />
+        <g
+          fill="#4b6073"
+          mask="url(#downloaddrop-b)"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+        </g>
+        <g
+          transform="translate(13 14)"
+        >
+          <rect
+            fill="#FFF"
+            height="9.3"
+            rx="2"
+            stroke="#1dbcc0"
+            strokeWidth=".7"
+            width="9.3"
+            x=".35"
+            y=".35"
+          />
+          <path
+            d="M4.9 8.313L1.75 2.7h6.3z"
+            fill="#1dbcc0"
+          />
+        </g>
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    DownloadDrop
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+          fill="#4b6073"
+          fillRule="nonzero"
+        />
+        <mask
+          fill="#fff"
+        >
+          <path
+            d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+            fill="#4b6073"
+            fillRule="nonzero"
+          />
+          <path
+            d="M0 0h24v24H0z"
+          />
+        </mask>
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    DownloadSimple
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={22}
+      viewBox="0 0 22 22"
+      width={22}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="nonzero"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <path
+          d="M8.57578125,18.95625 L3.62578125,18.95625 L9.065625,13.5164063 C9.46875,13.1132812 9.46875,12.4617188 9.065625,12.0585938 C8.6625,11.6554687 8.0109375,11.6554687 7.6078125,12.0585938 L2.08125,17.5828125 L2.08125,12.675 C2.08125,12.1054688 1.61953125,11.64375 1.05,11.64375 C0.48046875,11.64375 0.01875,12.1054688 0.01875,12.675 L0.01875,19.9875 C0.01875,20.5570312 0.48046875,21.01875 1.05,21.01875 L8.5734375,21.01875 C9.14296875,21.01875 9.6046875,20.5570312 9.6046875,19.9875 C9.6046875,19.4179688 9.1453125,18.95625 8.57578125,18.95625 Z M19.9664063,0.01875 L12.4429688,0.01875 C11.8734375,0.01875 11.4117188,0.48046875 11.4117188,1.05 C11.4117188,1.61953125 11.8734375,2.08125 12.4429688,2.08125 L17.390625,2.08125 L11.9507813,7.51875 C11.5476563,7.921875 11.5476563,8.5734375 11.9507813,8.9765625 C12.1523438,9.178125 12.4171875,9.27890625 12.6796875,9.27890625 C12.9445313,9.27890625 13.2070313,9.178125 13.4085938,8.9765625 L18.9328125,3.45234375 L18.9328125,8.36015625 C18.9328125,8.9296875 19.3945313,9.39140625 19.9640625,9.39140625 C20.5335938,9.39140625 20.9953125,8.9296875 20.9953125,8.36015625 L20.9953125,1.04765625 C20.9976563,0.48046875 20.5359375,0.01875 19.9664063,0.01875 Z"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Expand
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <g
+          stroke="#4b6073"
+        >
+          <path
+            d="M2 7h20M5 12h14M7 17h10"
+          />
+        </g>
+        <circle
+          cx="17"
+          cy="16"
+          fill="#FFF"
+          r="5"
+          stroke="#1dbcc0"
+        />
+        <path
+          d="M17 13.477V19M14.475 16h5.045"
+          stroke="#1dbcc0"
+          strokeLinecap="square"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    FilterUp
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="nonzero"
+      >
+        <path
+          d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
+        />
+        <path
+          d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Folder
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={22}
+      viewBox="0 0 24 22"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="#4b6073"
+        transform="translate(1 1)"
+      >
+        <circle
+          cx="11"
+          cy="1.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="11"
+          cy="9.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="11"
+          cy="18.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="20.5"
+          cy="4.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="1.5"
+          cy="4.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="20.5"
+          cy="14.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <circle
+          cx="1.5"
+          cy="14.5"
+          fill="#4b6073"
+          r="1.5"
+        />
+        <path
+          d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
+        />
+        <path
+          d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Model
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="evenodd"
+      >
+        <circle
+          cx="12"
+          cy="5"
+          r="2"
+        />
+        <circle
+          cx="12"
+          cy="13"
+          r="2"
+        />
+        <circle
+          cx="12"
+          cy="21"
+          r="2"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    MoreVertical
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={9}
+      viewBox="0 0 8 9"
+      width={8}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#4b6073"
+        fillRule="evenodd"
+      >
+        <path
+          d="M.05 7.899L3.56.296C3.646.12 3.76 0 3.971 0h.02c.212 0 .332.12.41.296l3.498 7.581c.035.071.049.127.049.19a.286.286 0 0 1-.296.283H.282C.127 8.35 0 8.23 0 8.09c.007-.05.014-.12.05-.191zm7.186-.106L3.97.69.72 7.793h6.516z"
+          fillRule="nonzero"
+        />
+        <path
+          d="M3.962 1.2L7 7.82H.923z"
+          stroke="#4b6073"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Permission
+  </dd>
+  <dt
+    className="emotion-0 emotion-1"
+  >
+    <svg
+      className=""
+      height={24}
+      viewBox="0 0 24 24"
+      width={24}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M17.176 15.762l4.531 4.53a1 1 0 0 1-1.414 1.415l-4.531-4.531a8.5 8.5 0 1 1 1.414-1.414zm-2.016-.73a6.5 6.5 0 1 0-.128.128 1.013 1.013 0 0 1 .128-.128z"
+          fill="#4b6073"
+          fillRule="nonzero"
+        />
+      </g>
+    </svg>
+  </dt>
+  <dd
+    className="emotion-2 emotion-3"
+  >
+    Search
+  </dd>
+</dl>
+`;
+
+exports[`Storyshots Icons logos 1`] = `
+Array [
+  <div>
+    <svg
+      viewBox="0 0 1920 332"
+      width={200}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="owkestraLogo-1"
+          x1="29.3"
+          x2="29.3"
+          y1="280.58"
+          y2="99.11"
+        >
+          <stop
+            offset="0"
+            stopColor="#16addb"
+          />
+          <stop
+            offset="0.27"
+            stopColor="#18aadc"
+          />
+          <stop
+            offset="0.44"
+            stopColor="#1fa2dd"
+          />
+          <stop
+            offset="0.58"
+            stopColor="#2a93e0"
+          />
+          <stop
+            offset="0.71"
+            stopColor="#3a7ee4"
+          />
+          <stop
+            offset="0.83"
+            stopColor="#4e63ea"
+          />
+          <stop
+            offset="0.94"
+            stopColor="#6742f0"
+          />
+          <stop
+            offset="1"
+            stopColor="#772df4"
+          />
+        </linearGradient>
+        <linearGradient
+          id="owkestraLogo-2"
+          x1="79.76"
+          x2="79.76"
+          xlinkHref="#owkestraLogo-1"
+          y1="308.46"
+          y2="126.98"
+        />
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="owkestraLogo-3"
+          x1="130.22"
+          x2="130.22"
+          y1="235.29"
+          y2="53.82"
+        >
+          <stop
+            offset="0"
+            stopColor="#16addb"
+          />
+          <stop
+            offset="0.14"
+            stopColor="#19a9dc"
+          />
+          <stop
+            offset="0.28"
+            stopColor="#229dde"
+          />
+          <stop
+            offset="0.43"
+            stopColor="#3189e2"
+          />
+          <stop
+            offset="0.57"
+            stopColor="#476de8"
+          />
+          <stop
+            offset="0.71"
+            stopColor="#6249ef"
+          />
+          <stop
+            offset="0.8"
+            stopColor="#772df4"
+          />
+          <stop
+            offset="1"
+            stopColor="#ed1e79"
+          />
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="owkestraLogo-4"
+          x1="180.68"
+          x2="180.68"
+          y1="270.41"
+          y2="88.93"
+        >
+          <stop
+            offset="0"
+            stopColor="#16addb"
+          />
+          <stop
+            offset="0.15"
+            stopColor="#1aa8dc"
+          />
+          <stop
+            offset="0.34"
+            stopColor="#2599df"
+          />
+          <stop
+            offset="0.54"
+            stopColor="#3781e4"
+          />
+          <stop
+            offset="0.75"
+            stopColor="#515fea"
+          />
+          <stop
+            offset="0.97"
+            stopColor="#7234f3"
+          />
+          <stop
+            offset="1"
+            stopColor="#772df4"
+          />
+        </linearGradient>
+        <linearGradient
+          id="owkestraLogo-5"
+          x1="231.14"
+          x2="231.14"
+          xlinkHref="#owkestraLogo-3"
+          y1="202.17"
+          y2="20.7"
+        />
+      </defs>
+      <title>
+        Owkestra Logo
+      </title>
+      <path
+        d="M29.3,308.46a12.6,12.6,0,0,1-12.6-12.6V33.3a12.6,12.6,0,1,1,25.19,0V295.86A12.6,12.6,0,0,1,29.3,308.46Z"
+        fill="#f2f2f2"
+      />
+      <path
+        d="M79.76,308.46a12.6,12.6,0,0,1-12.6-12.6V33.3a12.6,12.6,0,1,1,25.19,0V295.86A12.6,12.6,0,0,1,79.76,308.46Z"
+        fill="#f2f2f2"
+      />
+      <path
+        d="M130.22,308.46a12.6,12.6,0,0,1-12.6-12.6V33.3a12.6,12.6,0,1,1,25.19,0V295.86A12.59,12.59,0,0,1,130.22,308.46Z"
+        fill="#f2f2f2"
+      />
+      <path
+        d="M180.68,308.46a12.6,12.6,0,0,1-12.6-12.6V33.3a12.6,12.6,0,1,1,25.19,0V295.86A12.59,12.59,0,0,1,180.68,308.46Z"
+        fill="#f2f2f2"
+      />
+      <path
+        d="M231.14,308.46a12.59,12.59,0,0,1-12.59-12.6V33.3a12.6,12.6,0,1,1,25.19,0V295.86A12.6,12.6,0,0,1,231.14,308.46Z"
+        fill="#f2f2f2"
+      />
+      <path
+        d="M29.3,280.58A12.59,12.59,0,0,1,16.7,268V111.71a12.6,12.6,0,1,1,25.19,0V268A12.59,12.59,0,0,1,29.3,280.58Z"
+        fill="url(#owkestraLogo-1)"
+      />
+      <path
+        d="M79.76,308.46a12.6,12.6,0,0,1-12.6-12.6V139.58a12.6,12.6,0,1,1,25.19,0V295.86A12.6,12.6,0,0,1,79.76,308.46Z"
+        fill="url(#owkestraLogo-2)"
+      />
+      <path
+        d="M130.22,235.29a12.6,12.6,0,0,1-12.6-12.6V66.41a12.6,12.6,0,0,1,25.19,0V222.69A12.59,12.59,0,0,1,130.22,235.29Z"
+        fill="url(#owkestraLogo-3)"
+      />
+      <path
+        d="M180.68,270.41a12.6,12.6,0,0,1-12.6-12.6V101.53a12.6,12.6,0,1,1,25.19,0V257.81A12.59,12.59,0,0,1,180.68,270.41Z"
+        fill="url(#owkestraLogo-4)"
+      />
+      <path
+        d="M231.14,202.17a12.59,12.59,0,0,1-12.59-12.59V33.3a12.6,12.6,0,1,1,25.19,0V189.58A12.6,12.6,0,0,1,231.14,202.17Z"
+        fill="url(#owkestraLogo-5)"
+      />
+      <path
+        d="M360.92,165.47v-.42c0-40.38,30.34-75.76,74.92-75.76s74.49,35,74.49,75.34v.42c0,40.39-30.35,75.75-74.91,75.75S360.92,205.86,360.92,165.47Zm132.25,0v-.42c0-33.27-24.27-60.47-57.75-60.47s-57.34,26.78-57.34,60.05v.42c0,33.27,24.28,60.48,57.76,60.48S493.17,198.74,493.17,165.47Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M571.87,102.9a12.14,12.14,0,0,1-.84-3.76,8.73,8.73,0,0,1,8.58-8.38c4.19,0,7.33,3.14,8.58,6.91L628.58,214,666.87,97.25c1.25-3.77,3.77-6.49,8.16-6.49h1.05c4.18,0,6.91,2.72,8.16,6.49L722.53,214l40.6-116.76c1.25-3.77,4-6.49,8-6.49a8.66,8.66,0,0,1,8.37,8.17,13.91,13.91,0,0,1-1.05,4L731.53,233.06c-1.47,4.18-4.39,7.11-8.58,7.11h-1.26c-4.18,0-7.11-2.93-8.57-7.11L675,120.48,637.16,233.06c-1.47,4.18-4.39,7.11-8.58,7.11h-1.26c-4.18,0-7.11-2.72-8.58-7.11Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M852.93,99.14a8.27,8.27,0,1,1,16.53,0v80.14L953,93.69c1.88-1.67,3.77-2.93,6.49-2.93a8.28,8.28,0,0,1,7.95,8.17,8.17,8.17,0,0,1-2.72,5.86l-51.9,51.47,55.67,68.64a9.12,9.12,0,0,1,2.29,6.06,8.53,8.53,0,0,1-8.37,8.38,7.93,7.93,0,0,1-6.69-3.77l-54.62-68-31.59,31.6V231a8.27,8.27,0,1,1-16.53,0Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M1044.2,229.91V100.18a8.35,8.35,0,0,1,8.16-8.37h91a7.53,7.53,0,1,1,0,15.06h-82.65v50H1134a7.63,7.63,0,0,1,7.53,7.53A7.51,7.51,0,0,1,1134,172h-73.24v51.26h83.7a7.54,7.54,0,0,1,0,15.07h-92.07A8.35,8.35,0,0,1,1044.2,229.91Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M1221,220.71a7.44,7.44,0,0,1-3.13-6.28,8,8,0,0,1,7.95-8.15,7.31,7.31,0,0,1,5,1.88c13.81,11.72,27.62,17.37,46.24,17.37,19.67,0,32.65-10.47,32.65-24.91v-.42c0-13.6-7.33-21.34-38.08-27.82-33.69-7.33-49.18-18.21-49.18-42.28v-.42c0-23,20.3-40,48.13-40,19.25,0,33.27,4.82,46.66,14.45a8.51,8.51,0,0,1,3.56,6.69,8,8,0,0,1-7.95,8,7.72,7.72,0,0,1-4.82-1.47c-12.34-9-24.27-12.76-37.87-12.76-19,0-31.18,10.46-31.18,23.64v.42c0,13.82,7.53,21.55,39.76,28.46,32.64,7.11,47.71,19.05,47.71,41.43V199c0,25.11-20.93,41.43-50,41.43C1255.14,240.38,1237.36,233.68,1221,220.71Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M1437.63,107.08h-42.48a7.67,7.67,0,0,1-7.74-7.53,7.86,7.86,0,0,1,7.74-7.74h101.7a7.86,7.86,0,0,1,7.74,7.74,7.67,7.67,0,0,1-7.74,7.53h-42.48V231a8.37,8.37,0,1,1-16.74,0Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M1576.39,100.18a8.35,8.35,0,0,1,8.16-8.37h54.82c18,0,32.44,5.44,41.64,14.64,7.12,7.12,11.3,17.38,11.3,28.89v.42c0,24.05-16.32,38.08-39.13,42.47l36.41,46.88a9,9,0,0,1,2.72,6.06c0,4.4-4.18,8.17-8.37,8.17-3.35,0-5.86-1.89-7.74-4.4L1635,181.37h-42.06V231a8.27,8.27,0,1,1-16.53,0Zm61.51,66.33c22,0,37.67-11.29,37.67-30.13V136c0-18-13.81-28.89-37.46-28.89h-45.19v59.43Z"
+        fill="#1e1e1e"
+      />
+      <path
+        d="M1760.54,227.41,1820,97.46c2.09-4.61,5.23-7.33,10.46-7.33h.84c5,0,8.37,2.72,10.25,7.33L1901,227.2a11.12,11.12,0,0,1,1,4.18,8,8,0,0,1-8,8c-4,0-6.69-2.73-8.16-6.07l-15.27-33.69h-80.36L1775,233.68c-1.47,3.56-4.18,5.66-8,5.66a7.51,7.51,0,0,1-7.53-7.54A9.46,9.46,0,0,1,1760.54,227.41Zm103.58-42.9-33.69-74.92-33.69,74.92Z"
+        fill="#1e1e1e"
+      />
+    </svg>
+  </div>,
+  <div>
+    <svg
+      className=""
+      height={64}
+      viewBox="0 0 340 64"
+      width={200}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M.63 57.739C.315 57.483 0 57.036 0 56.46c0-.894.756-1.661 1.638-1.661.44 0 .819.192 1.07.383 4.41 4.025 8.82 5.814 14.867 5.814 6.614 0 11.15-3.77 11.15-8.88v-.128c0-4.728-2.458-7.475-12.473-9.52C5.669 40.297 1.386 36.655 1.386 29.883v-.128C1.386 23.111 7.37 18 15.559 18c5.921 0 10.015 1.533 14.047 4.6.315.256.693.703.693 1.341 0 .895-.756 1.662-1.638 1.662-.378 0-.756-.128-1.07-.384-3.843-3.002-7.686-4.216-12.158-4.216-6.488 0-10.772 3.77-10.772 8.433v.128c0 4.728 2.394 7.603 12.85 9.775C27.717 41.447 32 45.153 32 51.669v.128C32 59.017 25.89 64 17.386 64 10.77 64 5.606 61.892.63 57.739M48 44.993V20.637c0-.881.753-1.637 1.63-1.637.879 0 1.631.756 1.631 1.637v24.041c0 10.385 5.582 16.364 14.864 16.364 8.906 0 14.613-5.412 14.613-16.049V20.637c0-.881.753-1.637 1.631-1.637S84 19.756 84 20.637v23.978C84 57.266 76.662 64 66 64c-10.537 0-18-6.671-18-19.007M122.297 59.051c7.568 0 12.36-3.378 12.36-8.784v-.123c0-5.283-4.73-8.354-13.432-8.354H106.28v17.261h16.018zm-1.45-20.21c6.621 0 11.351-3.132 11.351-8.845v-.123c0-4.73-3.973-7.925-11.036-7.925h-14.883v16.893h14.568zM103 20.597c0-.86.756-1.597 1.64-1.597h16.585c4.982 0 9.018 1.413 11.478 3.809 1.828 1.781 2.837 4.054 2.837 6.757v.122c0 5.836-3.91 8.785-7.504 10.198 5.297 1.351 9.964 4.3 9.964 10.258v.123C138 57.454 131.694 62 122.171 62H104.64c-.884 0-1.64-.737-1.64-1.597V20.597zM153.63 57.739c-.315-.256-.63-.703-.63-1.278 0-.894.756-1.661 1.638-1.661.44 0 .819.192 1.07.383 4.41 4.025 8.82 5.814 14.867 5.814 6.614 0 11.15-3.77 11.15-8.88v-.128c0-4.728-2.458-7.475-12.473-9.52-10.583-2.172-14.866-5.814-14.866-12.586v-.128c0-6.644 5.984-11.755 14.173-11.755 5.921 0 10.015 1.533 14.047 4.6.315.256.693.703.693 1.341 0 .895-.756 1.662-1.638 1.662-.378 0-.756-.128-1.07-.384-3.843-3.002-7.686-4.216-12.158-4.216-6.488 0-10.772 3.77-10.772 8.433v.128c0 4.728 2.394 7.603 12.85 9.775C180.717 41.447 185 45.153 185 51.669v.128C185 59.017 178.89 64 170.386 64c-6.615 0-11.78-2.108-16.756-6.261M213.84 22.068h-14.307c-.83 0-1.533-.703-1.533-1.534 0-.83.703-1.534 1.533-1.534h31.934c.83 0 1.533.703 1.533 1.534 0 .831-.703 1.534-1.533 1.534H217.16v40.27c0 .895-.766 1.662-1.66 1.662-.894 0-1.66-.767-1.66-1.662v-40.27zM265.47 42.203c7.098 0 12.376-3.771 12.376-10.227v-.128c0-6.008-4.49-9.78-12.193-9.78h-14.499v20.135h14.317zM248 20.663c0-.896.728-1.663 1.578-1.663h16.257c5.217 0 9.402 1.726 11.95 4.41 2.002 2.11 3.215 5.114 3.215 8.31v.128c0 7.479-5.15 12.054-12.309 13.077l-3.645.282h-13.892v17.131c0 .895-.727 1.662-1.576 1.662-.85 0-1.578-.767-1.578-1.662V20.662z"
+          fill="#4B6073"
+        />
+        <g
+          transform="translate(296)"
+        >
+          <mask
+            fill="#fff"
+            id="logo-mask"
+          >
+            <path
+              d="M.255.127H43.74v44.747H.255z"
+            />
+          </mask>
+          <path
+            d="M39.829 41.916L21.966 3.84 4.179 41.916h35.65zm-39.317.567L19.717 1.7C20.167.756 20.81.127 21.966.127h.128c1.156 0 1.799.629 2.248 1.573l19.141 40.656c.193.378.257.693.257 1.008 0 .818-.706 1.51-1.605 1.51H1.797c-.836 0-1.542-.63-1.542-1.384 0-.252.064-.63.257-1.007z"
+            fill="#1DBCC0"
+            mask="url(#logo-mask)"
+          />
+        </g>
+        <path
+          d="M269.328 50.628c-.535-.697-.4-1.757.29-2.297.692-.54 1.742-.404 2.277.293l9.777 12.748c.535.697.4 1.757-.29 2.297-.692.54-1.742.404-2.277-.293l-9.777-12.748z"
+          fill="#4B6073"
+        />
+      </g>
+    </svg>
+  </div>,
+]
+`;
+
+exports[`Storyshots RoundedButton default 1`] = `
+Array [
+  .emotion-0 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-0:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-0:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-0 emotion-1"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Text only
+  </button>,
+  .emotion-0 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-1 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-1:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-1:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-1 emotion-2"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-0"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="#4b6073"
+        fillRule="nonzero"
+      />
+    </svg>
+    Icon + text
+  </button>,
+]
+`;
+
+exports[`Storyshots RoundedButton disabled 1`] = `
+Array [
+  .emotion-0 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-0:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-0:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-0 emotion-1"
+    disabled={true}
+    onClick={[Function]}
+  >
+    Text only
+  </button>,
+  .emotion-0 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-1 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-1:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-1:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-1 emotion-2"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-0"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="#81909d"
+        fillRule="nonzero"
+      />
+    </svg>
+    Icon + text
+  </button>,
+]
+`;
+
+exports[`Storyshots RoundedButton icon colors 1`] = `
+Array [
+  .emotion-0 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-1 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-1:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-1:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-1 emotion-2"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-0"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="blue"
+        fillRule="nonzero"
+      />
+    </svg>
+    Normal
+  </button>,
+  .emotion-0 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-1 {
+  color: #4b6073;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-1:not(:disabled):hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-1:disabled {
+  color: #81909d;
+}
+
+<button
+    className="emotion-1 emotion-2"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-0"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="red"
+        fillRule="nonzero"
+      />
+    </svg>
+    Disabled
+  </button>,
+]
+`;
