@@ -7,5 +7,6 @@ module.exports = {
         ["emotion", {"sourceMap": true}],
         "@babel/plugin-syntax-export-default-from",
         "@babel/plugin-proposal-export-namespace-from",
+        "babel-plugin-macros",
     ],
 };
