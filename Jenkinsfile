@@ -16,6 +16,9 @@ pipeline {
     }
 
     stage('Test & Build') {
+      environment {
+        VERDACCIO_TOKEN = credentials('verdaccio-deployer')
+      }
       parallel {
         stage('Test') {
           agent {
@@ -27,6 +30,7 @@ pipeline {
           }
 
           steps {
+            sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
             sh "yarn install"
             sh "yarn eslint"
             sh "yarn test"
@@ -43,6 +47,7 @@ pipeline {
           }
 
           steps {
+            sh 'yarn install'
             sh 'yarn build'
           }
         }
