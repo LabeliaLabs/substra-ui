@@ -15,7 +15,7 @@ pipeline {
       }
     }
 
-    stage('Test & Build') {
+    stage('Test & Build & Lint') {
       environment {
         VERDACCIO_TOKEN = credentials('verdaccio-deployer')
       }
@@ -50,6 +50,21 @@ pipeline {
             sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
             sh 'yarn install'
             sh 'yarn build'
+          }
+        }
+
+        stage('Lint') {
+          agent {
+            kubernetes {
+              label 'substra-ui-lint'
+              defaultContainer 'node'
+              yamlFile '.cicd/agent.yaml'
+            }
+          }
+
+          steps {
+            sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
+            sh 'yarn eslint-check'
           }
         }
       }
