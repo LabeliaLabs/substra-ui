@@ -32,7 +32,6 @@ pipeline {
           steps {
             sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
             sh "yarn install"
-            sh "yarn eslint"
             sh "yarn test"
           }
         }
@@ -64,6 +63,7 @@ pipeline {
 
           steps {
             sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
+            sh 'yarn install'
             sh 'yarn eslint-check'
           }
         }
