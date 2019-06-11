@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "build": "babel src -d dist --ignore **/*.test.js,**/*.stories.js",
+    "build": "babel src -d dist --ignore **/*.test.js,**/*.stories.js && cp -r src/globalStyles/lato dist/globalStyles/",
     "eslint": "eslint --fix src",
     "eslint-check": "eslint src",
     "test": "jest src",
@@ -34,6 +34,7 @@
     "file-saver": "2.0.2",
     "keycode": "2.2.0",
     "mime-types": "2.1.24",
+    "emotion-normalize": "10.0.0",
     "prop-types": "latest",
     "react": "16.8.6",
     "react-is": "16.8.6",
