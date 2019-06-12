@@ -77,6 +77,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
 
 <div
   className=" emotion-11 emotion-12"
+  data-testid="wrapper"
 >
   <div
     className="emotion-9 emotion-10"
@@ -128,6 +129,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
       </button>
       <button
         className="emotion-4 emotion-2 emotion-3"
+        data-testid="toggle"
         onClick={[Function]}
         title="Expand"
       >
@@ -1707,6 +1709,7 @@ exports[`Storyshots CodeSample default 1`] = `
 
 <div
   className=" emotion-8 emotion-9"
+  data-testid="wrapper"
 >
   <div
     className="emotion-6 emotion-7"

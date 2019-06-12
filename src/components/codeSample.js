@@ -90,7 +90,7 @@ class CodeSample extends Component {
         `;
 
         return (
-            <Wrapper className={className}>
+            <Wrapper className={className} data-testid="wrapper">
                 <Header onClick={this.toggleCollapsed}>
                     <FilenameWrapper>
                         {filename}
@@ -103,6 +103,7 @@ class CodeSample extends Component {
                         />
                         {collapsible && (
                             <IconButton
+                                data-testid="toggle"
                                 Icon={collapsed ? Expand : Collapse}
                                 className={marginLeft}
                                 onClick={this.toggleCollapsed}
