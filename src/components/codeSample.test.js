@@ -1,14 +1,11 @@
 import React from 'react';
 import {render, fireEvent, cleanup} from 'react-testing-library';
-import {toHaveStyle} from 'jest-dom';
 import CodeSample from './codeSample';
-import 'jest-dom/extend-expect';
 
 afterEach(cleanup);
 
 const text = 'toto';
 
-expect.extend({toHaveStyle});
 
 test('Change collapse/expand status on click', () => {
     const {getByTestId} = render(<CodeSample codeString={text} filename="opener.py" language="python" collapsible />);
