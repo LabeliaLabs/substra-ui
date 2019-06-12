@@ -1,8 +1,6 @@
 import React from 'react';
-import {render, fireEvent, cleanup} from 'react-testing-library';
+import {render, fireEvent} from 'react-testing-library';
 import {RoundedButton} from './roundedButton';
-
-afterEach(cleanup);
 
 test('It should handle onClick', () => {
     const callback = jest.fn();

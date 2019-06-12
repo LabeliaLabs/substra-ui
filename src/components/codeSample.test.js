@@ -1,8 +1,6 @@
 import React from 'react';
-import {render, fireEvent, cleanup} from 'react-testing-library';
+import {render, fireEvent} from 'react-testing-library';
 import CodeSample from './codeSample';
-
-afterEach(cleanup);
 
 const text = 'toto';
 
