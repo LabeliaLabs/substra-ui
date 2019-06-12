@@ -27,13 +27,17 @@
     "@emotion/styled": "10.0.11",
     "babel-plugin-emotion": "10.0.9",
     "emotion": "10.0.9",
+    "file-saver": "2.0.2",
+    "mime-types": "2.1.24",
     "prop-types": "latest",
     "react": "16.8.6",
-    "react-is": "16.8.6"
+    "react-is": "16.8.6",
+    "react-syntax-highlighter": "10.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "@babel/plugin-syntax-export-default-from": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
