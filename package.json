@@ -10,16 +10,11 @@
   "scripts": {
     "build": "babel src -d dist --ignore **/*.test.js,**/*.stories.js",
     "eslint": "eslint --fix src",
+    "eslint-check": "eslint src",
     "test": "jest src",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "pre-commit": [
-    "precommit-msg",
-    "test",
-    "eslint"
-  ],
   "publishConfig": {
     "registry": "https://substra-npm.owkin.com/"
   },
@@ -66,7 +61,6 @@
     "jest": "^24.8.0",
     "jest-dom": "^3.5.0",
     "jest-emotion": "^10.0.11",
-    "pre-commit": "^1.2.2",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "react-testing-library": "^7.0.1",
