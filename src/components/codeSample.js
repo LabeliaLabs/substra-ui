@@ -54,7 +54,7 @@ class CodeSample extends Component {
     downloadCode = (e) => {
         e.stopPropagation();
         const {codeString, filename} = this.props;
-        const jsonBlob = new Blob([codeString], {type: mime.lookup(filename)});
+        const jsonBlob = new Blob([codeString], {type: mime.lookup(filename) || 'text/plain'});
         saveAs(jsonBlob, filename);
     };
 
