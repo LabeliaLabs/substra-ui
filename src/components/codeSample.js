@@ -97,6 +97,7 @@ class CodeSample extends Component {
                     </FilenameWrapper>
                     <ActionsWrapper>
                         <IconButton
+                            data-testid="download"
                             Icon={DownloadSimple}
                             onClick={this.downloadCode}
                             title={`Download ${filename}`}

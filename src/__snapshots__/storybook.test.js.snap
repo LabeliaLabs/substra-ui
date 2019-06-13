@@ -93,6 +93,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
     >
       <button
         className="emotion-2 emotion-3"
+        data-testid="download"
         onClick={[Function]}
         title="Download opener.py"
       >
@@ -1725,6 +1726,7 @@ exports[`Storyshots CodeSample default 1`] = `
     >
       <button
         className="emotion-2 emotion-3"
+        data-testid="download"
         onClick={[Function]}
         title="Download opener.py"
       >
