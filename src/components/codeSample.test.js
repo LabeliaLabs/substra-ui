@@ -1,4 +1,3 @@
-/* global Blob */
 import React from 'react';
 import {render, fireEvent} from 'react-testing-library';
 import {saveAs} from 'file-saver';
