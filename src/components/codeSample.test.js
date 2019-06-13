@@ -1,23 +1,23 @@
-// /* global Blob */
 import React from 'react';
-import {render, fireEvent, cleanup} from 'react-testing-library';
-import {toHaveStyle} from 'jest-dom';
+import {render, fireEvent} from 'react-testing-library';
 import {saveAs} from 'file-saver';
 
+import mime from 'mime-types';
 import CodeSample from './codeSample';
-import 'jest-dom/extend-expect';
 
-afterEach(cleanup);
+const codeString = 'toto'; // the default text used in the tests below
+const filename = 'opener.py'; // the default filename used in the tests below
 
-const text = 'toto'; // the default text used in the tests below
+// eslint-disable-next-line func-names
+global.Blob = function (content, options) {
+ return ({content, options});
+};
 
 /* requirements for the "Download on click" test */
 jest.mock('file-saver', () => ({saveAs: jest.fn()}));
 
-expect.extend({toHaveStyle});
-
 test('Change collapse/expand status on click', () => {
-    const {getByTestId} = render(<CodeSample codeString={text} filename="opener.py" language="python" collapsible />);
+    const {getByTestId} = render(<CodeSample codeString={codeString} filename={filename} language="python" collapsible />);
     let button = getByTestId('toggle');
     expect(button.title).toEqual('Expand'); // check if the button has the title "Expand"
     let wrapper = getByTestId('wrapper');
@@ -30,17 +30,18 @@ test('Change collapse/expand status on click', () => {
 });
 
 test('Download on click', () => {
-    const {getByTestId} = render(<CodeSample codeString={text} filename="opener.py" language="python" collapsible />);
+    const {getByTestId} = render(<CodeSample codeString={codeString} filename={filename} language="python" collapsible />);
     const button = getByTestId('download');
     fireEvent.click(button); // simulate a click
     expect(saveAs).toHaveBeenCalledTimes(1); // then we verify that the saveAs function was correctly called one time only
+    expect(saveAs).toHaveBeenCalledWith({content: [codeString], options: {type: mime.lookup(filename)}}, filename); // check the params the download was called with
 });
 
 test('Has a collapse/expand button', () => {
-    const noButtonCpt = render(<CodeSample codeString={text} filename="opener.py" language="python" />);
+    const noButtonCpt = render(<CodeSample codeString={codeString} filename={filename} language="python" />);
     expect(() => {
         noButtonCpt.getByTestId('toggle');
     }).toThrow();
-    const withButtonCpt = render(<CodeSample codeString={text} filename="opener.py" language="python" collapsible />);
+    const withButtonCpt = render(<CodeSample codeString={codeString} filename={filename} language="python" collapsible />);
     expect(withButtonCpt.getByTestId('toggle')).toBeTruthy();
 });
