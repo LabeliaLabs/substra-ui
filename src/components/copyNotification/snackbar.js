@@ -4,8 +4,8 @@ import {Paper, withStyles} from '@material-ui/core';
 import styled from '@emotion/styled';
 import {css} from 'emotion';
 import classNames from 'classnames';
-import Check from '../icons/check';
-import {primaryAccent} from '../variables/colors';
+import Check from '../../icons/check';
+import {primaryAccent} from '../../variables/colors';
 
 export const styles = (theme) => {
     const backgroundColor = theme.palette.background.default;
