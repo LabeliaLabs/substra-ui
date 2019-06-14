@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A shared UI components library for the Substra project.",
   "main": "dist/index.js",
+  "files": ["dist/"],
   "repository": "git@github.com:SubstraFoundation/substra-ui.git",
   "author": "Jérémy Morel <jeremy.morel@owkin.com>",
   "license": "Apache-2.0",
