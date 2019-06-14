@@ -4609,16 +4609,134 @@ Array [
 ]
 `;
 
-exports[`Storyshots Snackbar default 1`] = `
-<div
-  className="MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root"
-  data-testid="snackbar"
-  role="alertdialog"
->
+exports[`Storyshots Snackbar owkestra 1`] = `
+.emotion-0 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.emotion-2 {
+  margin-left: 15px;
+}
+
+.emotion-2 input {
+  display: block;
+  padding: 3px 0;
+  border: 1px solid #9b9b9b;
+  color: #9b9b9b;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.emotion-2 p {
+  color: #4b6073;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+<div>
   <div
-    className="MuiSnackbarContent-message"
+    className="MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root"
+    role="alertdialog"
   >
-    This is a simple message
+    <div
+      className="MuiSnackbarContent-message"
+    >
+      <svg
+        className="emotion-0"
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#4ba5d2"
+          fillRule="evenodd"
+        >
+          <path
+            d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+          />
+        </g>
+      </svg>
+      <div
+        className="emotion-0 emotion-2 emotion-3"
+      >
+        <input
+          disabled={true}
+          value="3d70ab46d710dacb0f48cb42db4874fac14e048a0d415e266aad38c09591ee71"
+        />
+        <p>
+          This is a simple message (Owkestra)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Snackbar substra 1`] = `
+.emotion-0 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.emotion-2 {
+  margin-left: 15px;
+}
+
+.emotion-2 input {
+  display: block;
+  padding: 3px 0;
+  border: 1px solid #9b9b9b;
+  color: #9b9b9b;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.emotion-2 p {
+  color: #4b6073;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+<div>
+  <div
+    className="MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root"
+    role="alertdialog"
+  >
+    <div
+      className="MuiSnackbarContent-message"
+    >
+      <svg
+        className="emotion-0"
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#1dbcc0"
+          fillRule="evenodd"
+        >
+          <path
+            d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+          />
+        </g>
+      </svg>
+      <div
+        className="emotion-0 emotion-2 emotion-3"
+      >
+        <input
+          disabled={true}
+          value="1cdafbb018dd195690111d74916b76c96892d897ec3587c814f287946db446c3"
+        />
+        <p>
+          This is a simple message (Substra)
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;
