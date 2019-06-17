@@ -72,8 +72,7 @@ pipeline {
 
     stage("Publish") {
       when {
-        branch "master"
-        tag "v*"
+        buildingTag()
       }
 
       environment {
@@ -92,7 +91,8 @@ pipeline {
         sh 'echo "//substra-npm.owkin.com/:_authToken=\"${VERDACCIO_TOKEN}\"" >> .npmrc'
         sh 'yarn install'
         sh 'yarn build'
-        sh "yarn publish"
+        sh "npm publish --dry-run"
+        sh "npm publish"
       }
     }
   }
