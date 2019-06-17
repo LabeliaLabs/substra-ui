@@ -8,7 +8,4 @@ export const
     slate = '#4b6073',
     tealish = '#1dbcc0',
     darkSkyBlue = '#4ba5d2',
-    iceBlueTwo = '#edf6fa',
-    primaryAccent = env => env === 'OWKESTRA' ? darkSkyBlue : tealish,
-    secondaryAccent = env => env === 'OWKESTRA' ? darkSkyBlue : gold,
-    iceSecondaryAccent = env => env === 'OWKESTRA' ? iceBlueTwo : iceGold;
+    iceBlueTwo = '#edf6fa';

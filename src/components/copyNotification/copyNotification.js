@@ -5,9 +5,9 @@ import copy from 'copy-to-clipboard';
 
 import {Snackbar} from '@material-ui/core';
 import {Check} from '../../icons';
-import SnackbarContent from './snackbar';
+import SnackbarContent from './snackbarContent';
 
-import {primaryAccent, ice} from '../../variables/colors';
+import {tealish, ice} from '../../variables/colors';
 
 export const middle = css`
     display: inline-block;
@@ -15,7 +15,7 @@ export const middle = css`
 `;
 
 export const snackbarContent = css`
-    color: ${primaryAccent};
+    color: ${tealish};
     background-color: ${ice};
     
     @media (min-width: 960px) {
@@ -48,14 +48,14 @@ export const anchorOrigin = {
 };
 
 
-export const withAddNotification = (WrappedComponent) => {
+export const withAddNotification = (WrappedComponent, Icon = Check) => {
     class CopyNotification extends Component {
         queuedNotification;
 
         state = {
             clipboard: {
                 open: false,
-                inputValue: '',
+                key: '',
                 text: '',
             },
         };
@@ -95,10 +95,10 @@ export const withAddNotification = (WrappedComponent) => {
             this.processNotificationQueue();
         };
 
-        addNotification = (inputValue, text) => {
-            copy(inputValue);
+        addNotification = (key, text) => {
+            copy(key);
             this.queuedNotification = {
-                inputValue,
+                key,
                 text,
             };
 
@@ -119,7 +119,7 @@ export const withAddNotification = (WrappedComponent) => {
         };
 
         render() {
-            const {clipboard: {open, text, inputValue}} = this.state;
+            const {clipboard: {open, text, key}} = this.state;
 
             return (
                 <Fragment>
@@ -136,9 +136,9 @@ export const withAddNotification = (WrappedComponent) => {
                             className={snackbarContent}
                             message={(
                                 <div>
-                                    <Check color={primaryAccent} className={middle} />
+                                    <Icon />
                                     <ClipboardContent className={middle}>
-                                        <input disabled value={inputValue} />
+                                        <input disabled value={key} />
                                         <p>
                                             {text}
                                         </p>
@@ -152,6 +152,5 @@ export const withAddNotification = (WrappedComponent) => {
             );
         }
     }
-
     return CopyNotification;
 };

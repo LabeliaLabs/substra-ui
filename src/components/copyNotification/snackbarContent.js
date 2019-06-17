@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Paper, withStyles} from '@material-ui/core';
-import styled from '@emotion/styled';
-import {css} from 'emotion';
 import classNames from 'classnames';
-import Check from '../../icons/check';
-import {primaryAccent} from '../../variables/colors';
 
 export const styles = (theme) => {
     const backgroundColor = theme.palette.background.default;
@@ -43,37 +39,11 @@ export const styles = (theme) => {
     };
 };
 
-export const ClipboardContent = styled('div')`
-    margin-left: 15px;
-    input {
-        display: block;
-        padding: 3px 0;
-        border: 1px solid #9b9b9b;
-        color: #9b9b9b;
-        background-color: transparent;
-        outline: none;
-        width: 100%;
-    }
-    
-    p {
-        color: #4b6073;
-        font-size: 13px;
-        margin: 4px 0 0;
-    }
-`;
-
-export const middle = css`
-    display: inline-block;
-    vertical-align: top;
-`;
-
 function SnackbarMain(props) {
     const {
-        inputValue,
         classes,
         message,
         className,
-        env,
         ...other
     } = props;
     return (
@@ -85,13 +55,7 @@ function SnackbarMain(props) {
             {...other}
         >
             <div className={classes.message}>
-                <Check color={primaryAccent(env)} className={middle} />
-                <ClipboardContent className={middle}>
-                    <input disabled value={inputValue} />
-                    <p>
-                        {message}
-                    </p>
-                </ClipboardContent>
+                {message}
             </div>
         </Paper>
     );
@@ -114,15 +78,13 @@ SnackbarMain.propTypes = {
      * The message to display.
      */
     message: PropTypes.node,
-    inputValue: PropTypes.node,
-    env: PropTypes.string,
+    key: PropTypes.string,
 };
 
 SnackbarMain.defaultProps = {
     className: '',
     message: null,
-    inputValue: '',
-    env: 'OWKESTRA',
+    key: '',
 };
 
 export default withStyles(styles, {name: 'MuiSnackbarContent'})(SnackbarMain);
