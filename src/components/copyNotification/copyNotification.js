@@ -126,6 +126,7 @@ export const withAddNotification = (WrappedComponent, Icon = Check) => {
                     <WrappedComponent addNotification={this.addNotification} {...this.props} />
 
                     <Snackbar
+                        data-testid="notification"
                         anchorOrigin={anchorOrigin}
                         open={open}
                         onClose={this.handleClose}

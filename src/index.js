@@ -3,7 +3,7 @@
 export {Button, RoundedButton} from './components/roundedButton';
 export {IconButton, RoundButton} from './components/iconButton';
 export {default as CodeSample} from './components/codeSample';
-export {default as SnackbarContent} from './components/snackbar';
+export {withAddNotification} from './components/copyNotification/copyNotification';
 
 // Icons
 
