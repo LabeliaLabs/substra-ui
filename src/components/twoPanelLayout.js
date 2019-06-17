@@ -110,7 +110,7 @@ class TwoPanelLayout extends Component {
 
 
     render() {
-        const {LeftPanel, RightPanel} = this.props;
+        const {leftPanelContent, rightPanelContent} = this.props;
 
         const Layout = styled.div`
             margin: 0 ${spacingLarge} ${spacingNormal} ${spacingLarge};
@@ -126,15 +126,15 @@ class TwoPanelLayout extends Component {
             ` : ''}
         `;
 
-        const LeftPanelWrapper = styled.div`
-            width: ${RightPanel ? `${this.state.leftPanelWidth.value}${this.state.leftPanelWidth.unit}` : '100%'};
+        const LeftPanel = styled.div`
+            width: ${rightPanelContent ? `${this.state.leftPanelWidth.value}${this.state.leftPanelWidth.unit}` : '100%'};
             flex-grow: 0;
             flex-shrink: 0;
             display: flex;
             overflow: hidden;
         `;
 
-        const RightPanelWrapper = styled.div`
+        const RightPanel = styled.div`
             flex-grow: 1;
             display: flex;
             overflow: hidden;
@@ -146,19 +146,19 @@ class TwoPanelLayout extends Component {
                 onMouseMove={this.move}
                 onMouseUp={this.mouseUp}
             >
-                <LeftPanelWrapper>
-                    <LeftPanel />
-                </LeftPanelWrapper>
+                <LeftPanel>
+                    {leftPanelContent}
+                </LeftPanel>
 
-                {RightPanel && (
+                {rightPanelContent && (
                     <Fragment>
                         <div
                             onMouseDown={this.mouseDown}
                             className={verticalBar}
                         />
-                        <RightPanelWrapper>
-                            <RightPanel />
-                        </RightPanelWrapper>
+                        <RightPanel>
+                            {rightPanelContent}
+                        </RightPanel>
                     </Fragment>
                 )
                 }
@@ -172,13 +172,13 @@ TwoPanelLayout.propTypes = {
         value: PropTypes.number,
         unit: PropTypes.string,
     }),
-    LeftPanel: PropTypes.component.isRequired,
-    RightPanel: PropTypes.component,
+    leftPanelContent: PropTypes.node.isRequired,
+    rightPanelContent: PropTypes.node,
 };
 
 TwoPanelLayout.defaultProps = {
     defaultLeftPanelWidth: {value: 40, unit: '%'},
-    RightPanel: null,
+    rightPanelContent: null,
 };
 
 export default TwoPanelLayout;

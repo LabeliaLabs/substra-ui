@@ -5904,9 +5904,7 @@ exports[`Storyshots TwoPanelsLayout single panel 1`] = `
     <div
       className="emotion-0"
     >
-      <div>
-        Left panel
-      </div>
+      Left panel
     </div>
   </div>
 </div>
@@ -5998,9 +5996,7 @@ exports[`Storyshots TwoPanelsLayout two panels 1`] = `
     <div
       className="emotion-0"
     >
-      <div>
-        Left panel
-      </div>
+      Left panel
     </div>
     <div
       className="emotion-1"
@@ -6009,9 +6005,7 @@ exports[`Storyshots TwoPanelsLayout two panels 1`] = `
     <div
       className="emotion-2"
     >
-      <div>
-        Right panel
-      </div>
+      Right panel
     </div>
   </div>
 </div>

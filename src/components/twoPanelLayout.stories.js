@@ -4,23 +4,20 @@ import {storiesOf} from '@storybook/react';
 import TwoPanelLayout from './twoPanelLayout';
 import {PanelContent, PanelTop, PanelWrapper} from './panel';
 
-const LeftPanel = props => <div {...props}>Left panel</div>;
-const RightPanel = props => <div {...props}>Right panel</div>;
-
 storiesOf('TwoPanelsLayout', module)
     .add('single panel', () => (
         <TwoPanelLayout
-            LeftPanel={LeftPanel}
+            leftPanelContent="Left panel"
         />
     ))
     .add('two panels', () => (
         <TwoPanelLayout
-            LeftPanel={LeftPanel}
-            RightPanel={RightPanel}
+            leftPanelContent="Left panel"
+            rightPanelContent="Right panel"
         />
     ))
     .add('two panels with proper style', () => {
-        const PanelWithStyle = () => (
+        const panelWithStyle = (
             <PanelWrapper>
                 <PanelTop>Panel top</PanelTop>
                 <PanelContent>Panel content</PanelContent>
@@ -28,8 +25,8 @@ storiesOf('TwoPanelsLayout', module)
         );
         return (
             <TwoPanelLayout
-                LeftPanel={PanelWithStyle}
-                RightPanel={PanelWithStyle}
+                leftPanelContent={panelWithStyle}
+                rightPanelContent={panelWithStyle}
             />
         );
     });
