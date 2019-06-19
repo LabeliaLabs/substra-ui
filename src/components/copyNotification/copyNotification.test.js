@@ -1,24 +1,41 @@
-/* test: check if the notification appears when clicking a button
-/* test: check if the notification disappears after 2000ms
-/* test: check if the text is copied to the clipboard */
-
 import React from 'react';
-// import {fireEvent} from 'react-testing-library';
+import {fireEvent, render} from 'react-testing-library';
+import copy from 'copy-to-clipboard';
 import PropTypes from '../../utils/propTypes';
-// import {withAddNotification} from './copyNotification';
+import {withAddNotification} from './copyNotification';
 
-test('Change collapse/expand status on click', () => {
-    const addNotificationButton = ({addNotification}) => (
-        <button type="button" onClick={() => addNotification('82e841c49822b2abcab9e95fe9ae359316d70ab5f627a28b0b67618dd945b2c3', 'Dataset\'s key successfully copied to clipboard!')}>
-            Add notification
-        </button>
-    );
+jest.mock('copy-to-clipboard');
 
-    addNotificationButton.propTypes = {
-        addNotification: PropTypes.func.isRequired,
-    };
+const addNotificationButton = ({addNotification}) => (
+    <button
+        data-testid="button"
+        type="button"
+        onClick={() => addNotification('key', 'text')}
+    >
+        Add notification
+    </button>
+);
 
-    // const button = withAddNotification(addNotificationButton);
+addNotificationButton.propTypes = {
+    addNotification: PropTypes.func.isRequired,
+};
 
-    // fireEvent.click(button); // simulate a click
+const Main = withAddNotification(addNotificationButton);
+
+test('The notification appears', () => {
+    const {getByTestId} = render(<Main />);
+
+    expect(() => getByTestId('notification')).toThrow();
+    fireEvent.click(getByTestId('button'));
+    expect(getByTestId('notification')).toBeDefined();
+});
+
+test('Key copied to the clipboard', () => {
+    copy.mockReset();
+    const {getByTestId} = render(<Main />);
+
+    expect(copy).not.toHaveBeenCalled();
+    fireEvent.click(getByTestId('button'));
+    expect(copy).toHaveBeenCalledTimes(1);
+    expect(copy).toHaveBeenCalledWith('key');
 });

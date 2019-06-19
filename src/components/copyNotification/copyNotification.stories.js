@@ -1,12 +1,15 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
+import {withKnobs, color} from '@storybook/addon-knobs';
 import PropTypes from '../../utils/propTypes';
 import {withAddNotification} from './copyNotification';
+import Check from '../../icons/check';
 
 storiesOf('CopyNotification', module)
+    .addDecorator(withKnobs)
     .add('default', () => {
         const addNotificationButton = ({addNotification}) => (
-            <button type="button" onClick={() => addNotification('82e841c49822b2abcab9e95fe9ae359316d70ab5f627a28b0b67618dd945b2c3', 'Dataset\'s key successfully copied to clipboard!')}>
+            <button type="button" onClick={() => addNotification('key', 'text')}>
                 Add notification
             </button>
         );
@@ -16,6 +19,24 @@ storiesOf('CopyNotification', module)
         };
 
         const Button = withAddNotification(addNotificationButton);
+
+        return <Button />;
+    })
+    .add('color override', () => {
+        const checkColor = color('Color: ');
+        const addNotificationButton = ({addNotification}) => (
+            <button type="button" onClick={() => addNotification('key', 'text')}>
+                Add notification
+            </button>
+        );
+
+        addNotificationButton.propTypes = {
+            addNotification: PropTypes.func.isRequired,
+        };
+
+        const OwkestraCheck = () => <Check color={checkColor} />;
+
+        const Button = withAddNotification(addNotificationButton, OwkestraCheck);
 
         return <Button />;
     });
