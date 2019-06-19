@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {render, fireEvent} from 'react-testing-library';
+import {render, fireEvent} from '@testing-library/react';
 import {
     alertInlineButton,
     AlertActions,

@@ -10,7 +10,7 @@ module.exports = {
         "\\.(css|less)$": "<rootDir>/test/mocks/styleMock.js"
     },
     setupFilesAfterEnv: [
-        'react-testing-library/cleanup-after-each',
+        '@testing-library/react/cleanup-after-each',
         '<rootDir>/test/setup.js',
     ],
 };
