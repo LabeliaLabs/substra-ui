@@ -4,6 +4,12 @@ export {Button, RoundedButton} from './components/roundedButton';
 export {IconButton, RoundButton} from './components/iconButton';
 export {default as CodeSample} from './components/codeSample';
 export {withAddNotification} from './components/copyNotification/copyNotification';
+export {
+    TabPanel,
+    Tab,
+    TabList,
+    Tabs,
+} from './components/tabs';
 
 // Icons
 

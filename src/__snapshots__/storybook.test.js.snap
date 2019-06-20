@@ -4626,3 +4626,254 @@ Array [
   </button>,
 ]
 `;
+
+exports[`Storyshots Tabs color override 1`] = `
+.emotion-2 {
+  border-bottom: 1px solid #e7e8e8;
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.emotion-0 {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: -1px;
+}
+
+.emotion-0.selected {
+  border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
+  color: #4ba5d2;
+}
+
+.emotion-0.disabled {
+  cursor: not-allowed;
+  color: #81909d;
+}
+
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <ul
+    className="emotion-2"
+    role="tablist"
+  >
+    <li
+      aria-controls="react-tabs-5"
+      aria-disabled="false"
+      aria-selected="true"
+      className="emotion-0 selected"
+      color="#4ba5d2"
+      id="react-tabs-4"
+      role="tab"
+      tabIndex="0"
+    >
+      Description
+    </li>
+    <li
+      aria-controls="react-tabs-7"
+      aria-disabled="false"
+      aria-selected="false"
+      className="emotion-0"
+      color="#4ba5d2"
+      id="react-tabs-6"
+      role="tab"
+      tabIndex={null}
+    >
+      Metrics
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-4"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-5"
+    role="tabpanel"
+  >
+    <p>
+      First tab's content
+    </p>
+  </div>
+  <div
+    aria-labelledby="react-tabs-6"
+    className="react-tabs__tab-panel"
+    id="react-tabs-7"
+    role="tabpanel"
+  />
+</div>
+`;
+
+exports[`Storyshots Tabs default 1`] = `
+.emotion-2 {
+  border-bottom: 1px solid #e7e8e8;
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.emotion-0 {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: -1px;
+}
+
+.emotion-0.selected {
+  border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
+  color: #4ba5d2;
+}
+
+.emotion-0.disabled {
+  cursor: not-allowed;
+  color: #81909d;
+}
+
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <ul
+    className="emotion-2"
+    role="tablist"
+  >
+    <li
+      aria-controls="react-tabs-1"
+      aria-disabled="false"
+      aria-selected="true"
+      className="emotion-0 selected"
+      id="react-tabs-0"
+      role="tab"
+      tabIndex="0"
+    >
+      Description
+    </li>
+    <li
+      aria-controls="react-tabs-3"
+      aria-disabled="false"
+      aria-selected="false"
+      className="emotion-0"
+      id="react-tabs-2"
+      role="tab"
+      tabIndex={null}
+    >
+      Metrics
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-0"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-1"
+    role="tabpanel"
+  >
+    <p>
+      First tab's content
+    </p>
+  </div>
+  <div
+    aria-labelledby="react-tabs-2"
+    className="react-tabs__tab-panel"
+    id="react-tabs-3"
+    role="tabpanel"
+  />
+</div>
+`;
+
+exports[`Storyshots Tabs disabled 1`] = `
+.emotion-2 {
+  border-bottom: 1px solid #e7e8e8;
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.emotion-0 {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: -1px;
+}
+
+.emotion-0.selected {
+  border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
+  color: #4ba5d2;
+}
+
+.emotion-0.disabled {
+  cursor: not-allowed;
+  color: #81909d;
+}
+
+<div
+  className="react-tabs"
+  data-tabs={true}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <ul
+    className="emotion-2"
+    role="tablist"
+  >
+    <li
+      aria-controls="react-tabs-9"
+      aria-disabled="false"
+      aria-selected="true"
+      className="emotion-0 selected"
+      id="react-tabs-8"
+      role="tab"
+      tabIndex="0"
+    >
+      Description
+    </li>
+    <li
+      aria-controls="react-tabs-11"
+      aria-disabled="true"
+      aria-selected="false"
+      className="emotion-0 disabled"
+      id="react-tabs-10"
+      role="tab"
+      tabIndex={null}
+    >
+      Metrics
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-8"
+    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-9"
+    role="tabpanel"
+  >
+    <p>
+      First tab's content
+    </p>
+  </div>
+  <div
+    aria-labelledby="react-tabs-10"
+    className="react-tabs__tab-panel"
+    id="react-tabs-11"
+    role="tabpanel"
+  />
+</div>
+`;
