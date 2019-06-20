@@ -4,6 +4,7 @@ import {withKnobs, color} from '@storybook/addon-knobs';
 import PropTypes from '../../utils/propTypes';
 import {withAddNotification} from './copyNotification';
 import Check from '../../icons/check';
+import {darkSkyBlue} from '../../variables/colors';
 
 storiesOf('CopyNotification', module)
     .addDecorator(withKnobs)
@@ -23,7 +24,7 @@ storiesOf('CopyNotification', module)
         return <Button />;
     })
     .add('color override', () => {
-        const checkColor = color('Color: ');
+        const checkColor = color('Color: ', darkSkyBlue);
         const addNotificationButton = ({addNotification}) => (
             <button type="button" onClick={() => addNotification('key', 'text')}>
                 Add notification
