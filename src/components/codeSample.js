@@ -1,12 +1,12 @@
 /* global Blob */
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import {css} from 'emotion';
 import styled from '@emotion/styled';
 import mime from 'mime-types';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {ghcolors} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {saveAs} from 'file-saver';
+import PropTypes from '../utils/propTypes';
 import {fontNormalMonospace, monospaceFamily} from '../variables/font';
 import {spacingExtraSmall, spacingNormal, spacingSmall} from '../variables/spacing';
 import {ice, iceBlue} from '../variables/colors';

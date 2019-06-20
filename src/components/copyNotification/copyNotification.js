@@ -48,7 +48,7 @@ export const anchorOrigin = {
 };
 
 
-export const withAddNotification = (WrappedComponent, Icon = Check) => {
+const withAddNotification = (WrappedComponent, Icon = Check) => {
     class CopyNotification extends Component {
         queuedNotification;
 
@@ -155,3 +155,5 @@ export const withAddNotification = (WrappedComponent, Icon = Check) => {
     }
     return CopyNotification;
 };
+
+export default withAddNotification;

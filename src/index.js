@@ -3,7 +3,8 @@
 export {Button, RoundedButton} from './components/roundedButton';
 export {IconButton, RoundButton} from './components/iconButton';
 export CodeSample from './components/codeSample';
-export {withAddNotification} from './components/copyNotification/copyNotification';
+export SearchBar from './components/searchBar/searchBar';
+export withAddNotification from './components/copyNotification/copyNotification';
 export {
     TabList,
     Tab,
@@ -11,6 +12,7 @@ export {
     TabPanel,
     cssTabTemplate,
 } from './components/tabs';
+
 export {
     alertWrapper,
     alertTitle,
@@ -20,7 +22,6 @@ export {
 
 
 // Icons
-
 export {
     Alert,
     Algo,
@@ -45,7 +46,6 @@ export {
 } from './icons';
 
 // Variables
-
-export * as colors from './variables/colors';
-export * as font from './variables/font';
-export * as spacing from './variables/spacing';
+export colors from './variables/colors';
+export font from './variables/font';
+export spacing from './variables/spacing';

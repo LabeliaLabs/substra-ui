@@ -2,7 +2,7 @@ import React from 'react';
 import {fireEvent, render} from 'react-testing-library';
 import copy from 'copy-to-clipboard';
 import PropTypes from '../../utils/propTypes';
-import {withAddNotification} from './copyNotification';
+import withAddNotification from './copyNotification';
 
 jest.mock('copy-to-clipboard');
 
