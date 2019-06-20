@@ -1,7 +1,8 @@
-import {createMuiTheme} from '@material-ui/core/styles';
+import React from 'react';
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 import indigo from '@material-ui/core/colors/indigo';
 
-const theme = createMuiTheme({
+export const theme = createMuiTheme({
     palette: {
         primary: indigo, // Purple and green play nicely together.
     },
@@ -12,4 +13,8 @@ const theme = createMuiTheme({
     },
 });
 
-export default theme;
+export const withMuiTheme = (WrappedComponent, muiTheme = theme) => props => (
+    <MuiThemeProvider theme={muiTheme}>
+        <WrappedComponent {...props} />
+    </MuiThemeProvider>
+    );

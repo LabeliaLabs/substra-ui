@@ -10,7 +10,7 @@ import PropTypes from '../../../utils/propTypes';
 
 import {match, parse} from './utils/autosuggest-highlight';
 
-import theme from '../../../utils/muiTheme';
+import {theme} from '../../../utils/muiTheme';
 
 const Logic = styled('span')`
     color: #1935a7;

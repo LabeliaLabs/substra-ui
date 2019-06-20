@@ -45,6 +45,10 @@ export {
     SubstraLogo,
 } from './icons';
 
+// Utils
+
+export {theme as muiTheme, withMuiTheme} from './utils/muiTheme';
+
 // Variables
 export colors from './variables/colors';
 export font from './variables/font';

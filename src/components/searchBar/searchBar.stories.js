@@ -4,6 +4,7 @@ import {StateDecorator, Store} from '@sambego/storybook-state';
 import {uniqBy} from 'lodash';
 
 import SearchBar from './searchBar';
+import {withMuiTheme} from '../../utils/muiTheme';
 
 const defaultState = {
     inputValue: '',
@@ -16,7 +17,6 @@ let previousState = {...defaultState};
 const store = new Store(defaultState);
 
 const setState = (state) => {
-    console.log('setState:', state);
     store.set(state);
 };
 
@@ -82,4 +82,18 @@ storiesOf('SearchBar', module)
             selectedItem={store.get('selectedItem')}
             placeholder="Custom placeholder"
         />
-    ));
+    ))
+    .add('withMuiTheme', () => {
+        const ThemedSearchBar = withMuiTheme(SearchBar);
+        return (
+            <ThemedSearchBar
+                inputValue={store.get('inputValue')}
+                setState={setState}
+                suggestions={store.get('suggestions')}
+                parentSuggestions={store.get('parentSuggestions')}
+                isParent={store.get('isParent')}
+                selectedItem={store.get('selectedItem')}
+                placeholder="Custom placeholder"
+            />
+        );
+    });
