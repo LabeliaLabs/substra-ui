@@ -7,7 +7,7 @@ import {
     Tab,
     TabPanel,
 } from './tabs';
-import {darkSkyBlue} from '../variables/colors';
+import {gold} from '../variables/colors';
 
 storiesOf('Tabs', module)
     .addDecorator(withKnobs)
@@ -26,12 +26,12 @@ storiesOf('Tabs', module)
         </Tabs>
     ))
     .add('color override', () => {
-        const checkColor = color('Color: ', darkSkyBlue);
+        const checkColor = color('Color: ', gold);
         return (
             <Tabs>
                 <TabList>
                     <Tab color={checkColor}>Description</Tab>
-                    <Tab color={checkColor}>Metrics</Tab>
+                    <Tab>Metrics</Tab>
                 </TabList>
                 <TabPanel>
                     <p>First tab's content</p>
