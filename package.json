@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A shared UI components library for the Substra project.",
   "main": "dist/index.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "repository": "git@github.com:SubstraFoundation/substra-ui.git",
   "author": "Jérémy Morel <jeremy.morel@owkin.com>",
   "license": "Apache-2.0",
@@ -16,6 +18,11 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "test",
+    "eslint"
+  ],
   "publishConfig": {
     "registry": "https://substra-npm.owkin.com/"
   },
@@ -28,10 +35,12 @@
     "emotion": "10.0.9",
     "file-saver": "2.0.2",
     "mime-types": "2.1.24",
+    "pre-commit": "^1.2.2",
     "prop-types": "latest",
     "react": "16.8.6",
     "react-is": "16.8.6",
-    "react-syntax-highlighter": "10.3.0"
+    "react-syntax-highlighter": "10.3.0",
+    "react-tabs": "3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
