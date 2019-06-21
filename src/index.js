@@ -1,8 +1,8 @@
 // Components
-
 export {Button, RoundedButton} from './components/roundedButton';
 export {IconButton, RoundButton} from './components/iconButton';
 export CodeSample from './components/codeSample';
+export CopyInput from './components/copyInput';
 export SearchBar from './components/searchBar/searchBar';
 export withAddNotification from './components/copyNotification/copyNotification';
 export {
