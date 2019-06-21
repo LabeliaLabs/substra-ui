@@ -10,6 +10,7 @@ export {
     Tab,
     TabPanel,
     tab,
+    tabList,
 } from './components/tabs';
 
 // Icons

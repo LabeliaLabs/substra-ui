@@ -49,4 +49,5 @@ export {
     Tab,
     TabPanel,
     tab,
+    tabList,
 };
