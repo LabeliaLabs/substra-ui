@@ -24,16 +24,16 @@ test('Tab\'s color changes & the description is updated', () => {
     expect(getByTestId('desc_1')).toBeDefined();
     expect(() => getByTestId('desc_2')).toThrow();
 
-    expect(getByTestId('title_1')).toHaveStyle('color: #4BA5D2');
-    expect(getByTestId('title_2')).not.toHaveStyle('color: #4BA5D2');
+    expect(getByTestId('title_1')).toHaveStyle('color: #1dbcc0');
+    expect(getByTestId('title_2')).not.toHaveStyle('color: #1dbcc0');
 
     fireEvent.click(getByTestId('title_2'));
 
     expect(() => getByTestId('desc_1')).toThrow();
     expect(getByTestId('desc_2')).toBeDefined();
 
-    expect(getByTestId('title_1')).not.toHaveStyle('color: #4BA5D2');
-    expect(getByTestId('title_2')).toHaveStyle('color: #4BA5D2');
+    expect(getByTestId('title_1')).not.toHaveStyle('color: #1dbcc0');
+    expect(getByTestId('title_2')).toHaveStyle('color: #1dbcc0');
 });
 test('It should have a disabled state', () => {
     const {getByTestId} = render(<Tabs>
@@ -52,14 +52,14 @@ test('It should have a disabled state', () => {
     expect(getByTestId('desc_1')).toBeDefined();
     expect(() => getByTestId('desc_2')).toThrow();
 
-    expect(getByTestId('title_1')).toHaveStyle('color: #4BA5D2');
-    expect(getByTestId('title_2')).not.toHaveStyle('color: #4BA5D2');
+    expect(getByTestId('title_1')).toHaveStyle('color: #1dbcc0');
+    expect(getByTestId('title_2')).not.toHaveStyle('color: #1dbcc0');
 
     fireEvent.click(getByTestId('title_2'));
 
     expect(getByTestId('desc_1')).toBeDefined();
     expect(() => getByTestId('desc_2')).toThrow();
 
-    expect(getByTestId('title_1')).toHaveStyle('color: #4BA5D2');
-    expect(getByTestId('title_2')).not.toHaveStyle('color: #4BA5D2');
+    expect(getByTestId('title_1')).toHaveStyle('color: #1dbcc0');
+    expect(getByTestId('title_2')).not.toHaveStyle('color: #1dbcc0');
 });

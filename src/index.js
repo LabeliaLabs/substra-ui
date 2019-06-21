@@ -5,10 +5,11 @@ export {IconButton, RoundButton} from './components/iconButton';
 export {default as CodeSample} from './components/codeSample';
 export {withAddNotification} from './components/copyNotification/copyNotification';
 export {
-    TabPanel,
-    Tab,
-    TabList,
     Tabs,
+    TabList,
+    Tab,
+    TabPanel,
+    tab,
 } from './components/tabs';
 
 // Icons

@@ -4650,12 +4650,16 @@ exports[`Storyshots Tabs color override 1`] = `
 
 .emotion-0.selected {
   border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
-  color: #4ba5d2;
+  color: #1dbcc0;
 }
 
 .emotion-0.disabled {
   cursor: not-allowed;
   color: #81909d;
+}
+
+.emotion-0.selected {
+  color: #edc20f;
 }
 
 <div
@@ -4673,7 +4677,6 @@ exports[`Storyshots Tabs color override 1`] = `
       aria-disabled="false"
       aria-selected="true"
       className="emotion-0 selected"
-      color="#4ba5d2"
       id="react-tabs-4"
       role="tab"
       tabIndex="0"
@@ -4685,7 +4688,6 @@ exports[`Storyshots Tabs color override 1`] = `
       aria-disabled="false"
       aria-selected="false"
       className="emotion-0"
-      color="#4ba5d2"
       id="react-tabs-6"
       role="tab"
       tabIndex={null}
@@ -4735,7 +4737,7 @@ exports[`Storyshots Tabs default 1`] = `
 
 .emotion-0.selected {
   border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
-  color: #4ba5d2;
+  color: #1dbcc0;
 }
 
 .emotion-0.disabled {
@@ -4818,7 +4820,7 @@ exports[`Storyshots Tabs disabled 1`] = `
 
 .emotion-0.selected {
   border-color: #e7e8e8 #e7e8e8 #ffffff #e7e8e8;
-  color: #4ba5d2;
+  color: #1dbcc0;
 }
 
 .emotion-0.disabled {

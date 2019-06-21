@@ -3,7 +3,6 @@ import {css} from 'emotion';
 import {
     Tab as ReactTab, Tabs, TabList as ReactTabList, TabPanel,
 } from 'react-tabs';
-import PropTypes from 'prop-types';
 import {
     blueGrey, ice, tealish, white,
 } from '../variables/colors';
@@ -17,7 +16,7 @@ const tabList = css`
     list-style: none;
 `;
 
-const tab = color => css`
+const tab = css`
     padding: ${spacingSmall} ${spacingNormal};
     border: 1px solid transparent;
     cursor: pointer;
@@ -27,7 +26,7 @@ const tab = color => css`
 
     &.selected {
         border-color: ${ice} ${ice} ${white} ${ice};
-        color: ${color};
+        color: ${tealish};
     }
 
     &.disabled {
@@ -40,22 +39,14 @@ const TabList = props => <ReactTabList className={tabList} {...props} />;
 
 TabList.tabsRole = 'TabList';
 
-const Tab = (props) => {
-    console.log(props);
-    return <ReactTab className={tab(props.color)} selectedClassName="selected" disabledClassName="disabled" {...props} />;
-};
+const Tab = props => <ReactTab className={tab} selectedClassName="selected" disabledClassName="disabled" {...props} />;
 
 Tab.tabsRole = 'Tab';
-Tab.propTypes = {
-    color: PropTypes.node,
-};
-Tab.defaultProps = {
-    color: tealish,
-};
 
 export {
     Tabs,
     TabList,
     Tab,
     TabPanel,
+    tab,
 };
