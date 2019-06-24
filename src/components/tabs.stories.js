@@ -7,7 +7,7 @@ import {
     TabList,
     Tab,
     TabPanel,
-    tab,
+    tabTemplate,
 } from './tabs';
 import {gold} from '../variables/colors';
 
@@ -30,7 +30,7 @@ storiesOf('Tabs', module)
     .add('color override', () => {
         const checkColor = color('Color: ', gold);
         const tabStyle = css`
-            ${tab}
+            ${tabTemplate};
             &.selected {
                 color: ${checkColor};
             }

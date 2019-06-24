@@ -9,7 +9,7 @@ export {
     TabList,
     Tab,
     TabPanel,
-    tab,
+    tabTemplate,
     tabList,
 } from './components/tabs';
 

@@ -16,7 +16,7 @@ const tabList = css`
     list-style: none;
 `;
 
-const tab = css`
+const tabTemplate = `
     padding: ${spacingSmall} ${spacingNormal};
     border: 1px solid transparent;
     cursor: pointer;
@@ -35,6 +35,10 @@ const tab = css`
     }
 `;
 
+const tab = css`
+    ${tabTemplate}
+`;
+
 const TabList = props => <ReactTabList className={tabList} {...props} />;
 
 TabList.tabsRole = 'TabList';
@@ -48,6 +52,6 @@ export {
     TabList,
     Tab,
     TabPanel,
-    tab,
+    tabTemplate,
     tabList,
 };
