@@ -11,6 +11,13 @@ export {
     TabPanel,
     cssTabTemplate,
 } from './components/tabs';
+export {
+    alertWrapper,
+    alertTitle,
+    AlertActions,
+    alertInlineButton,
+} from './components/alert';
+
 
 // Icons
 
