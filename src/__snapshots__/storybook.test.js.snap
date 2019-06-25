@@ -3247,6 +3247,24 @@ exports[`Storyshots CodeSample default 1`] = `
 </div>
 `;
 
+exports[`Storyshots CopyNotification color override 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+>
+  Add notification
+</button>
+`;
+
+exports[`Storyshots CopyNotification default 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+>
+  Add notification
+</button>
+`;
+
 exports[`Storyshots IconButton default 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
