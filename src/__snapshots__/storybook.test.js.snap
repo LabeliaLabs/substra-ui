@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Alert default 1`] = `
-.emotion-6 {
+.emotion-3 {
   background-color: #fdf8e7;
   border: 1px solid #edc20f;
   border-radius: 3px;
@@ -30,11 +30,11 @@ exports[`Storyshots Alert default 1`] = `
   margin: 10px;
 }
 
-.emotion-4 {
+.emotion-2 {
   margin: 5px 5px 5px 10px;
 }
 
-.emotion-2 {
+.emotion-1 {
   border: none;
   background: none;
   color: #edc20f;
@@ -45,18 +45,18 @@ exports[`Storyshots Alert default 1`] = `
 }
 
 <div
-  className="emotion-6 emotion-7"
+  className="emotion-3"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     This model has not been tested yet
   </div>
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-2"
   >
     <button
-      className="emotion-2 emotion-3"
+      className="emotion-1"
     >
       learn more
     </button>
@@ -65,11 +65,11 @@ exports[`Storyshots Alert default 1`] = `
 `;
 
 exports[`Storyshots Alert override 1`] = `
-.emotion-4 {
+.emotion-2 {
   margin: 5px 5px 5px 10px;
 }
 
-.emotion-6 {
+.emotion-3 {
   background-color: #fdf8e7;
   border: 1px solid #edc20f;
   border-radius: 3px;
@@ -101,7 +101,7 @@ exports[`Storyshots Alert override 1`] = `
   color: #4ba5d2;
 }
 
-.emotion-2 {
+.emotion-1 {
   border: none;
   background: none;
   color: #edc20f;
@@ -113,18 +113,18 @@ exports[`Storyshots Alert override 1`] = `
 }
 
 <div
-  className="emotion-6 emotion-7"
+  className="emotion-3"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     This model has not been tested yet
   </div>
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-2"
   >
     <button
-      className="emotion-2 emotion-3"
+      className="emotion-1"
     >
       learn more
     </button>
