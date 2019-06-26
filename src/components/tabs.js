@@ -1,12 +1,14 @@
 import React from 'react';
 import {css} from 'emotion';
 import {
-    Tab as ReactTab, TabList as ReactTabList, Tabs, TabPanel,
+    Tab as ReactTab, TabList as ReactTabList,
 } from 'react-tabs';
 import {
     blueGrey, ice, tealish, white,
 } from '../variables/colors';
 import {spacingNormal, spacingSmall} from '../variables/spacing';
+
+export {Tabs, TabPanel} from 'react-tabs';
 
 const cssTabList = `
     border-bottom: 1px solid ${ice};
@@ -60,8 +62,3 @@ export const Tab = props => (
     />
 );
 Tab.tabsRole = 'Tab';
-
-export {
-    Tabs,
-    TabPanel,
-};
