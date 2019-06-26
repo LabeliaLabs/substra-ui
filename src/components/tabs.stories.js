@@ -3,11 +3,11 @@ import React from 'react';
 import {css} from 'emotion';
 import {color, withKnobs} from '@storybook/addon-knobs';
 import {
-    Tabs,
     TabList,
     Tab,
+    Tabs,
     TabPanel,
-    tabTemplate,
+    cssTabTemplate,
 } from './tabs';
 import {gold} from '../variables/colors';
 
@@ -30,7 +30,7 @@ storiesOf('Tabs', module)
     .add('color override', () => {
         const checkColor = color('Color: ', gold);
         const tabStyle = css`
-            ${tabTemplate};
+            ${cssTabTemplate};
             &.selected {
                 color: ${checkColor};
             }
