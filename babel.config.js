@@ -4,10 +4,9 @@ module.exports = {
         '@babel/preset-react',
     ],
     plugins: [
-        ["emotion", {"sourceMap": true}],
-        "@babel/plugin-syntax-export-default-from",
-        "@babel/plugin-proposal-export-namespace-from",
-        "babel-plugin-macros",
-        "@babel/plugin-proposal-class-properties",
+        '@babel/plugin-syntax-export-default-from',
+        '@babel/plugin-proposal-export-namespace-from',
+        'babel-plugin-macros',
+        '@babel/plugin-proposal-class-properties',
     ],
 };

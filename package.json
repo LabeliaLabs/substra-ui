@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A shared UI components library for the Substra project.",
   "main": "dist/index.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "repository": "git@github.com:SubstraFoundation/substra-ui.git",
   "author": "Jérémy Morel <jeremy.morel@owkin.com>",
   "license": "Apache-2.0",
@@ -31,7 +33,8 @@
     "prop-types": "latest",
     "react": "16.8.6",
     "react-is": "16.8.6",
-    "react-syntax-highlighter": "10.3.0"
+    "react-syntax-highlighter": "10.3.0",
+    "react-tabs": "3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
