@@ -1,5 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Alert default 1`] = `
+.emotion-3 {
+  background-color: #fdf8e7;
+  border: 1px solid #edc20f;
+  border-radius: 3px;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-0 {
+  color: #edc20f;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.emotion-2 {
+  margin: 5px 5px 5px 10px;
+}
+
+.emotion-1 {
+  border: none;
+  background: none;
+  color: #edc20f;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-0"
+  >
+    This model has not been tested yet
+  </div>
+  <div
+    className="emotion-2"
+  >
+    <button
+      className="emotion-1"
+    >
+      learn more
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Alert override 1`] = `
+.emotion-2 {
+  margin: 5px 5px 5px 10px;
+}
+
+.emotion-3 {
+  background-color: #fdf8e7;
+  border: 1px solid #edc20f;
+  border-radius: 3px;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #edf6fa;
+  border: 1px solid #4ba5d2;
+}
+
+.emotion-0 {
+  color: #edc20f;
+  font-weight: bold;
+  margin: 10px;
+  color: #4ba5d2;
+}
+
+.emotion-1 {
+  border: none;
+  background: none;
+  color: #edc20f;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px;
+  color: #4ba5d2;
+}
+
+<div
+  className="emotion-3"
+>
+  <div
+    className="emotion-0"
+  >
+    This model has not been tested yet
+  </div>
+  <div
+    className="emotion-2"
+  >
+    <button
+      className="emotion-1"
+    >
+      learn more
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots CodeSample collapsible 1`] = `
 .emotion-2 {
   margin-left: 5px;
