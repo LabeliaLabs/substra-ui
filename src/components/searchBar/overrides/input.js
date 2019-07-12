@@ -540,7 +540,10 @@ Input.propTypes = {
      * Override or extend the styles applied to the component.
      * See [CSS API](#css-api) below for more details.
      */
-    classes: PropTypes.shape({}).isRequired,
+    classes: PropTypes.shape({
+        input: PropTypes.string,
+        inputWrapper: PropTypes.string,
+    }).isRequired,
     /**
      * The CSS class name of the wrapper element.
      */

@@ -45,21 +45,25 @@ exports[`Storyshots Alert default 1`] = `
 }
 
 <div
-  className="emotion-3"
+  id="app-root"
 >
   <div
-    className="emotion-0"
+    className="emotion-3"
   >
-    This model has not been tested yet
-  </div>
-  <div
-    className="emotion-2"
-  >
-    <button
-      className="emotion-1"
+    <div
+      className="emotion-0"
     >
-      learn more
-    </button>
+      This model has not been tested yet
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <button
+        className="emotion-1"
+      >
+        learn more
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -113,21 +117,25 @@ exports[`Storyshots Alert override 1`] = `
 }
 
 <div
-  className="emotion-3"
+  id="app-root"
 >
   <div
-    className="emotion-0"
+    className="emotion-3"
   >
-    This model has not been tested yet
-  </div>
-  <div
-    className="emotion-2"
-  >
-    <button
-      className="emotion-1"
+    <div
+      className="emotion-0"
     >
-      learn more
-    </button>
+      This model has not been tested yet
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <button
+        className="emotion-1"
+      >
+        learn more
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -208,1566 +216,1570 @@ exports[`Storyshots CodeSample collapsible 1`] = `
 }
 
 <div
-  className=" emotion-6"
-  data-testid="wrapper"
+  id="app-root"
 >
   <div
-    className="emotion-5"
-    onClick={[Function]}
+    className=" emotion-6"
+    data-testid="wrapper"
   >
     <div
-      className="emotion-0"
+      className="emotion-5"
+      onClick={[Function]}
     >
-      opener.py
-    </div>
-    <div
-      className="emotion-4"
-    >
-      <button
-        className="emotion-1"
-        data-testid="download"
-        onClick={[Function]}
-        title="Download opener.py"
+      <div
+        className="emotion-0"
       >
-        <svg
-          className=""
-          height={15}
-          viewBox="0 0 24 24"
-          width={15}
-          xmlns="http://www.w3.org/2000/svg"
+        opener.py
+      </div>
+      <div
+        className="emotion-4"
+      >
+        <button
+          className="emotion-1"
+          data-testid="download"
+          onClick={[Function]}
+          title="Download opener.py"
         >
-          <g
-            fill="none"
-            fillRule="evenodd"
+          <svg
+            className=""
+            height={15}
+            viewBox="0 0 24 24"
+            width={15}
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
-              fill="#4B6073"
-              fillRule="nonzero"
-            />
-            <mask
-              fill="#fff"
+            <g
+              fill="none"
+              fillRule="evenodd"
             >
               <path
                 d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
                 fill="#4B6073"
                 fillRule="nonzero"
               />
-              <path
-                d="M0 0h24v24H0z"
-              />
-            </mask>
-          </g>
-        </svg>
-      </button>
-      <button
-        className="emotion-2 emotion-1"
-        data-testid="toggle"
-        onClick={[Function]}
-        title="Expand"
-      >
-        <svg
-          className=""
-          height={15}
-          viewBox="0 0 22 22"
-          width={15}
-          xmlns="http://www.w3.org/2000/svg"
+              <mask
+                fill="#fff"
+              >
+                <path
+                  d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+                  fill="#4B6073"
+                  fillRule="nonzero"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                />
+              </mask>
+            </g>
+          </svg>
+        </button>
+        <button
+          className="emotion-2 emotion-1"
+          data-testid="toggle"
+          onClick={[Function]}
+          title="Expand"
         >
-          <g
-            fill="#4B6073"
-            fillRule="nonzero"
-            stroke="none"
-            strokeWidth="1"
+          <svg
+            className=""
+            height={15}
+            viewBox="0 0 22 22"
+            width={15}
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M8.57578125,18.95625 L3.62578125,18.95625 L9.065625,13.5164063 C9.46875,13.1132812 9.46875,12.4617188 9.065625,12.0585938 C8.6625,11.6554687 8.0109375,11.6554687 7.6078125,12.0585938 L2.08125,17.5828125 L2.08125,12.675 C2.08125,12.1054688 1.61953125,11.64375 1.05,11.64375 C0.48046875,11.64375 0.01875,12.1054688 0.01875,12.675 L0.01875,19.9875 C0.01875,20.5570312 0.48046875,21.01875 1.05,21.01875 L8.5734375,21.01875 C9.14296875,21.01875 9.6046875,20.5570312 9.6046875,19.9875 C9.6046875,19.4179688 9.1453125,18.95625 8.57578125,18.95625 Z M19.9664063,0.01875 L12.4429688,0.01875 C11.8734375,0.01875 11.4117188,0.48046875 11.4117188,1.05 C11.4117188,1.61953125 11.8734375,2.08125 12.4429688,2.08125 L17.390625,2.08125 L11.9507813,7.51875 C11.5476563,7.921875 11.5476563,8.5734375 11.9507813,8.9765625 C12.1523438,9.178125 12.4171875,9.27890625 12.6796875,9.27890625 C12.9445313,9.27890625 13.2070313,9.178125 13.4085938,8.9765625 L18.9328125,3.45234375 L18.9328125,8.36015625 C18.9328125,8.9296875 19.3945313,9.39140625 19.9640625,9.39140625 C20.5335938,9.39140625 20.9953125,8.9296875 20.9953125,8.36015625 L20.9953125,1.04765625 C20.9976563,0.48046875 20.5359375,0.01875 19.9664063,0.01875 Z"
-            />
-          </g>
-        </svg>
-      </button>
+            <g
+              fill="#4B6073"
+              fillRule="nonzero"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <path
+                d="M8.57578125,18.95625 L3.62578125,18.95625 L9.065625,13.5164063 C9.46875,13.1132812 9.46875,12.4617188 9.065625,12.0585938 C8.6625,11.6554687 8.0109375,11.6554687 7.6078125,12.0585938 L2.08125,17.5828125 L2.08125,12.675 C2.08125,12.1054688 1.61953125,11.64375 1.05,11.64375 C0.48046875,11.64375 0.01875,12.1054688 0.01875,12.675 L0.01875,19.9875 C0.01875,20.5570312 0.48046875,21.01875 1.05,21.01875 L8.5734375,21.01875 C9.14296875,21.01875 9.6046875,20.5570312 9.6046875,19.9875 C9.6046875,19.4179688 9.1453125,18.95625 8.57578125,18.95625 Z M19.9664063,0.01875 L12.4429688,0.01875 C11.8734375,0.01875 11.4117188,0.48046875 11.4117188,1.05 C11.4117188,1.61953125 11.8734375,2.08125 12.4429688,2.08125 L17.390625,2.08125 L11.9507813,7.51875 C11.5476563,7.921875 11.5476563,8.5734375 11.9507813,8.9765625 C12.1523438,9.178125 12.4171875,9.27890625 12.6796875,9.27890625 C12.9445313,9.27890625 13.2070313,9.178125 13.4085938,8.9765625 L18.9328125,3.45234375 L18.9328125,8.36015625 C18.9328125,8.9296875 19.3945313,9.39140625 19.9640625,9.39140625 C20.5335938,9.39140625 20.9953125,8.9296875 20.9953125,8.36015625 L20.9953125,1.04765625 C20.9976563,0.48046875 20.5359375,0.01875 19.9664063,0.01875 Z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <pre
-    style={
-      Object {
-        "border": "none",
-        "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
-        "fontSize": "11px",
-        "margin": 0,
-        "padding": "10px",
-      }
-    }
-  >
-    <code
+    <pre
       style={
         Object {
-          "float": "left",
+          "border": "none",
           "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
           "fontSize": "11px",
-          "paddingRight": "10px",
+          "margin": 0,
+          "padding": "10px",
         }
       }
     >
-      <span
-        className="react-syntax-highlighter-line-number"
+      <code
         style={
           Object {
-            "userSelect": "none",
+            "float": "left",
+            "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
+            "fontSize": "11px",
+            "paddingRight": "10px",
           }
         }
       >
-        1
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          1
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          2
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          3
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          4
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          5
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          6
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          7
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          8
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          9
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          10
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          11
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          12
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          13
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          14
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          15
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          16
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          17
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          18
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          19
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          20
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          21
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          22
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          23
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          24
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          25
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          26
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          27
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          28
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          29
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          30
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          31
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          32
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          33
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          34
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          35
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          36
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          37
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          38
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          39
+
+        </span>
+      </code>
+      <code
         style={
           Object {
-            "userSelect": "none",
+            "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
+            "fontSize": "11px",
           }
         }
       >
-        2
+        
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        3
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         os
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        4
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         pandas 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         pd
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        5
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         random
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        6
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         string
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        7
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         numpy 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         np
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        8
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        9
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        10
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        11
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        12
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        13
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        14
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        15
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        16
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        17
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        18
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        19
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        20
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        21
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        22
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        23
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        24
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        25
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        26
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        27
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        28
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        29
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        30
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        31
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        32
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        33
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        34
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        35
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        36
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        37
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        38
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        39
-
-      </span>
-    </code>
-    <code
-      style={
-        Object {
-          "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
-          "fontSize": "11px",
-        }
-      }
-    >
-      
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       os
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       pandas 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       pd
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       random
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       string
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       numpy 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       np
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       logging
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         logging
 
 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       substratools 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       tools
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         substratools 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         tools
 
 
 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        class
-      </span>
-       
-      <span
-        className="token class-name"
-        style={Object {}}
-      >
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          class
+        </span>
+         
+        <span
+          className="token class-name"
+          style={Object {}}
+        >
+          Opener
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        tools
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
         Opener
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      tools
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      Opener
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_X
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_X
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
         logging
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      info
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        info
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
         datas 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        [
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ]
-      </span>
-      
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          [
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ]
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        for
-      </span>
-       folder 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        in
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          for
+        </span>
+         folder 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          in
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             datas
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      append
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        '{}/X.npy'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        format
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folder
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        append
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          '{}/X.npy'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          format
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folder
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      concatenate
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      datas
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       axis
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        concatenate
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        datas
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         axis
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_y
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
-        y 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        [
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ]
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_y
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        for
-      </span>
-       folder 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        in
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        y 
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          [
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ]
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          for
+        </span>
+         folder 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          in
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             y
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      append
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        '{}/y.npy'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        format
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folder
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        append
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          '{}/y.npy'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          format
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folder
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      concatenate
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      y
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       axis
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        concatenate
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        y
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         axis
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        save_pred
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       y_pred
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          save_pred
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         y_pred
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        with
-      </span>
-       
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        open
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        'wb'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-       
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       f
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          with
+        </span>
+         
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          open
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          'wb'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+         
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         f
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      save
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      f
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       y_pred
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
-
-    
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_pred
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        save
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        f
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         y_pred
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        fake_X
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_pred
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
+
+    
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          fake_X
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
         data 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        5
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        1000
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        2051
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          5
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          1000
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          2051
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       data
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         data
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        fake_y
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
-        y 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      randint
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       high
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        2
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       size
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        5
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          fake_y
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       y
+        y 
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        randint
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         high
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          2
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         size
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          5
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         y
 
-    </code>
-  </pre>
+      </code>
+    </pre>
+  </div>
 </div>
 `;
 
@@ -1841,1541 +1853,1545 @@ exports[`Storyshots CodeSample default 1`] = `
 }
 
 <div
-  className=" emotion-4"
-  data-testid="wrapper"
+  id="app-root"
 >
   <div
-    className="emotion-3"
-    onClick={[Function]}
+    className=" emotion-4"
+    data-testid="wrapper"
   >
     <div
-      className="emotion-0"
+      className="emotion-3"
+      onClick={[Function]}
     >
-      opener.py
-    </div>
-    <div
-      className="emotion-2"
-    >
-      <button
-        className="emotion-1"
-        data-testid="download"
-        onClick={[Function]}
-        title="Download opener.py"
+      <div
+        className="emotion-0"
       >
-        <svg
-          className=""
-          height={15}
-          viewBox="0 0 24 24"
-          width={15}
-          xmlns="http://www.w3.org/2000/svg"
+        opener.py
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-1"
+          data-testid="download"
+          onClick={[Function]}
+          title="Download opener.py"
         >
-          <g
-            fill="none"
-            fillRule="evenodd"
+          <svg
+            className=""
+            height={15}
+            viewBox="0 0 24 24"
+            width={15}
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
-              fill="#4B6073"
-              fillRule="nonzero"
-            />
-            <mask
-              fill="#fff"
+            <g
+              fill="none"
+              fillRule="evenodd"
             >
               <path
                 d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
                 fill="#4B6073"
                 fillRule="nonzero"
               />
-              <path
-                d="M0 0h24v24H0z"
-              />
-            </mask>
-          </g>
-        </svg>
-      </button>
+              <mask
+                fill="#fff"
+              >
+                <path
+                  d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+                  fill="#4B6073"
+                  fillRule="nonzero"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                />
+              </mask>
+            </g>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <pre
-    style={
-      Object {
-        "border": "none",
-        "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
-        "fontSize": "11px",
-        "margin": 0,
-        "padding": "10px",
-      }
-    }
-  >
-    <code
+    <pre
       style={
         Object {
-          "float": "left",
+          "border": "none",
           "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
           "fontSize": "11px",
-          "paddingRight": "10px",
+          "margin": 0,
+          "padding": "10px",
         }
       }
     >
-      <span
-        className="react-syntax-highlighter-line-number"
+      <code
         style={
           Object {
-            "userSelect": "none",
+            "float": "left",
+            "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
+            "fontSize": "11px",
+            "paddingRight": "10px",
           }
         }
       >
-        1
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          1
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          2
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          3
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          4
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          5
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          6
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          7
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          8
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          9
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          10
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          11
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          12
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          13
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          14
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          15
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          16
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          17
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          18
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          19
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          20
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          21
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          22
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          23
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          24
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          25
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          26
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          27
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          28
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          29
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          30
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          31
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          32
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          33
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          34
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          35
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          36
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          37
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          38
+
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={
+            Object {
+              "userSelect": "none",
+            }
+          }
+        >
+          39
+
+        </span>
+      </code>
+      <code
         style={
           Object {
-            "userSelect": "none",
+            "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
+            "fontSize": "11px",
           }
         }
       >
-        2
+        
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        3
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         os
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        4
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         pandas 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         pd
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        5
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         random
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        6
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         string
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        7
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         numpy 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         np
 
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        8
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        9
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        10
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        11
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        12
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        13
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        14
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        15
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        16
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        17
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        18
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        19
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        20
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        21
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        22
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        23
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        24
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        25
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        26
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        27
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        28
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        29
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        30
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        31
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        32
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        33
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        34
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        35
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        36
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        37
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        38
-
-      </span>
-      <span
-        className="react-syntax-highlighter-line-number"
-        style={
-          Object {
-            "userSelect": "none",
-          }
-        }
-      >
-        39
-
-      </span>
-    </code>
-    <code
-      style={
-        Object {
-          "fontFamily": "SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace",
-          "fontSize": "11px",
-        }
-      }
-    >
-      
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       os
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       pandas 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       pd
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       random
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       string
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       numpy 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       np
-
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       logging
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         logging
 
 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        import
-      </span>
-       substratools 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       tools
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          import
+        </span>
+         substratools 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         tools
 
 
 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        class
-      </span>
-       
-      <span
-        className="token class-name"
-        style={Object {}}
-      >
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          class
+        </span>
+         
+        <span
+          className="token class-name"
+          style={Object {}}
+        >
+          Opener
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        tools
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
         Opener
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      tools
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      Opener
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_X
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_X
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
         logging
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      info
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        info
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
         datas 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        [
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ]
-      </span>
-      
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          [
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ]
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        for
-      </span>
-       folder 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        in
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          for
+        </span>
+         folder 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          in
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             datas
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      append
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        '{}/X.npy'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        format
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folder
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        append
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          '{}/X.npy'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          format
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folder
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      concatenate
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      datas
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       axis
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        concatenate
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        datas
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         axis
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_y
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
-        y 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        [
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ]
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_y
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        for
-      </span>
-       folder 
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        in
-      </span>
-       folders
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        y 
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          [
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ]
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          for
+        </span>
+         folder 
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          in
+        </span>
+         folders
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             y
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      append
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        '{}/y.npy'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        format
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      folder
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        append
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          '{}/y.npy'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          format
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        folder
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      concatenate
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      y
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       axis
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        concatenate
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        y
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         axis
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        save_pred
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       y_pred
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          save_pred
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         y_pred
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        with
-      </span>
-       
-      <span
-        className="token builtin"
-        style={Object {}}
-      >
-        open
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token string"
-        style={Object {}}
-      >
-        'wb'
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-       
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        as
-      </span>
-       f
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          with
+        </span>
+         
+        <span
+          className="token builtin"
+          style={Object {}}
+        >
+          open
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token string"
+          style={Object {}}
+        >
+          'wb'
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+         
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          as
+        </span>
+         f
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
             np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      save
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      f
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       y_pred
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
-
-    
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        get_pred
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        save
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        f
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         y_pred
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      load
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      path
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        fake_X
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          get_pred
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        load
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        path
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
+
+    
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          fake_X
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
+        
         data 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        5
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        1000
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        2051
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          5
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          1000
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          2051
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       data
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         data
 
     
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        def
-      </span>
-       
-      <span
-        className="token function"
-        style={Object {}}
-      >
-        fake_y
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      self
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        :
-      </span>
-      
-        y 
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-       np
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      random
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        .
-      </span>
-      randint
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        0
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       high
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        2
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-       size
-      <span
-        className="token operator"
-        style={Object {}}
-      >
-        =
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        (
-      </span>
-      <span
-        className="token number"
-        style={Object {}}
-      >
-        5
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        ,
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      <span
-        className="token punctuation"
-        style={Object {}}
-      >
-        )
-      </span>
-      
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          def
+        </span>
+         
+        <span
+          className="token function"
+          style={Object {}}
+        >
+          fake_y
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        self
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          :
+        </span>
         
-      <span
-        className="token keyword"
-        style={Object {}}
-      >
-        return
-      </span>
-       y
+        y 
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+         np
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        random
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          .
+        </span>
+        randint
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          0
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         high
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          2
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+         size
+        <span
+          className="token operator"
+          style={Object {}}
+        >
+          =
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          (
+        </span>
+        <span
+          className="token number"
+          style={Object {}}
+        >
+          5
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          ,
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        <span
+          className="token punctuation"
+          style={Object {}}
+        >
+          )
+        </span>
+        
+        
+        <span
+          className="token keyword"
+          style={Object {}}
+        >
+          return
+        </span>
+         y
 
-    </code>
-  </pre>
+      </code>
+    </pre>
+  </div>
 </div>
 `;
 
@@ -3443,97 +3459,101 @@ exports[`Storyshots CopyInput color override 1`] = `
 }
 
 <div
-  className="emotion-5"
+  id="app-root"
 >
-  <input
-    className="emotion-0"
-    data-testid="input"
-    onClick={[Function]}
-    readOnly={true}
-    value=""
-  />
-  <button
-    className="emotion-3 emotion-4"
-    data-testid="button"
-    onClick={[Function]}
+  <div
+    className="emotion-5"
   >
-    <svg
-      className="emotion-1"
-      height={15}
-      viewBox="0 0 24 22"
-      width={15}
-      xmlns="http://www.w3.org/2000/svg"
+    <input
+      className="emotion-0"
+      data-testid="input"
+      onClick={[Function]}
+      readOnly={true}
+      value=""
+    />
+    <button
+      className="emotion-3 emotion-4"
+      data-testid="button"
+      onClick={[Function]}
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
-        stroke="yellow"
-        transform="translate(1 1)"
+      <svg
+        className="emotion-1"
+        height={15}
+        viewBox="0 0 24 22"
+        width={15}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <circle
-          cx="11"
-          cy="1.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="11"
-          cy="9.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="11"
-          cy="18.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="20.5"
-          cy="4.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="1.5"
-          cy="4.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="20.5"
-          cy="14.5"
-          fill="yellow"
-          r="1.5"
-        />
-        <circle
-          cx="1.5"
-          cy="14.5"
-          fill="yellow"
-          r="1.5"
-        />
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="yellow"
+          transform="translate(1 1)"
+        >
+          <circle
+            cx="11"
+            cy="1.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="11"
+            cy="9.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="11"
+            cy="18.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="20.5"
+            cy="4.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="1.5"
+            cy="4.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="20.5"
+            cy="14.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <circle
+            cx="1.5"
+            cy="14.5"
+            fill="yellow"
+            r="1.5"
+          />
+          <path
+            d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
+          />
+          <path
+            d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
+          />
+        </g>
+      </svg>
+      <svg
+        className="emotion-2"
+        height={15}
+        viewBox="0 0 24 24"
+        width={15}
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
+          d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+          fill="red"
+          fillRule="nonzero"
         />
-        <path
-          d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
-        />
-      </g>
-    </svg>
-    <svg
-      className="emotion-2"
-      height={15}
-      viewBox="0 0 24 24"
-      width={15}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
-        fill="red"
-        fillRule="nonzero"
-      />
-    </svg>
-  </button>
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
@@ -3601,124 +3621,136 @@ exports[`Storyshots CopyInput default 1`] = `
 }
 
 <div
-  className="emotion-5"
+  id="app-root"
 >
-  <input
-    className="emotion-0"
-    data-testid="input"
-    onClick={[Function]}
-    readOnly={true}
-    value="Lorem ipsum dolor sit amet"
-  />
-  <button
-    className="emotion-3 emotion-4"
-    data-testid="button"
-    onClick={[Function]}
+  <div
+    className="emotion-5"
   >
-    <svg
-      className="emotion-1"
-      height={15}
-      viewBox="0 0 28 29"
-      width={15}
-      xmlns="http://www.w3.org/2000/svg"
+    <input
+      className="emotion-0"
+      data-testid="input"
+      onClick={[Function]}
+      readOnly={true}
+      value="Lorem ipsum dolor sit amet"
+    />
+    <button
+      className="emotion-3 emotion-4"
+      data-testid="button"
+      onClick={[Function]}
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
+      <svg
+        className="emotion-1"
+        height={15}
+        viewBox="0 0 28 29"
+        width={15}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          transform="translate(6)"
-        >
-          <mask
-            fill="#fff"
-            id="mask-copy"
-          >
-            <path
-              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
-            />
-          </mask>
-          <g
-            fill="#4B6073"
-            mask="url(#mask-copy)"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-          </g>
-        </g>
-        <g
-          transform="translate(-1 6)"
+          fill="none"
+          fillRule="evenodd"
         >
           <g
-            fill="#4B6073"
+            transform="translate(6)"
           >
-            <path
-              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
-            />
+            <mask
+              fill="#fff"
+              id="mask-copy"
+            >
+              <path
+                d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              />
+            </mask>
+            <g
+              fill="#4B6073"
+              mask="url(#mask-copy)"
+            >
+              <path
+                d="M0 0h24v24H0z"
+              />
+            </g>
           </g>
+          <g
+            transform="translate(-1 6)"
+          >
+            <g
+              fill="#4B6073"
+            >
+              <path
+                d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              />
+            </g>
+          </g>
+          <path
+            d="M18 9h8v13h-8z"
+            fill="#4B6073"
+          />
+          <path
+            d="M11 2h8v8h-8z"
+            fill="#4B6073"
+          />
+          <path
+            d="M10 3h8v6h-8z"
+            fill="#4B6073"
+          />
+          <path
+            d="M8 16h10v9H8z"
+            fill="#FFF"
+          />
+          <path
+            d="M7 9h4v9H7z"
+            fill="#FFF"
+          />
+          <path
+            d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
+            fill="#4B6073"
+          />
         </g>
-        <path
-          d="M18 9h8v13h-8z"
-          fill="#4B6073"
-        />
-        <path
-          d="M11 2h8v8h-8z"
-          fill="#4B6073"
-        />
-        <path
-          d="M10 3h8v6h-8z"
-          fill="#4B6073"
-        />
-        <path
-          d="M8 16h10v9H8z"
-          fill="#FFF"
-        />
-        <path
-          d="M7 9h4v9H7z"
-          fill="#FFF"
-        />
-        <path
-          d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
-          fill="#4B6073"
-        />
-      </g>
-    </svg>
-    <svg
-      className="emotion-2"
-      height={15}
-      viewBox="0 0 24 24"
-      width={15}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#1dbcc0"
-        fillRule="evenodd"
+      </svg>
+      <svg
+        className="emotion-2"
+        height={15}
+        viewBox="0 0 24 24"
+        width={15}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
-        />
-      </g>
-    </svg>
-  </button>
+        <g
+          fill="#1dbcc0"
+          fillRule="evenodd"
+        >
+          <path
+            d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots CopyNotification color override 1`] = `
-<button
-  onClick={[Function]}
-  type="button"
+<div
+  id="app-root"
 >
-  Add notification
-</button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Add notification
+  </button>
+</div>
 `;
 
 exports[`Storyshots CopyNotification default 1`] = `
-<button
-  onClick={[Function]}
-  type="button"
+<div
+  id="app-root"
 >
-  Add notification
-</button>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Add notification
+  </button>
+</div>
 `;
 
 exports[`Storyshots IconButton default 1`] = `
@@ -3750,23 +3782,27 @@ exports[`Storyshots IconButton default 1`] = `
   transition: background-color 200ms ease-out;
 }
 
-<button
-  className="emotion-0"
+<div
+  id="app-root"
 >
-  <svg
-    className=""
-    height={15}
-    viewBox="0 0 24 24"
-    width={15}
-    xmlns="http://www.w3.org/2000/svg"
+  <button
+    className="emotion-0"
   >
-    <path
-      d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
-      fill="#4B6073"
-      fillRule="nonzero"
-    />
-  </svg>
-</button>
+    <svg
+      className=""
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="#4B6073"
+        fillRule="nonzero"
+      />
+    </svg>
+  </button>
+</div>
 `;
 
 exports[`Storyshots Icons default 1`] = `
@@ -3786,785 +3822,791 @@ exports[`Storyshots Icons default 1`] = `
   margin: 0;
 }
 
-<dl
-  className="emotion-36"
+<div
+  id="app-root"
 >
-  <dt
-    className="emotion-0"
+  <dl
+    className="emotion-36"
   >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+    <dt
+      className="emotion-0"
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
-      >
-        <mask
-          fill="#fff"
-          id="alert-b"
-        >
-          <path
-            d="M9.88 3.449a3.002 3.002 0 0 1 5.135 0l8.478 14.154a3 3 0 0 1-2.576 4.5H3.966a3 3 0 0 1-2.557-4.514l8.47-14.14zM3.132 18.603a1 1 0 0 0 .844 1.5h16.929a1 1 0 0 0 .863-1.486L13.302 4.48a1 1 0 0 0-1.709-.002l-8.46 14.124zm8.314-9.5a1 1 0 0 1 2 0v4a1 1 0 1 1-2 0v-4zm.293 7.707a1 1 0 1 1 1.414-1.414 1 1 0 0 1-1.414 1.414z"
-          />
-        </mask>
-        <g
-          fill="#4b6073"
-          mask="url(#alert-b)"
-        >
-          <path
-            d="M0 0h24v24H0z"
-          />
-        </g>
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Alert
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={25}
-      viewBox="0 0 50 25"
-      width={45}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-      >
-        <path
-          d="M10.414 12l5.293-5.293a1 1 0 1 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L10.414 12z"
-          fill="#4b6073"
-        />
-        <g
-          transform="translate(27)"
-        >
-          <path
-            d="M13.586 12l-5.293 5.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L13.586 12z"
-            fill="#4b6073"
-          />
-        </g>
-        <g
-          transform="rotate(-70 24.855 -5.297)"
-        >
-          <path
-            d="M1.053 2.237H15.8c.582 0 1.053-.5 1.053-1.119C16.852.501 16.381 0 15.8 0H1.053C.472 0 0 .5 0 1.118c0 .618.472 1.119 1.053 1.119z"
-            fill="#4b6073"
-          />
-        </g>
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Algo
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
-        fill="#4b6073"
-        fillRule="nonzero"
-      />
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Book
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#4b6073"
-        fillRule="evenodd"
-      >
-        <path
-          d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Check
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-      >
-        <path
-          d="M17 3h1a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h1a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2zM7 5H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2-2v2h6V3H9z"
-          fill="#4b6073"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Clipboard
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={22}
-      viewBox="0 0 22 22"
-      width={22}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#4b6073"
-        fillRule="nonzero"
-        stroke="none"
-        strokeWidth="1"
-      >
-        <path
-          d="M1.05,13.70625 L6,13.70625 L0.56015625,19.14375 C0.15703125,19.546875 0.15703125,20.1984375 0.56015625,20.6015625 C0.96328125,21.0046875 1.61484375,21.0046875 2.01796875,20.6015625 L7.5421875,15.0773438 L7.5421875,19.9851562 C7.5421875,20.5546875 8.00390625,21.0164062 8.5734375,21.0164062 C9.14296875,21.0164062 9.6046875,20.5546875 9.6046875,19.9851562 L9.6046875,12.6726563 C9.6046875,12.103125 9.14296875,11.6414062 8.5734375,11.6414062 L1.05,11.6414062 C0.48046875,11.6414062 0.01875,12.103125 0.01875,12.6726563 C0.01875,13.2421875 0.48046875,13.70625 1.05,13.70625 Z M12.440625,9.39375 L19.9640625,9.39375 C20.5335937,9.39375 20.9953125,8.93203125 20.9953125,8.3625 C20.9953125,7.79296875 20.5335937,7.33125 19.9640625,7.33125 L15.0164063,7.33125 L20.45625,1.89140625 C20.859375,1.48828125 20.859375,0.83671875 20.45625,0.43359375 C20.2546875,0.23203125 19.9898438,0.13125 19.7273438,0.13125 C19.4625,0.13125 19.2,0.23203125 18.9984375,0.43359375 L13.471875,5.9578125 L13.471875,1.05 C13.471875,0.48046875 13.0101563,0.01875 12.440625,0.01875 C11.8710938,0.01875 11.409375,0.48046875 11.409375,1.05 L11.409375,8.3625 C11.409375,8.93203125 11.8710938,9.39375 12.440625,9.39375 Z"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Collapse
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          transform="translate(5.009)"
+          fill="none"
+          fillRule="evenodd"
         >
           <mask
             fill="#fff"
-            id="copydrop-b"
+            id="alert-b"
           >
             <path
-              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
-            />
-          </mask>
-          <path
-            d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
-            fill="#000"
-            fillRule="nonzero"
-          />
-          <g
-            fill="#4b6073"
-            mask="url(#copydrop-b)"
-          >
-            <path
-              d="M0 0h18v20H0z"
-            />
-          </g>
-        </g>
-        <g
-          transform="translate(0 4.444)"
-        >
-          <mask
-            fill="#fff"
-            id="copydrop-d"
-          >
-            <path
-              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
-            />
-          </mask>
-          <path
-            d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
-            fill="#000"
-            fillRule="nonzero"
-          />
-          <g
-            fill="#4b6073"
-            mask="url(#copydrop-d)"
-          >
-            <path
-              d="M0 0h18v20H0z"
-            />
-          </g>
-        </g>
-        <path
-          d="M14.191 7.111h5.843v10.667h-5.843z"
-          fill="#4b6073"
-        />
-        <path
-          d="M9.183 1.778h5.843V8H9.183z"
-          fill="#4b6073"
-        />
-        <path
-          d="M8.348 1.778h5.843v4.444H8.348z"
-          fill="#4b6073"
-        />
-        <path
-          d="M6.42 12.444h7.847v7.111H6.42z"
-          fill="#FFF"
-        />
-        <path
-          d="M5.936 6.93h3.339v7.111H5.936z"
-          fill="#FFF"
-        />
-        <path
-          d="M15.448 6.743l-.743 4.285-3.542-3.542zM20.657 6.971l-.114 3.657L17 7.086z"
-          fill="#4b6073"
-        />
-        <g
-          transform="translate(13 14)"
-        >
-          <rect
-            fill="#FFF"
-            height="9.3"
-            rx="2"
-            stroke="#1dbcc0"
-            strokeWidth=".7"
-            width="9.3"
-            x=".35"
-            y=".35"
-          />
-          <path
-            d="M4.9 8.313L1.75 2.7h6.3z"
-            fill="#1dbcc0"
-          />
-        </g>
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    CopyDrop
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={29}
-      viewBox="0 0 28 29"
-      width={28}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-      >
-        <g
-          transform="translate(6)"
-        >
-          <mask
-            fill="#fff"
-            id="mask-copy"
-          >
-            <path
-              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              d="M9.88 3.449a3.002 3.002 0 0 1 5.135 0l8.478 14.154a3 3 0 0 1-2.576 4.5H3.966a3 3 0 0 1-2.557-4.514l8.47-14.14zM3.132 18.603a1 1 0 0 0 .844 1.5h16.929a1 1 0 0 0 .863-1.486L13.302 4.48a1 1 0 0 0-1.709-.002l-8.46 14.124zm8.314-9.5a1 1 0 0 1 2 0v4a1 1 0 1 1-2 0v-4zm.293 7.707a1 1 0 1 1 1.414-1.414 1 1 0 0 1-1.414 1.414z"
             />
           </mask>
           <g
             fill="#4b6073"
-            mask="url(#mask-copy)"
+            mask="url(#alert-b)"
           >
             <path
               d="M0 0h24v24H0z"
             />
           </g>
         </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Alert
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={25}
+        viewBox="0 0 50 25"
+        width={45}
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g
-          transform="translate(-1 6)"
+          fill="none"
+          fillRule="evenodd"
         >
-          <g
+          <path
+            d="M10.414 12l5.293-5.293a1 1 0 1 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L10.414 12z"
             fill="#4b6073"
+          />
+          <g
+            transform="translate(27)"
           >
             <path
-              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              d="M13.586 12l-5.293 5.293a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 0-1.414l-6-6a1 1 0 0 0-1.414 1.414L13.586 12z"
+              fill="#4b6073"
+            />
+          </g>
+          <g
+            transform="rotate(-70 24.855 -5.297)"
+          >
+            <path
+              d="M1.053 2.237H15.8c.582 0 1.053-.5 1.053-1.119C16.852.501 16.381 0 15.8 0H1.053C.472 0 0 .5 0 1.118c0 .618.472 1.119 1.053 1.119z"
+              fill="#4b6073"
             />
           </g>
         </g>
-        <path
-          d="M18 9h8v13h-8z"
-          fill="#4b6073"
-        />
-        <path
-          d="M11 2h8v8h-8z"
-          fill="#4b6073"
-        />
-        <path
-          d="M10 3h8v6h-8z"
-          fill="#4b6073"
-        />
-        <path
-          d="M8 16h10v9H8z"
-          fill="#FFF"
-        />
-        <path
-          d="M7 9h4v9H7z"
-          fill="#FFF"
-        />
-        <path
-          d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
-          fill="#4b6073"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    CopySimple
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={25}
-      viewBox="0 0 23 25"
-      width={23}
-      xmlns="http://www.w3.org/2000/svg"
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
     >
-      <g
-        fill="none"
-        fillRule="nonzero"
-        stroke="#4b6073"
+      Algo
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M11.552 1c2.967 0 5.688.448 7.584 1.222.948.366 1.73.814 2.226 1.302.494.449.741.938.741 1.426 0 .489-.247.936-.741 1.425-.495.448-1.278.896-2.226 1.303-1.937.733-4.616 1.222-7.584 1.222S5.864 8.41 3.968 7.678c-.948-.366-1.731-.814-2.226-1.303C1.247 5.886 1 5.44 1 4.95c0-.488.248-.937.742-1.426.495-.447 1.278-.895 2.226-1.302C5.905 1.448 8.584 1 11.552 1z"
+          d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+          fill="#4b6073"
+          fillRule="nonzero"
         />
-        <path
-          d="M1 6c.083.117.206.195.289.311.577.506 1.442.974 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.388 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.857-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 11.02 1 10.592 1 10.125V6z"
-        />
-        <path
-          d="M1 11c.083.117.206.194.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.078.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.7-4.616 1.168-7.584 1.168s-5.688-.468-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 16.02 1 15.592 1 15.125V11z"
-        />
-        <path
-          d="M1 16c.083.117.206.195.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 21.02 1 20.592 1 20.125V16z"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Dataset
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
+      Book
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <mask
-          fill="#fff"
-          id="downloaddrop-b"
+        <g
+          fill="#4b6073"
+          fillRule="evenodd"
         >
+          <path
+            d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Check
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M17 3h1a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h1a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2zM7 5H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-1a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2-2v2h6V3H9z"
+            fill="#4b6073"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Clipboard
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={22}
+        viewBox="0 0 22 22"
+        width={22}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#4b6073"
+          fillRule="nonzero"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <path
+            d="M1.05,13.70625 L6,13.70625 L0.56015625,19.14375 C0.15703125,19.546875 0.15703125,20.1984375 0.56015625,20.6015625 C0.96328125,21.0046875 1.61484375,21.0046875 2.01796875,20.6015625 L7.5421875,15.0773438 L7.5421875,19.9851562 C7.5421875,20.5546875 8.00390625,21.0164062 8.5734375,21.0164062 C9.14296875,21.0164062 9.6046875,20.5546875 9.6046875,19.9851562 L9.6046875,12.6726563 C9.6046875,12.103125 9.14296875,11.6414062 8.5734375,11.6414062 L1.05,11.6414062 C0.48046875,11.6414062 0.01875,12.103125 0.01875,12.6726563 C0.01875,13.2421875 0.48046875,13.70625 1.05,13.70625 Z M12.440625,9.39375 L19.9640625,9.39375 C20.5335937,9.39375 20.9953125,8.93203125 20.9953125,8.3625 C20.9953125,7.79296875 20.5335937,7.33125 19.9640625,7.33125 L15.0164063,7.33125 L20.45625,1.89140625 C20.859375,1.48828125 20.859375,0.83671875 20.45625,0.43359375 C20.2546875,0.23203125 19.9898438,0.13125 19.7273438,0.13125 C19.4625,0.13125 19.2,0.23203125 18.9984375,0.43359375 L13.471875,5.9578125 L13.471875,1.05 C13.471875,0.48046875 13.0101563,0.01875 12.440625,0.01875 C11.8710938,0.01875 11.409375,0.48046875 11.409375,1.05 L11.409375,8.3625 C11.409375,8.93203125 11.8710938,9.39375 12.440625,9.39375 Z"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Collapse
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <g
+            transform="translate(5.009)"
+          >
+            <mask
+              fill="#fff"
+              id="copydrop-b"
+            >
+              <path
+                d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+              />
+            </mask>
+            <path
+              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+              fill="#000"
+              fillRule="nonzero"
+            />
+            <g
+              fill="#4b6073"
+              mask="url(#copydrop-b)"
+            >
+              <path
+                d="M0 0h18v20H0z"
+              />
+            </g>
+          </g>
+          <g
+            transform="translate(0 4.444)"
+          >
+            <mask
+              fill="#fff"
+              id="copydrop-d"
+            >
+              <path
+                d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+              />
+            </mask>
+            <path
+              d="M10.5 3.679v2.988h2.69L10.5 3.679zm3.75 4.654h-4.5C9.336 8.333 9 7.96 9 7.5v-5H4.5c-.414 0-.75.373-.75.833v13.334c0 .46.336.833.75.833h9c.414 0 .75-.373.75-.833V8.333zm-4.5-7.5c.199 0 .39.088.53.244l5.25 5.834c.141.156.22.368.22.589v9.167c0 1.38-1.007 2.5-2.25 2.5h-9c-1.243 0-2.25-1.12-2.25-2.5V3.333c0-1.38 1.007-2.5 2.25-2.5h5.25z"
+              fill="#000"
+              fillRule="nonzero"
+            />
+            <g
+              fill="#4b6073"
+              mask="url(#copydrop-d)"
+            >
+              <path
+                d="M0 0h18v20H0z"
+              />
+            </g>
+          </g>
+          <path
+            d="M14.191 7.111h5.843v10.667h-5.843z"
+            fill="#4b6073"
+          />
+          <path
+            d="M9.183 1.778h5.843V8H9.183z"
+            fill="#4b6073"
+          />
+          <path
+            d="M8.348 1.778h5.843v4.444H8.348z"
+            fill="#4b6073"
+          />
+          <path
+            d="M6.42 12.444h7.847v7.111H6.42z"
+            fill="#FFF"
+          />
+          <path
+            d="M5.936 6.93h3.339v7.111H5.936z"
+            fill="#FFF"
+          />
+          <path
+            d="M15.448 6.743l-.743 4.285-3.542-3.542zM20.657 6.971l-.114 3.657L17 7.086z"
+            fill="#4b6073"
+          />
+          <g
+            transform="translate(13 14)"
+          >
+            <rect
+              fill="#FFF"
+              height="9.3"
+              rx="2"
+              stroke="#1dbcc0"
+              strokeWidth=".7"
+              width="9.3"
+              x=".35"
+              y=".35"
+            />
+            <path
+              d="M4.9 8.313L1.75 2.7h6.3z"
+              fill="#1dbcc0"
+            />
+          </g>
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      CopyDrop
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={29}
+        viewBox="0 0 28 29"
+        width={28}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <g
+            transform="translate(6)"
+          >
+            <mask
+              fill="#fff"
+              id="mask-copy"
+            >
+              <path
+                d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              />
+            </mask>
+            <g
+              fill="#4b6073"
+              mask="url(#mask-copy)"
+            >
+              <path
+                d="M0 0h24v24H0z"
+              />
+            </g>
+          </g>
+          <g
+            transform="translate(-1 6)"
+          >
+            <g
+              fill="#4b6073"
+            >
+              <path
+                d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+              />
+            </g>
+          </g>
+          <path
+            d="M18 9h8v13h-8z"
+            fill="#4b6073"
+          />
+          <path
+            d="M11 2h8v8h-8z"
+            fill="#4b6073"
+          />
+          <path
+            d="M10 3h8v6h-8z"
+            fill="#4b6073"
+          />
+          <path
+            d="M8 16h10v9H8z"
+            fill="#FFF"
+          />
+          <path
+            d="M7 9h4v9H7z"
+            fill="#FFF"
+          />
+          <path
+            d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
+            fill="#4b6073"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      CopySimple
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={25}
+        viewBox="0 0 23 25"
+        width={23}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="nonzero"
+          stroke="#4b6073"
+        >
+          <path
+            d="M11.552 1c2.967 0 5.688.448 7.584 1.222.948.366 1.73.814 2.226 1.302.494.449.741.938.741 1.426 0 .489-.247.936-.741 1.425-.495.448-1.278.896-2.226 1.303-1.937.733-4.616 1.222-7.584 1.222S5.864 8.41 3.968 7.678c-.948-.366-1.731-.814-2.226-1.303C1.247 5.886 1 5.44 1 4.95c0-.488.248-.937.742-1.426.495-.447 1.278-.895 2.226-1.302C5.905 1.448 8.584 1 11.552 1z"
+          />
+          <path
+            d="M1 6c.083.117.206.195.289.311.577.506 1.442.974 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.388 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.857-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 11.02 1 10.592 1 10.125V6z"
+          />
+          <path
+            d="M1 11c.083.117.206.194.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.078.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.7-4.616 1.168-7.584 1.168s-5.688-.468-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 16.02 1 15.592 1 15.125V11z"
+          />
+          <path
+            d="M1 16c.083.117.206.195.289.311.577.506 1.442.973 2.431 1.362 2.02.74 4.782 1.207 7.832 1.207s5.812-.467 7.831-1.207c1.03-.389 1.855-.817 2.432-1.362.124-.077.206-.194.288-.311v4.125c0 .467-.247.895-.741 1.362-.495.428-1.278.856-2.226 1.245-1.937.701-4.616 1.168-7.584 1.168s-5.688-.467-7.584-1.168c-.948-.35-1.731-.778-2.226-1.245C1.247 21.02 1 20.592 1 20.125V16z"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Dataset
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <mask
+            fill="#fff"
+            id="downloaddrop-b"
+          >
+            <path
+              d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+            />
+          </mask>
           <path
             d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+            fill="#000"
+            fillRule="nonzero"
           />
-        </mask>
-        <path
-          d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
-          fill="#000"
-          fillRule="nonzero"
-        />
-        <g
-          fill="#4b6073"
-          mask="url(#downloaddrop-b)"
-        >
-          <path
-            d="M0 0h24v24H0z"
-          />
+          <g
+            fill="#4b6073"
+            mask="url(#downloaddrop-b)"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </g>
+          <g
+            transform="translate(13 14)"
+          >
+            <rect
+              fill="#FFF"
+              height="9.3"
+              rx="2"
+              stroke="#1dbcc0"
+              strokeWidth=".7"
+              width="9.3"
+              x=".35"
+              y=".35"
+            />
+            <path
+              d="M4.9 8.313L1.75 2.7h6.3z"
+              fill="#1dbcc0"
+            />
+          </g>
         </g>
-        <g
-          transform="translate(13 14)"
-        >
-          <rect
-            fill="#FFF"
-            height="9.3"
-            rx="2"
-            stroke="#1dbcc0"
-            strokeWidth=".7"
-            width="9.3"
-            x=".35"
-            y=".35"
-          />
-          <path
-            d="M4.9 8.313L1.75 2.7h6.3z"
-            fill="#1dbcc0"
-          />
-        </g>
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    DownloadDrop
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
+      DownloadDrop
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
-          fill="#4b6073"
-          fillRule="nonzero"
-        />
-        <mask
-          fill="#fff"
+        <g
+          fill="none"
+          fillRule="evenodd"
         >
           <path
             d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
             fill="#4b6073"
             fillRule="nonzero"
           />
+          <mask
+            fill="#fff"
+          >
+            <path
+              d="M11 13.586V2a1 1 0 0 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586zM2 17a1 1 0 0 1 2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 1 2 0v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3z"
+              fill="#4b6073"
+              fillRule="nonzero"
+            />
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </mask>
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      DownloadSimple
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={22}
+        viewBox="0 0 22 22"
+        width={22}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#4b6073"
+          fillRule="nonzero"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <path
+            d="M8.57578125,18.95625 L3.62578125,18.95625 L9.065625,13.5164063 C9.46875,13.1132812 9.46875,12.4617188 9.065625,12.0585938 C8.6625,11.6554687 8.0109375,11.6554687 7.6078125,12.0585938 L2.08125,17.5828125 L2.08125,12.675 C2.08125,12.1054688 1.61953125,11.64375 1.05,11.64375 C0.48046875,11.64375 0.01875,12.1054688 0.01875,12.675 L0.01875,19.9875 C0.01875,20.5570312 0.48046875,21.01875 1.05,21.01875 L8.5734375,21.01875 C9.14296875,21.01875 9.6046875,20.5570312 9.6046875,19.9875 C9.6046875,19.4179688 9.1453125,18.95625 8.57578125,18.95625 Z M19.9664063,0.01875 L12.4429688,0.01875 C11.8734375,0.01875 11.4117188,0.48046875 11.4117188,1.05 C11.4117188,1.61953125 11.8734375,2.08125 12.4429688,2.08125 L17.390625,2.08125 L11.9507813,7.51875 C11.5476563,7.921875 11.5476563,8.5734375 11.9507813,8.9765625 C12.1523438,9.178125 12.4171875,9.27890625 12.6796875,9.27890625 C12.9445313,9.27890625 13.2070313,9.178125 13.4085938,8.9765625 L18.9328125,3.45234375 L18.9328125,8.36015625 C18.9328125,8.9296875 19.3945313,9.39140625 19.9640625,9.39140625 C20.5335938,9.39140625 20.9953125,8.9296875 20.9953125,8.36015625 L20.9953125,1.04765625 C20.9976563,0.48046875 20.5359375,0.01875 19.9664063,0.01875 Z"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Expand
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
           <path
             d="M0 0h24v24H0z"
           />
-        </mask>
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    DownloadSimple
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={22}
-      viewBox="0 0 22 22"
-      width={22}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#4b6073"
-        fillRule="nonzero"
-        stroke="none"
-        strokeWidth="1"
-      >
-        <path
-          d="M8.57578125,18.95625 L3.62578125,18.95625 L9.065625,13.5164063 C9.46875,13.1132812 9.46875,12.4617188 9.065625,12.0585938 C8.6625,11.6554687 8.0109375,11.6554687 7.6078125,12.0585938 L2.08125,17.5828125 L2.08125,12.675 C2.08125,12.1054688 1.61953125,11.64375 1.05,11.64375 C0.48046875,11.64375 0.01875,12.1054688 0.01875,12.675 L0.01875,19.9875 C0.01875,20.5570312 0.48046875,21.01875 1.05,21.01875 L8.5734375,21.01875 C9.14296875,21.01875 9.6046875,20.5570312 9.6046875,19.9875 C9.6046875,19.4179688 9.1453125,18.95625 8.57578125,18.95625 Z M19.9664063,0.01875 L12.4429688,0.01875 C11.8734375,0.01875 11.4117188,0.48046875 11.4117188,1.05 C11.4117188,1.61953125 11.8734375,2.08125 12.4429688,2.08125 L17.390625,2.08125 L11.9507813,7.51875 C11.5476563,7.921875 11.5476563,8.5734375 11.9507813,8.9765625 C12.1523438,9.178125 12.4171875,9.27890625 12.6796875,9.27890625 C12.9445313,9.27890625 13.2070313,9.178125 13.4085938,8.9765625 L18.9328125,3.45234375 L18.9328125,8.36015625 C18.9328125,8.9296875 19.3945313,9.39140625 19.9640625,9.39140625 C20.5335938,9.39140625 20.9953125,8.9296875 20.9953125,8.36015625 L20.9953125,1.04765625 C20.9976563,0.48046875 20.5359375,0.01875 19.9664063,0.01875 Z"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Expand
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-      >
-        <path
-          d="M0 0h24v24H0z"
-        />
-        <g
-          stroke="#4b6073"
-        >
+          <g
+            stroke="#4b6073"
+          >
+            <path
+              d="M2 7h20M5 12h14M7 17h10"
+            />
+          </g>
+          <circle
+            cx="17"
+            cy="16"
+            fill="#FFF"
+            r="5"
+            stroke="#1dbcc0"
+          />
           <path
-            d="M2 7h20M5 12h14M7 17h10"
+            d="M17 13.477V19M14.475 16h5.045"
+            stroke="#1dbcc0"
+            strokeLinecap="square"
           />
         </g>
-        <circle
-          cx="17"
-          cy="16"
-          fill="#FFF"
-          r="5"
-          stroke="#1dbcc0"
-        />
-        <path
-          d="M17 13.477V19M14.475 16h5.045"
-          stroke="#1dbcc0"
-          strokeLinecap="square"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    FilterUp
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
     >
-      <g
-        fill="#4b6073"
-        fillRule="nonzero"
-      >
-        <path
-          d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
-        />
-        <path
-          d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Folder
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={22}
-      viewBox="0 0 24 22"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+      FilterUp
+    </dd>
+    <dt
+      className="emotion-0"
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
-        stroke="#4b6073"
-        transform="translate(1 1)"
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <circle
-          cx="11"
-          cy="1.5"
+        <g
           fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="11"
-          cy="9.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="11"
-          cy="18.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="20.5"
-          cy="4.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="1.5"
-          cy="4.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="20.5"
-          cy="14.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <circle
-          cx="1.5"
-          cy="14.5"
-          fill="#4b6073"
-          r="1.5"
-        />
-        <path
-          d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
-        />
-        <path
-          d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Model
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#4b6073"
-        fillRule="evenodd"
-      >
-        <circle
-          cx="12"
-          cy="5"
-          r="2"
-        />
-        <circle
-          cx="12"
-          cy="13"
-          r="2"
-        />
-        <circle
-          cx="12"
-          cy="21"
-          r="2"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    MoreVertical
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={9}
-      viewBox="0 0 8 9"
-      width={8}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill="#4b6073"
-        fillRule="evenodd"
-      >
-        <path
-          d="M.05 7.899L3.56.296C3.646.12 3.76 0 3.971 0h.02c.212 0 .332.12.41.296l3.498 7.581c.035.071.049.127.049.19a.286.286 0 0 1-.296.283H.282C.127 8.35 0 8.23 0 8.09c.007-.05.014-.12.05-.191zm7.186-.106L3.97.69.72 7.793h6.516z"
           fillRule="nonzero"
-        />
-        <path
-          d="M3.962 1.2L7 7.82H.923z"
+        >
+          <path
+            d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
+          />
+          <path
+            d="M8.465 4H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-9a1 1 0 0 1-.832-.445L8.465 4zm3.07 1H20a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h5a1 1 0 0 1 .832.445L11.535 5z"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Folder
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={22}
+        viewBox="0 0 24 22"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
           stroke="#4b6073"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Permission
-  </dd>
-  <dt
-    className="emotion-0"
-  >
-    <svg
-      className=""
-      height={24}
-      viewBox="0 0 24 24"
-      width={24}
-      xmlns="http://www.w3.org/2000/svg"
+          transform="translate(1 1)"
+        >
+          <circle
+            cx="11"
+            cy="1.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="11"
+            cy="9.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="11"
+            cy="18.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="20.5"
+            cy="4.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="1.5"
+            cy="4.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="20.5"
+            cy="14.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <circle
+            cx="1.5"
+            cy="14.5"
+            fill="#4b6073"
+            r="1.5"
+          />
+          <path
+            d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
+          />
+          <path
+            d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
+      Model
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M17.176 15.762l4.531 4.53a1 1 0 0 1-1.414 1.415l-4.531-4.531a8.5 8.5 0 1 1 1.414-1.414zm-2.016-.73a6.5 6.5 0 1 0-.128.128 1.013 1.013 0 0 1 .128-.128z"
+        <g
           fill="#4b6073"
-          fillRule="nonzero"
-        />
-      </g>
-    </svg>
-  </dt>
-  <dd
-    className="emotion-1"
-  >
-    Search
-  </dd>
-</dl>
+          fillRule="evenodd"
+        >
+          <circle
+            cx="12"
+            cy="5"
+            r="2"
+          />
+          <circle
+            cx="12"
+            cy="13"
+            r="2"
+          />
+          <circle
+            cx="12"
+            cy="21"
+            r="2"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      MoreVertical
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={9}
+        viewBox="0 0 8 9"
+        width={8}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="#4b6073"
+          fillRule="evenodd"
+        >
+          <path
+            d="M.05 7.899L3.56.296C3.646.12 3.76 0 3.971 0h.02c.212 0 .332.12.41.296l3.498 7.581c.035.071.049.127.049.19a.286.286 0 0 1-.296.283H.282C.127 8.35 0 8.23 0 8.09c.007-.05.014-.12.05-.191zm7.186-.106L3.97.69.72 7.793h6.516z"
+            fillRule="nonzero"
+          />
+          <path
+            d="M3.962 1.2L7 7.82H.923z"
+            stroke="#4b6073"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Permission
+    </dd>
+    <dt
+      className="emotion-0"
+    >
+      <svg
+        className=""
+        height={24}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M17.176 15.762l4.531 4.53a1 1 0 0 1-1.414 1.415l-4.531-4.531a8.5 8.5 0 1 1 1.414-1.414zm-2.016-.73a6.5 6.5 0 1 0-.128.128 1.013 1.013 0 0 1 .128-.128z"
+            fill="#4b6073"
+            fillRule="nonzero"
+          />
+        </g>
+      </svg>
+    </dt>
+    <dd
+      className="emotion-1"
+    >
+      Search
+    </dd>
+  </dl>
+</div>
 `;
 
 exports[`Storyshots Icons logos 1`] = `
-Array [
+<div
+  id="app-root"
+>
   <div>
     <svg
       viewBox="0 0 1920 332"
@@ -4784,7 +4826,7 @@ Array [
         fill="#1e1e1e"
       />
     </svg>
-  </div>,
+  </div>
   <div>
     <svg
       className=""
@@ -4824,13 +4866,17 @@ Array [
         />
       </g>
     </svg>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots RoundedButton default 1`] = `
-Array [
-  .emotion-0 {
+.emotion-1 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-0 {
   color: #4b6073;
   height: 30px;
   line-height: 28px;
@@ -4851,46 +4897,23 @@ Array [
   color: #81909d;
 }
 
-<button
+<div
+  id="app-root"
+>
+  <button
     className="emotion-0"
     disabled={false}
     onClick={[Function]}
   >
     Text only
-  </button>,
-  .emotion-0 {
-  margin-right: 5px;
-  margin-bottom: -3px;
-}
-
-.emotion-1 {
-  color: #4b6073;
-  height: 30px;
-  line-height: 28px;
-  border-radius: 15px;
-  border: 1px solid #e7e8e8;
-  padding: 0 20px;
-  background: none;
-  cursor: pointer;
-}
-
-.emotion-1:not(:disabled):hover {
-  background-color: #e7e8e8;
-  -webkit-transition: background-color 200ms ease-out;
-  transition: background-color 200ms ease-out;
-}
-
-.emotion-1:disabled {
-  color: #81909d;
-}
-
-<button
-    className="emotion-1"
+  </button>
+  <button
+    className="emotion-0"
     disabled={false}
     onClick={[Function]}
   >
     <svg
-      className="emotion-0"
+      className="emotion-1"
       height={15}
       viewBox="0 0 24 24"
       width={15}
@@ -4903,13 +4926,17 @@ Array [
       />
     </svg>
     Icon + text
-  </button>,
-]
+  </button>
+</div>
 `;
 
 exports[`Storyshots RoundedButton disabled 1`] = `
-Array [
-  .emotion-0 {
+.emotion-1 {
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.emotion-0 {
   color: #4b6073;
   height: 30px;
   line-height: 28px;
@@ -4930,46 +4957,23 @@ Array [
   color: #81909d;
 }
 
-<button
+<div
+  id="app-root"
+>
+  <button
     className="emotion-0"
     disabled={true}
     onClick={[Function]}
   >
     Text only
-  </button>,
-  .emotion-0 {
-  margin-right: 5px;
-  margin-bottom: -3px;
-}
-
-.emotion-1 {
-  color: #4b6073;
-  height: 30px;
-  line-height: 28px;
-  border-radius: 15px;
-  border: 1px solid #e7e8e8;
-  padding: 0 20px;
-  background: none;
-  cursor: pointer;
-}
-
-.emotion-1:not(:disabled):hover {
-  background-color: #e7e8e8;
-  -webkit-transition: background-color 200ms ease-out;
-  transition: background-color 200ms ease-out;
-}
-
-.emotion-1:disabled {
-  color: #81909d;
-}
-
-<button
-    className="emotion-1"
+  </button>
+  <button
+    className="emotion-0"
     disabled={true}
     onClick={[Function]}
   >
     <svg
-      className="emotion-0"
+      className="emotion-1"
       height={15}
       viewBox="0 0 24 24"
       width={15}
@@ -4982,13 +4986,12 @@ Array [
       />
     </svg>
     Icon + text
-  </button>,
-]
+  </button>
+</div>
 `;
 
 exports[`Storyshots RoundedButton icon colors 1`] = `
-Array [
-  .emotion-0 {
+.emotion-0 {
   margin-right: 5px;
   margin-bottom: -3px;
 }
@@ -5014,7 +5017,10 @@ Array [
   color: #81909d;
 }
 
-<button
+<div
+  id="app-root"
+>
+  <button
     className="emotion-1"
     disabled={false}
     onClick={[Function]}
@@ -5033,34 +5039,8 @@ Array [
       />
     </svg>
     Normal
-  </button>,
-  .emotion-0 {
-  margin-right: 5px;
-  margin-bottom: -3px;
-}
-
-.emotion-1 {
-  color: #4b6073;
-  height: 30px;
-  line-height: 28px;
-  border-radius: 15px;
-  border: 1px solid #e7e8e8;
-  padding: 0 20px;
-  background: none;
-  cursor: pointer;
-}
-
-.emotion-1:not(:disabled):hover {
-  background-color: #e7e8e8;
-  -webkit-transition: background-color 200ms ease-out;
-  transition: background-color 200ms ease-out;
-}
-
-.emotion-1:disabled {
-  color: #81909d;
-}
-
-<button
+  </button>
+  <button
     className="emotion-1"
     disabled={true}
     onClick={[Function]}
@@ -5079,8 +5059,8 @@ Array [
       />
     </svg>
     Disabled
-  </button>,
-]
+  </button>
+</div>
 `;
 
 exports[`Storyshots SearchBar default 1`] = `
@@ -5230,86 +5210,86 @@ exports[`Storyshots SearchBar default 1`] = `
 }
 
 <div
-  className="emotion-6"
+  id="app-root"
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-0-label"
-    aria-owns={null}
-    className="emotion-3"
-    role="combobox"
+    className="emotion-6"
   >
     <div
-      onClick={[Function]}
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-0-label"
+      aria-owns={null}
+      className="emotion-3"
+      role="combobox"
     >
       <div
-        className="MuiFormControl-root MuiFormControl-fullWidth"
-        label=""
+        onClick={[Function]}
       >
         <div
-          aria-activedescendant={null}
-          aria-autocomplete="list"
-          aria-controls={null}
-          aria-labelledby="downshift-0-label"
-          className="emotion-2"
-          disabled={false}
-          margin="none"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          required={false}
+          className="MuiFormControl-root MuiFormControl-fullWidth"
+          label=""
         >
           <div
-            className="emotion-1"
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-controls={null}
+            aria-labelledby="downshift-0-label"
+            className="emotion-2"
+            disabled={false}
+            margin="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            <input
-              aria-invalid={false}
-              autoComplete="off"
-              autoFocus={false}
-              className="emotion-0"
-              disabled={false}
-              id="downshift-0-input"
-              name=""
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              placeholder="Custom placeholder"
-              readOnly={false}
-              required={false}
-              type="text"
-              value=""
-            />
+            <div
+              className="emotion-1"
+            >
+              <input
+                aria-invalid={false}
+                autoComplete="off"
+                autoFocus={false}
+                className="emotion-0"
+                disabled={false}
+                id="downshift-0-input"
+                name=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                placeholder="Custom placeholder"
+                readOnly={false}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+            
           </div>
-          
         </div>
       </div>
     </div>
-  </div>
-  <button
-    className="emotion-4 emotion-5"
-    onClick={[Function]}
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      height={18}
-      role="presentation"
-      viewBox="0 0 24 24"
-      width={18}
+    <button
+      className="emotion-4 emotion-5"
+      onClick={[Function]}
     >
-      <path
-        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-      />
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-    </svg>
-  </button>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root"
+        focusable="false"
+        height={18}
+        role="presentation"
+        viewBox="0 0 24 24"
+        width={18}
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
@@ -5460,86 +5440,86 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
 }
 
 <div
-  className="emotion-6"
+  id="app-root"
 >
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="downshift-1-label"
-    aria-owns={null}
-    className="emotion-3"
-    role="combobox"
+    className="emotion-6"
   >
     <div
-      onClick={[Function]}
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-1-label"
+      aria-owns={null}
+      className="emotion-3"
+      role="combobox"
     >
       <div
-        className="MuiFormControl-root MuiFormControl-fullWidth"
-        label=""
+        onClick={[Function]}
       >
         <div
-          aria-activedescendant={null}
-          aria-autocomplete="list"
-          aria-controls={null}
-          aria-labelledby="downshift-1-label"
-          className="emotion-2"
-          disabled={false}
-          margin="none"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          required={false}
+          className="MuiFormControl-root MuiFormControl-fullWidth"
+          label=""
         >
           <div
-            className="emotion-1"
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-controls={null}
+            aria-labelledby="downshift-1-label"
+            className="emotion-2"
+            disabled={false}
+            margin="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
           >
-            <input
-              aria-invalid={false}
-              autoComplete="off"
-              autoFocus={false}
-              className="emotion-0"
-              disabled={false}
-              id="downshift-1-input"
-              name=""
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              placeholder="Custom placeholder"
-              readOnly={false}
-              required={false}
-              type="text"
-              value=""
-            />
+            <div
+              className="emotion-1"
+            >
+              <input
+                aria-invalid={false}
+                autoComplete="off"
+                autoFocus={false}
+                className="emotion-0"
+                disabled={false}
+                id="downshift-1-input"
+                name=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                placeholder="Custom placeholder"
+                readOnly={false}
+                required={false}
+                type="text"
+                value=""
+              />
+            </div>
+            
           </div>
-          
         </div>
       </div>
     </div>
-  </div>
-  <button
-    className="emotion-4 emotion-5"
-    onClick={[Function]}
-  >
-    <svg
-      aria-hidden="true"
-      className="MuiSvgIcon-root"
-      focusable="false"
-      height={18}
-      role="presentation"
-      viewBox="0 0 24 24"
-      width={18}
+    <button
+      className="emotion-4 emotion-5"
+      onClick={[Function]}
     >
-      <path
-        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-      />
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-    </svg>
-  </button>
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root"
+        focusable="false"
+        height={18}
+        role="presentation"
+        viewBox="0 0 24 24"
+        width={18}
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
@@ -5579,54 +5559,58 @@ exports[`Storyshots Tabs color override 1`] = `
 }
 
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  id="app-root"
 >
-  <ul
-    className="emotion-2"
-    role="tablist"
-  >
-    <li
-      aria-controls="react-tabs-5"
-      aria-disabled="false"
-      aria-selected="true"
-      className="emotion-0 selected"
-      id="react-tabs-4"
-      role="tab"
-      tabIndex="0"
-    >
-      Description
-    </li>
-    <li
-      aria-controls="react-tabs-7"
-      aria-disabled="false"
-      aria-selected="false"
-      className="emotion-0"
-      id="react-tabs-6"
-      role="tab"
-      tabIndex={null}
-    >
-      Metrics
-    </li>
-  </ul>
   <div
-    aria-labelledby="react-tabs-4"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
-    id="react-tabs-5"
-    role="tabpanel"
+    className="react-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
   >
-    <p>
-      First tab's content
-    </p>
+    <ul
+      className="emotion-2"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-5"
+        aria-disabled="false"
+        aria-selected="true"
+        className="emotion-0 selected"
+        id="react-tabs-4"
+        role="tab"
+        tabIndex="0"
+      >
+        Description
+      </li>
+      <li
+        aria-controls="react-tabs-7"
+        aria-disabled="false"
+        aria-selected="false"
+        className="emotion-0"
+        id="react-tabs-6"
+        role="tab"
+        tabIndex={null}
+      >
+        Metrics
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-4"
+      className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+      id="react-tabs-5"
+      role="tabpanel"
+    >
+      <p>
+        First tab's content
+      </p>
+    </div>
+    <div
+      aria-labelledby="react-tabs-6"
+      className="react-tabs__tab-panel"
+      id="react-tabs-7"
+      role="tabpanel"
+    />
   </div>
-  <div
-    aria-labelledby="react-tabs-6"
-    className="react-tabs__tab-panel"
-    id="react-tabs-7"
-    role="tabpanel"
-  />
 </div>
 `;
 
@@ -5662,54 +5646,58 @@ exports[`Storyshots Tabs default 1`] = `
 }
 
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  id="app-root"
 >
-  <ul
-    className="emotion-2"
-    role="tablist"
-  >
-    <li
-      aria-controls="react-tabs-1"
-      aria-disabled="false"
-      aria-selected="true"
-      className="emotion-0 selected"
-      id="react-tabs-0"
-      role="tab"
-      tabIndex="0"
-    >
-      Description
-    </li>
-    <li
-      aria-controls="react-tabs-3"
-      aria-disabled="false"
-      aria-selected="false"
-      className="emotion-0"
-      id="react-tabs-2"
-      role="tab"
-      tabIndex={null}
-    >
-      Metrics
-    </li>
-  </ul>
   <div
-    aria-labelledby="react-tabs-0"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
-    id="react-tabs-1"
-    role="tabpanel"
+    className="react-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
   >
-    <p>
-      First tab's content
-    </p>
+    <ul
+      className="emotion-2"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-1"
+        aria-disabled="false"
+        aria-selected="true"
+        className="emotion-0 selected"
+        id="react-tabs-0"
+        role="tab"
+        tabIndex="0"
+      >
+        Description
+      </li>
+      <li
+        aria-controls="react-tabs-3"
+        aria-disabled="false"
+        aria-selected="false"
+        className="emotion-0"
+        id="react-tabs-2"
+        role="tab"
+        tabIndex={null}
+      >
+        Metrics
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-0"
+      className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+      id="react-tabs-1"
+      role="tabpanel"
+    >
+      <p>
+        First tab's content
+      </p>
+    </div>
+    <div
+      aria-labelledby="react-tabs-2"
+      className="react-tabs__tab-panel"
+      id="react-tabs-3"
+      role="tabpanel"
+    />
   </div>
-  <div
-    aria-labelledby="react-tabs-2"
-    className="react-tabs__tab-panel"
-    id="react-tabs-3"
-    role="tabpanel"
-  />
 </div>
 `;
 
@@ -5745,53 +5733,57 @@ exports[`Storyshots Tabs disabled 1`] = `
 }
 
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  id="app-root"
 >
-  <ul
-    className="emotion-2"
-    role="tablist"
-  >
-    <li
-      aria-controls="react-tabs-9"
-      aria-disabled="false"
-      aria-selected="true"
-      className="emotion-0 selected"
-      id="react-tabs-8"
-      role="tab"
-      tabIndex="0"
-    >
-      Description
-    </li>
-    <li
-      aria-controls="react-tabs-11"
-      aria-disabled="true"
-      aria-selected="false"
-      className="emotion-0 disabled"
-      id="react-tabs-10"
-      role="tab"
-      tabIndex={null}
-    >
-      Metrics
-    </li>
-  </ul>
   <div
-    aria-labelledby="react-tabs-8"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
-    id="react-tabs-9"
-    role="tabpanel"
+    className="react-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
   >
-    <p>
-      First tab's content
-    </p>
+    <ul
+      className="emotion-2"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-9"
+        aria-disabled="false"
+        aria-selected="true"
+        className="emotion-0 selected"
+        id="react-tabs-8"
+        role="tab"
+        tabIndex="0"
+      >
+        Description
+      </li>
+      <li
+        aria-controls="react-tabs-11"
+        aria-disabled="true"
+        aria-selected="false"
+        className="emotion-0 disabled"
+        id="react-tabs-10"
+        role="tab"
+        tabIndex={null}
+      >
+        Metrics
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-8"
+      className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+      id="react-tabs-9"
+      role="tabpanel"
+    >
+      <p>
+        First tab's content
+      </p>
+    </div>
+    <div
+      aria-labelledby="react-tabs-10"
+      className="react-tabs__tab-panel"
+      id="react-tabs-11"
+      role="tabpanel"
+    />
   </div>
-  <div
-    aria-labelledby="react-tabs-10"
-    className="react-tabs__tab-panel"
-    id="react-tabs-11"
-    role="tabpanel"
-  />
 </div>
 `;
