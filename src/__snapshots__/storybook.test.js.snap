@@ -3379,6 +3379,330 @@ exports[`Storyshots CodeSample default 1`] = `
 </div>
 `;
 
+exports[`Storyshots CopyInput color override 1`] = `
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.emotion-1 {
+  opacity: 1;
+}
+
+.emotion-2 {
+  position: absolute;
+  opacity: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-4:hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-5 {
+  position: relative;
+}
+
+.emotion-0 {
+  width: 100%;
+  background-color: transparent;
+  color: inherit;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  border: 1px solid #e7e8e8;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 28px;
+  padding-left: 10px;
+  padding-right: 35px;
+}
+
+<div
+  className="emotion-5"
+>
+  <input
+    className="emotion-0"
+    data-testid="input"
+    onClick={[Function]}
+    readOnly={true}
+    value=""
+  />
+  <button
+    className="emotion-3 emotion-4"
+    data-testid="button"
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-1"
+      height={15}
+      viewBox="0 0 24 22"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="yellow"
+        transform="translate(1 1)"
+      >
+        <circle
+          cx="11"
+          cy="1.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="11"
+          cy="9.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="11"
+          cy="18.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="20.5"
+          cy="4.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="1.5"
+          cy="4.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="20.5"
+          cy="14.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <circle
+          cx="1.5"
+          cy="14.5"
+          fill="yellow"
+          r="1.5"
+        />
+        <path
+          d="M9.746 2.082L2.278 13.147 10 10.183 2.835 5.135l6.42-3.31M12.659 1.826l6.665 3.091-6.665 5.393 6.665 3.305zM2.886 15.514l6.827 3.09h2.626l7.31-3.09"
+        />
+        <path
+          d="M19.734 5.455l-7.351 12.114H9.886L2.45 5.455"
+        />
+      </g>
+    </svg>
+    <svg
+      className="emotion-2"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M19 16V3H6.5A1.5 1.5 0 0 0 5 4.5v11.837A3.486 3.486 0 0 1 6.5 16H19zm0 2H6.5a1.5 1.5 0 0 0 0 3H19v-3zM6.5 1H20a1 1 0 0 1 1 1v20a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 19.5v-15A3.5 3.5 0 0 1 6.5 1z"
+        fill="red"
+        fillRule="nonzero"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots CopyInput default 1`] = `
+.emotion-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.emotion-1 {
+  opacity: 1;
+}
+
+.emotion-2 {
+  position: absolute;
+  opacity: 0;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-4:hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-5 {
+  position: relative;
+}
+
+.emotion-0 {
+  width: 100%;
+  background-color: transparent;
+  color: inherit;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  border: 1px solid #e7e8e8;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 28px;
+  padding-left: 10px;
+  padding-right: 35px;
+}
+
+<div
+  className="emotion-5"
+>
+  <input
+    className="emotion-0"
+    data-testid="input"
+    onClick={[Function]}
+    readOnly={true}
+    value="Lorem ipsum dolor sit amet"
+  />
+  <button
+    className="emotion-3 emotion-4"
+    data-testid="button"
+    onClick={[Function]}
+  >
+    <svg
+      className="emotion-1"
+      height={15}
+      viewBox="0 0 28 29"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          transform="translate(6)"
+        >
+          <mask
+            fill="#fff"
+            id="mask-copy"
+          >
+            <path
+              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+            />
+          </mask>
+          <g
+            fill="#4B6073"
+            mask="url(#mask-copy)"
+          >
+            <path
+              d="M0 0h24v24H0z"
+            />
+          </g>
+        </g>
+        <g
+          transform="translate(-1 6)"
+        >
+          <g
+            fill="#4B6073"
+          >
+            <path
+              d="M19 10h-6a1 1 0 0 1-1-1V3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10h1a1 1 0 0 0 1-1v11a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3h7a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 .217.324zm-5-5.586V8h3.586L14 4.414z"
+            />
+          </g>
+        </g>
+        <path
+          d="M18 9h8v13h-8z"
+          fill="#4B6073"
+        />
+        <path
+          d="M11 2h8v8h-8z"
+          fill="#4B6073"
+        />
+        <path
+          d="M10 3h8v6h-8z"
+          fill="#4B6073"
+        />
+        <path
+          d="M8 16h10v9H8z"
+          fill="#FFF"
+        />
+        <path
+          d="M7 9h4v9H7z"
+          fill="#FFF"
+        />
+        <path
+          d="M18.914 8.586l-.353 5.303-4.95-4.95zM26.99 8.675l.06 4.889-4.95-4.95z"
+          fill="#4B6073"
+        />
+      </g>
+    </svg>
+    <svg
+      className="emotion-2"
+      height={15}
+      viewBox="0 0 24 24"
+      width={15}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="#1dbcc0"
+        fillRule="evenodd"
+      >
+        <path
+          d="M20 11.076a1 1 0 1 1 2 0v.93a11 11 0 1 1-6.523-10.053 1 1 0 1 1-.814 1.827A9 9 0 1 0 20 12.006v-.93zm-9 1.516L21.293 2.3a1 1 0 0 1 1.414 1.414l-11 11a1 1 0 0 1-1.414 0l-3-3A1 1 0 0 1 8.707 10.3L11 12.592z"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`Storyshots CopyNotification color override 1`] = `
 <button
   onClick={[Function]}
