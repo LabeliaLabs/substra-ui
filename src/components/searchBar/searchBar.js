@@ -283,12 +283,19 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-    location: PropTypes.shape({}),
+    location: PropTypes.shape({
+        query: PropTypes.shape({
+            search: PropTypes.string,
+        }),
+    }),
     suggestions: PropTypes.arrayOf(PropTypes.shape({})),
     parentSuggestions: PropTypes.arrayOf(PropTypes.shape({})),
     setState: PropTypes.func,
     inputValue: PropTypes.string,
-    selectedItem: PropTypes.arrayOf(PropTypes.shape({})),
+    selectedItem: PropTypes.arrayOf(PropTypes.shape({
+        isLogic: PropTypes.bool,
+        child: PropTypes.string,
+    })),
     isParent: PropTypes.bool,
     placeholder: PropTypes.string,
 };
