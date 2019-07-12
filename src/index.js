@@ -20,6 +20,8 @@ export {
     alertInlineButton,
 } from './components/alert';
 
+// Global styles
+export GlobalStyles from './globalStyles';
 
 // Icons
 export {
