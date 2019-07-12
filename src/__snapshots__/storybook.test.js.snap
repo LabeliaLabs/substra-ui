@@ -133,7 +133,7 @@ exports[`Storyshots Alert override 1`] = `
 `;
 
 exports[`Storyshots CodeSample collapsible 1`] = `
-.emotion-4 {
+.emotion-2 {
   margin-left: 5px;
 }
 
@@ -141,11 +141,11 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   padding: 5px 20px;
 }
 
-.emotion-7 {
+.emotion-4 {
   padding: 5px;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -167,13 +167,13 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   cursor: pointer;
 }
 
-.emotion-2:hover {
+.emotion-1:hover {
   background-color: #e7e8e8;
   -webkit-transition: background-color 200ms ease-out;
   transition: background-color 200ms ease-out;
 }
 
-.emotion-11 {
+.emotion-6 {
   border: 1px solid #e7e8e8;
   border-radius: 3px;
   display: -webkit-box;
@@ -186,7 +186,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   max-height: 150px;
 }
 
-.emotion-9 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,23 +208,23 @@ exports[`Storyshots CodeSample collapsible 1`] = `
 }
 
 <div
-  className=" emotion-11 emotion-12"
+  className=" emotion-6"
   data-testid="wrapper"
 >
   <div
-    className="emotion-9 emotion-10"
+    className="emotion-5"
     onClick={[Function]}
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
       opener.py
     </div>
     <div
-      className="emotion-7 emotion-8"
+      className="emotion-4"
     >
       <button
-        className="emotion-2 emotion-3"
+        className="emotion-1"
         data-testid="download"
         onClick={[Function]}
         title="Download opener.py"
@@ -261,7 +261,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
         </svg>
       </button>
       <button
-        className="emotion-4 emotion-2 emotion-3"
+        className="emotion-2 emotion-1"
         data-testid="toggle"
         onClick={[Function]}
         title="Expand"
@@ -1772,7 +1772,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
 `;
 
 exports[`Storyshots CodeSample default 1`] = `
-.emotion-8 {
+.emotion-4 {
   border: 1px solid #e7e8e8;
   border-radius: 3px;
   display: -webkit-box;
@@ -1784,7 +1784,7 @@ exports[`Storyshots CodeSample default 1`] = `
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1808,11 +1808,11 @@ exports[`Storyshots CodeSample default 1`] = `
   padding: 5px 20px;
 }
 
-.emotion-4 {
+.emotion-2 {
   padding: 5px;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1834,30 +1834,30 @@ exports[`Storyshots CodeSample default 1`] = `
   cursor: pointer;
 }
 
-.emotion-2:hover {
+.emotion-1:hover {
   background-color: #e7e8e8;
   -webkit-transition: background-color 200ms ease-out;
   transition: background-color 200ms ease-out;
 }
 
 <div
-  className=" emotion-8 emotion-9"
+  className=" emotion-4"
   data-testid="wrapper"
 >
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-3"
     onClick={[Function]}
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
       opener.py
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       <button
-        className="emotion-2 emotion-3"
+        className="emotion-1"
         data-testid="download"
         onClick={[Function]}
         title="Download opener.py"
@@ -3427,7 +3427,7 @@ exports[`Storyshots IconButton default 1`] = `
 }
 
 <button
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   <svg
     className=""
@@ -3446,7 +3446,7 @@ exports[`Storyshots IconButton default 1`] = `
 `;
 
 exports[`Storyshots Icons default 1`] = `
-.emotion-72 {
+.emotion-36 {
   display: grid;
   grid-template-columns: 50px auto;
   grid-gap: 10px;
@@ -3457,16 +3457,16 @@ exports[`Storyshots Icons default 1`] = `
   width: 50px;
 }
 
-.emotion-2 {
+.emotion-1 {
   grid-column: 2;
   margin: 0;
 }
 
 <dl
-  className="emotion-72 emotion-73"
+  className="emotion-36"
 >
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3499,12 +3499,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Alert
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3541,12 +3541,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Algo
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3563,12 +3563,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Book
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3588,12 +3588,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Check
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3614,12 +3614,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Clipboard
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3641,12 +3641,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Collapse
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3755,12 +3755,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     CopyDrop
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3832,12 +3832,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     CopySimple
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3867,12 +3867,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Dataset
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3928,12 +3928,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     DownloadDrop
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3967,12 +3967,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     DownloadSimple
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -3994,12 +3994,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Expand
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4038,12 +4038,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     FilterUp
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4066,12 +4066,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Folder
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4138,12 +4138,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Model
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4175,12 +4175,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     MoreVertical
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4205,12 +4205,12 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Permission
   </dd>
   <dt
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <svg
       className=""
@@ -4232,7 +4232,7 @@ exports[`Storyshots Icons default 1`] = `
     </svg>
   </dt>
   <dd
-    className="emotion-2 emotion-3"
+    className="emotion-1"
   >
     Search
   </dd>
@@ -4528,7 +4528,7 @@ Array [
 }
 
 <button
-    className="emotion-0 emotion-1"
+    className="emotion-0"
     disabled={false}
     onClick={[Function]}
   >
@@ -4561,7 +4561,7 @@ Array [
 }
 
 <button
-    className="emotion-1 emotion-2"
+    className="emotion-1"
     disabled={false}
     onClick={[Function]}
   >
@@ -4607,7 +4607,7 @@ Array [
 }
 
 <button
-    className="emotion-0 emotion-1"
+    className="emotion-0"
     disabled={true}
     onClick={[Function]}
   >
@@ -4640,7 +4640,7 @@ Array [
 }
 
 <button
-    className="emotion-1 emotion-2"
+    className="emotion-1"
     disabled={true}
     onClick={[Function]}
   >
@@ -4691,7 +4691,7 @@ Array [
 }
 
 <button
-    className="emotion-1 emotion-2"
+    className="emotion-1"
     disabled={false}
     onClick={[Function]}
   >
@@ -4737,7 +4737,7 @@ Array [
 }
 
 <button
-    className="emotion-1 emotion-2"
+    className="emotion-1"
     disabled={true}
     onClick={[Function]}
   >
@@ -4885,7 +4885,7 @@ exports[`Storyshots SearchBar default 1`] = `
   transition: background-color 200ms ease-out;
 }
 
-.emotion-7 {
+.emotion-6 {
   border: 1px solid #e7e8e8;
   background-color: #ffffff;
   display: -webkit-box;
@@ -4906,7 +4906,7 @@ exports[`Storyshots SearchBar default 1`] = `
 }
 
 <div
-  className="emotion-7 emotion-8"
+  className="emotion-6"
 >
   <div
     aria-expanded={false}
@@ -4965,7 +4965,7 @@ exports[`Storyshots SearchBar default 1`] = `
     </div>
   </div>
   <button
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-4 emotion-5"
     onClick={[Function]}
   >
     <svg
@@ -5115,7 +5115,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
   transition: background-color 200ms ease-out;
 }
 
-.emotion-7 {
+.emotion-6 {
   border: 1px solid #e7e8e8;
   background-color: #ffffff;
   display: -webkit-box;
@@ -5136,7 +5136,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
 }
 
 <div
-  className="emotion-7 emotion-8"
+  className="emotion-6"
 >
   <div
     aria-expanded={false}
@@ -5195,7 +5195,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
     </div>
   </div>
   <button
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-4 emotion-5"
     onClick={[Function]}
   >
     <svg
