@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import requireContext from 'require-context.macro';
 import {GlobalStyles} from "../src";
@@ -11,10 +11,10 @@ function loadStories() {
 }
 
 const withGlobalStyles = (cb) => (
-  <Fragment>
+  <div id="app-root">
     <GlobalStyles />
     {cb()}
-  </Fragment>
+  </div>
 );
 
 addDecorator(withGlobalStyles);
