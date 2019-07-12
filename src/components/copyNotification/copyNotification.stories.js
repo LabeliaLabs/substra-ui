@@ -2,7 +2,7 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {withKnobs, color} from '@storybook/addon-knobs';
 import PropTypes from '../../utils/propTypes';
-import {withAddNotification} from './copyNotification';
+import withAddNotification from './copyNotification';
 import Check from '../../icons/check';
 import {darkSkyBlue} from '../../variables/colors';
 

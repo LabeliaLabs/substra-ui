@@ -3,3 +3,11 @@ export const
     fontNormalMonospace = '11px',
     fontNormal = '12px',
     fontLarge = '14px';
+
+
+export default {
+    monospaceFamily,
+    fontNormalMonospace,
+    fontNormal,
+    fontLarge,
+};
