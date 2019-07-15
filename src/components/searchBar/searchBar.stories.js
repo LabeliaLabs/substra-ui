@@ -28,29 +28,33 @@ const suggestions = [
     'BBBB:3',
 ];
 
-const getSuggestions = (isParent, selectedItem) => {
+const getSuggestions = (isParent, selectedItem, item) => {
+    const isLogic = item === '-OR-';
     const level_1 = uniqBy(suggestions.map(s => ({label: s.split(':')[0]})), 'label');
+
     if (isParent) {
         return {
             suggestions: [
-                ...(selectedItem.length ? [{label: '-OR-', isLogic: true}] : []),
+                ...(selectedItem.length && !isLogic ? [{label: '-OR-', isLogic: true}] : []),
                 ...level_1,
             ],
             parentSuggestions: level_1,
+            item: isLogic ? '' : item,
         };
     }
 
-    const level_2 = uniqBy(suggestions
-            .map(s => s.split(':'))
-            .filter(s => s[0] === selectedItem[0].parent)
-            .map(s => ({label: s[1]})),
-        'label');
+    const s = suggestions.reduce((p, c) => {
+        const [parent, child] = c.split(':');
+        return [
+            ...p,
+            ...(parent === selectedItem[0].parent ? [{label: child}] : []),
+        ];
+    }, []);
+    const level_2 = uniqBy(s, 'label');
 
     return {
         suggestions: level_2,
-        parentSuggestions: [
-            ...level_1,
-        ],
+        parentSuggestions: level_1,
     };
 };
 
@@ -58,11 +62,13 @@ const getSuggestions = (isParent, selectedItem) => {
 setState({...defaultState, ...getSuggestions(defaultState.isParent, [])});
 
 store.subscribe((state) => {
-    if (previousState.isParent !== state.isParent) {
+    if (previousState.isParent !== state.isParent || state.item === '-OR-' || (
+        !state.selectedItem.length && state.suggestions[0].label === '-OR-'
+    )) {
         previousState = {...state};
         store.set({
             ...state,
-            ...getSuggestions(state.isParent, state.selectedItem),
+            ...getSuggestions(state.isParent, state.selectedItem, state.item),
         });
     }
 

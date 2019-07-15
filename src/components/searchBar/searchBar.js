@@ -4,8 +4,6 @@ import Downshift from 'downshift';
 import uuidv4 from 'uuid/v4';
 import decodeUriComponent from 'decode-uri-component';
 import {isEqual, noop} from 'lodash';
-
-
 import styled from '@emotion/styled';
 import {css} from 'emotion';
 
@@ -66,7 +64,6 @@ class SearchBar extends Component {
         if (location && location.query && location.query.search) {
             // get groups separated by -OR-
             const groups = location.query.search.split('-OR-');
-
 
             newSelectedItem = groups.reduce((p, group) => {
                 // create related chips
