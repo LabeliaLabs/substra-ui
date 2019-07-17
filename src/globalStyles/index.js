@@ -6,19 +6,6 @@ import {iceBlue, slate} from '../variables/colors';
 import {fontNormal} from '../variables/font';
 import {spacingSmall} from '../variables/spacing';
 
-const fontFace = (variant, style, weight) => css`
-    @font-face {
-        font-family: 'Lato';
-        font-style: ${style};
-        font-weight: ${weight};
-        src: url(${require(`./lato/LatoLatin-${variant}.eot`)}); /* IE9 Compat Modes */
-        src: url('${require(`./lato/LatoLatin-${variant}.eot`)}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-             url(${require(`./lato/LatoLatin-${variant}.woff2`)}) format('woff2'), /* Super Modern Browsers */
-             url(${require(`./lato/LatoLatin-${variant}.woff`)}) format('woff'), /* Pretty Modern Browsers */
-             url(${require(`./lato/LatoLatin-${variant}.ttf`)})  format('truetype'); /* Safari, Android, iOS */
-    }
-`;
-
 // unused for now
 // const fontFaceItalic = (variant, weight) => css`
 //     ${fontFace(variant, 'normal', weight)}
@@ -26,11 +13,35 @@ const fontFace = (variant, style, weight) => css`
 // `;
 
 
+// hardcode which font we want for avoiding making webpack load all available fonts
+const fontFaceNormal = `
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: url(${require('./lato/LatoLatin-Bold.eot')}); /* IE9 Compat Modes */
+            src: url('${require('./lato/LatoLatin-Bold.eot')}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                 url(${require('./lato/LatoLatin-Bold.woff2')}) format('woff2'), /* Super Modern Browsers */
+                 url(${require('./lato/LatoLatin-Bold.woff')}) format('woff'), /* Pretty Modern Browsers */
+                 url(${require('./lato/LatoLatin-Bold.ttf')}) format('truetype'); /* Safari, Android, iOS */
+        };
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: url(${require('./lato/LatoLatin-Regular.eot')}); /* IE9 Compat Modes */
+            src: url('${require('./lato/LatoLatin-Regular.eot')}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                 url(${require('./lato/LatoLatin-Regular.woff2')}) format('woff2'), /* Super Modern Browsers */
+                 url(${require('./lato/LatoLatin-Regular.woff')}) format('woff'), /* Pretty Modern Browsers */
+                 url(${require('./lato/LatoLatin-Regular.ttf')}) format('truetype'); /* Safari, Android, iOS */
+        };
+    `;
+
+
 const globalStyles = css`
     ${emotionNormalize}
     
-    ${fontFace('Bold', 'normal', 700)}
-    ${fontFace('Regular', 'normal', 400)}
+    ${fontFaceNormal};
     
     html {
         box-sizing: border-box;

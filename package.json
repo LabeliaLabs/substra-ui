@@ -1,17 +1,22 @@
 {
   "name": "@substrafoundation/substra-ui",
+  "sideEffects": false,
   "version": "0.0.1",
   "description": "A shared UI components library for the Substra project.",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
   "files": [
-    "dist/"
+    "es/",
+    "cjs/"
   ],
   "repository": "git@github.com:SubstraFoundation/substra-ui.git",
   "author": "Jérémy Morel <jeremy.morel@owkin.com>",
   "license": "Apache-2.0",
   "private": false,
   "scripts": {
-    "build": "babel src -d dist --ignore **/*.test.js,**/*.stories.js && cp -r src/globalStyles/lato dist/globalStyles/",
+    "build:cjs": "NODE_ENV=cjs babel src --out-dir cjs --ignore **/*.test.js,**/*.stories.js",
+    "build:es": "NODE_ENV=es babel src --out-dir es --ignore **/*.test.js,**/*.stories.js",
+    "build": "npm run build:cjs && npm run build:es && cp -r src/globalStyles/lato cjs/globalStyles/ && cp -r src/globalStyles/lato es/globalStyles/",
     "eslint": "eslint --fix src",
     "eslint-check": "eslint src",
     "test": "jest src",

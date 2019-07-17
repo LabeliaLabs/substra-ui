@@ -9,4 +9,23 @@ module.exports = {
         'babel-plugin-macros',
         '@babel/plugin-proposal-class-properties',
     ],
+    env: {
+        es: {
+            presets: [
+                [
+                    '@babel/preset-env',
+                    {
+                        modules: false,
+                    },
+                ],
+            ],
+        },
+        cjs: {
+            presets: [
+                [
+                    '@babel/preset-env',
+                ],
+            ],
+        },
+    },
 };

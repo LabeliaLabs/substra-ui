@@ -1,5 +1,6 @@
 node_modules/
 *.log*
 .idea/
-dist/
-yarn-error.log 
+es/
+cjs/
+yarn-error.log

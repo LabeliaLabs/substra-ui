@@ -1958,7 +1958,7 @@
     pretty-format "^24.8.0"
     wait-for-expect "^1.2.0"
 
-"@testing-library/jest-dom@^4.0.0":
+"@testing-library/jest-dom@4.0.0":
   version "4.0.0"
   resolved "https://substra-npm.owkin.com/@testing-library%2fjest-dom/-/jest-dom-4.0.0.tgz#56eee8dd183fe14a682fda7aca6413ec4e5303d2"
   integrity sha512-YQA/LnRRfqHV5YRauawOGgMDgq43XfyqCz3whmxIPyrfvTdjLCNyY/BseGaa48y54yb3oiRo/NZT0oXNMQdkTA==
