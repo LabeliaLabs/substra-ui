@@ -1,7 +1,6 @@
 /* global window */
 import React, {Component, Fragment} from 'react';
 import {css} from 'emotion';
-import styled from '@emotion/styled';
 import PropTypes from '../utils/propTypes';
 import {spacingLarge, spacingNormal} from '../variables/spacing';
 import {white, ice} from '../variables/colors';
