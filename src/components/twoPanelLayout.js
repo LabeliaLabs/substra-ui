@@ -108,47 +108,47 @@ class TwoPanelLayout extends Component {
         }
     };
 
+    getLayout = () => css`
+        margin: 0 ${spacingLarge} ${spacingNormal} ${spacingLarge};
+        background-color: ${white};
+        border: 1px solid ${ice};
+        display: flex;
+        flex: 1;
+        align-items: stretch;
+        overflow: hidden;
+        ${this.state.hold ? `
+            cursor: col-resize;
+            user-select: none;
+        ` : ''}
+    `;
 
-    render() {
-        const {leftPanelContent, rightPanelContent} = this.props;
+    getLeftPanel = rightPanelContent => css`
+        width: ${rightPanelContent ? `${this.state.leftPanelWidth.value}${this.state.leftPanelWidth.unit}` : '100%'};
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        overflow: hidden;
+    `;
 
-        const Layout = styled.div`
-            margin: 0 ${spacingLarge} ${spacingNormal} ${spacingLarge};
-            background-color: ${white};
-            border: 1px solid ${ice};
-            display: flex;
-            flex: 1;
-            align-items: stretch;
-            overflow: hidden;
-            ${this.state.hold ? `
-                cursor: col-resize;
-                user-select: none;
-            ` : ''}
-        `;
-
-        const LeftPanel = styled.div`
-            width: ${rightPanelContent ? `${this.state.leftPanelWidth.value}${this.state.leftPanelWidth.unit}` : '100%'};
-            flex-grow: 0;
-            flex-shrink: 0;
-            display: flex;
-            overflow: hidden;
-        `;
-
-        const RightPanel = styled.div`
+    getRightPanel = css`
             flex-grow: 1;
             display: flex;
             overflow: hidden;
         `;
 
+    render() {
+        const {leftPanelContent, rightPanelContent} = this.props;
+
         return (
-            <Layout
+            <div
                 ref={this.contentRef}
                 onMouseMove={this.move}
                 onMouseUp={this.mouseUp}
+                className={this.getLayout()}
             >
-                <LeftPanel>
+                <div className={this.getLeftPanel(rightPanelContent)}>
                     {leftPanelContent}
-                </LeftPanel>
+                </div>
 
                 {rightPanelContent && (
                     <Fragment>
@@ -156,13 +156,13 @@ class TwoPanelLayout extends Component {
                             onMouseDown={this.mouseDown}
                             className={verticalBar}
                         />
-                        <RightPanel>
+                        <div className={this.getRightPanel}>
                             {rightPanelContent}
-                        </RightPanel>
+                        </div>
                     </Fragment>
                 )
                 }
-            </Layout>
+            </div>
         );
     }
 }
