@@ -4870,6 +4870,76 @@ exports[`Storyshots Icons logos 1`] = `
 </div>
 `;
 
+exports[`Storyshots Panel default 1`] = `
+.emotion-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e8e8;
+  padding: 0 20px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.emotion-1 {
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+  id="app-root"
+>
+  <div
+    className="emotion-2"
+  >
+    <div
+      className="emotion-0"
+    >
+      Top
+    </div>
+    <div
+      className="emotion-1"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots RoundedButton default 1`] = `
 .emotion-1 {
   margin-right: 5px;
@@ -5784,6 +5854,335 @@ exports[`Storyshots Tabs disabled 1`] = `
       id="react-tabs-11"
       role="tabpanel"
     />
+  </div>
+</div>
+`;
+
+exports[`Storyshots TwoPanelsLayout single panel 1`] = `
+.emotion-1 {
+  margin: 0 40px 20px 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e8e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+<div
+  id="app-root"
+>
+  <div
+    className="emotion-1"
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="emotion-0"
+    >
+      Left panel
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TwoPanelsLayout two panels 1`] = `
+.emotion-1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  margin-right: -7px;
+  margin-left: -7px;
+  z-index: 1;
+  cursor: col-resize;
+  background-color: transparent;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.emotion-1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  border-left: 1px solid #e7e8e8;
+}
+
+.emotion-3 {
+  margin: 0 40px 20px 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e8e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  width: 40%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.emotion-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+<div
+  id="app-root"
+>
+  <div
+    className="emotion-3"
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="emotion-0"
+    >
+      Left panel
+    </div>
+    <div
+      className="emotion-1"
+      onMouseDown={[Function]}
+    />
+    <div
+      className="emotion-2"
+    >
+      Right panel
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TwoPanelsLayout two panels with proper style 1`] = `
+.emotion-4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  margin-right: -7px;
+  margin-left: -7px;
+  z-index: 1;
+  cursor: col-resize;
+  background-color: transparent;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.emotion-4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  border-left: 1px solid #e7e8e8;
+}
+
+.emotion-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e8e8;
+  padding: 0 20px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.emotion-1 {
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-9 {
+  margin: 0 40px 20px 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e8e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-3 {
+  width: 40%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.emotion-8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+<div
+  id="app-root"
+>
+  <div
+    className="emotion-9"
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+  >
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-2"
+      >
+        <div
+          className="emotion-0"
+        >
+          Panel top
+        </div>
+        <div
+          className="emotion-1"
+        >
+          Panel content
+        </div>
+      </div>
+    </div>
+    <div
+      className="emotion-4"
+      onMouseDown={[Function]}
+    />
+    <div
+      className="emotion-8"
+    >
+      <div
+        className="emotion-2"
+      >
+        <div
+          className="emotion-0"
+        >
+          Panel top
+        </div>
+        <div
+          className="emotion-1"
+        >
+          Panel content
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
