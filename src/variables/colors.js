@@ -1,5 +1,4 @@
-export const
-    white = '#ffffff',
+export const white = '#ffffff',
     iceBlue = '#f7f8f8',
     ice = '#e7e8e8',
     blueGrey = '#81909d',
@@ -9,3 +8,16 @@ export const
     tealish = '#1dbcc0',
     darkSkyBlue = '#4ba5d2',
     iceBlueTwo = '#edf6fa';
+
+export default {
+    white,
+    iceBlue,
+    ice,
+    blueGrey,
+    gold,
+    iceGold,
+    slate,
+    tealish,
+    darkSkyBlue,
+    iceBlueTwo,
+};

@@ -1,5 +1,5 @@
-import {toHaveStyle} from 'jest-dom';
-import 'jest-dom/extend-expect';
+import {toHaveStyle} from '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
 
 expect.extend({toHaveStyle});
 

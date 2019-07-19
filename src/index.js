@@ -1,11 +1,31 @@
 // Components
-
 export {Button, RoundedButton} from './components/roundedButton';
 export {IconButton, RoundButton} from './components/iconButton';
-export {default as CodeSample} from './components/codeSample';
+export CodeSample from './components/codeSample';
+export CopyInput from './components/copyInput';
+export SearchBar from './components/searchBar/searchBar';
+export withAddNotification from './components/copyNotification/copyNotification';
+export {
+    TabList,
+    Tab,
+    Tabs,
+    TabPanel,
+    cssTabTemplate,
+} from './components/tabs';
+export {PanelWrapper, PanelTop, PanelContent} from './components/panel';
+export TwoPanelLayout from './components/twoPanelLayout';
+
+export {
+    alertWrapper,
+    alertTitle,
+    AlertActions,
+    alertInlineButton,
+} from './components/alert';
+
+// Global styles
+export GlobalStyles from './globalStyles';
 
 // Icons
-
 export {
     Alert,
     Algo,
@@ -29,8 +49,11 @@ export {
     SubstraLogo,
 } from './icons';
 
-// Variables
+// Utils
 
-export * as colors from './variables/colors';
-export * as font from './variables/font';
-export * as spacing from './variables/spacing';
+export {theme as muiTheme, withMuiTheme} from './utils/muiTheme';
+
+// Variables
+export colors from './variables/colors';
+export font from './variables/font';
+export spacing from './variables/spacing';
