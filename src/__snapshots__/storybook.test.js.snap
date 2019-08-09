@@ -5593,6 +5593,72 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
 </div>
 `;
 
+exports[`Storyshots Select default 1`] = `
+.emotion-0 {
+  display: inline-block;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: 20px;
+  padding: 5px 40px 5px 10px;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #e7e8e8;
+  border-radius: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM4MTkwOWQiIGZvY3VzYWJsZT0iZmFsc2UiIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiI+PHBhdGggZD0iTTcgMTBsNSA1IDUtNXoiPjwvcGF0aD48L3N2Zz4=');
+  background-repeat: no-repeat;
+  background-position: right 3px top 50%;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.emotion-0::-ms-expand {
+  display: none;
+}
+
+.emotion-0:hover {
+  border-color: #e7e8e8;
+  background-color: #e7e8e8;
+}
+
+.emotion-0:focus {
+  border-color: #e7e8e8;
+  outline: none;
+}
+
+.emotion-0 option {
+  font-weight: normal;
+}
+
+<div
+  id="app-root"
+>
+  <select
+    className="emotion-0"
+  >
+    <option
+      value="option1"
+    >
+      NAME (A-Z)
+    </option>
+    <option
+      value="option2"
+    >
+      NAME (Z-A)
+    </option>
+  </select>
+</div>
+`;
+
 exports[`Storyshots Tabs color override 1`] = `
 .emotion-2 {
   border-bottom: 1px solid #e7e8e8;
