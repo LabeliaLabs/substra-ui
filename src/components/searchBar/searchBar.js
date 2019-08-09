@@ -259,6 +259,11 @@ class SearchBar extends Component {
         return (
             <InputWrapper>
                 <Downshift
+                    {/* ids need to be explicitely set to avoid SSR issue */}
+                    id="searchbar-autocomplete"
+                    labelId="searchbar-autocomplete-label"
+                    inputId="searchbar-autocomplete-input"
+                    menuId="searchbar-autocomplete-menu"
                     inputValue={inputValue}
                     onChange={this.handleChange}
                     onOuterClick={this.handleOuterClick}
