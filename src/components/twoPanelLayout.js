@@ -51,11 +51,8 @@ class TwoPanelLayout extends Component {
         this.contentRef = React.createRef();
     }
 
-    componentWillMount() {
-        this.updateDimensions();
-    }
-
     componentDidMount() {
+        this.updateDimensions();
         window.addEventListener('resize', this.updateDimensions);
     }
 
