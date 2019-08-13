@@ -7,7 +7,9 @@ module.exports = {
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4],
         "react/jsx-filename-extension": [0],
+        "react/jsx-fragments": [2, "element"],
         "react/jsx-closing-tag-location": [0],
+        "react/jsx-props-no-spreading": [0],
         "react/no-unescaped-entities": [0],
         "react/no-danger": [0],
         "react/no-array-index-key": [0],
@@ -30,7 +32,7 @@ module.exports = {
         "import/no-webpack-loader-syntax": [0],
         "import/no-unresolved": [0],
         "import/no-useless-path-segments": [0], // for react-universal-component lazy loading
-        "arrow-parens": [2],
+        "arrow-parens": [1, "as-needed"],
         "max-len": [0],
         "no-unused-vars": [2, {"args": "none"}],
         "consistent-return": [0],

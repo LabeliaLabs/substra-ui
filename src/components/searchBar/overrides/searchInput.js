@@ -94,7 +94,7 @@ class SearchInput extends Component {
         });
     };
 
-    getSuggestions = (inputValue) => {
+    getSuggestions = inputValue => {
         const {suggestions} = this.props;
 
         return suggestions.filter(suggestion => (!inputValue || suggestion.label.toLowerCase().includes(inputValue.replace(/ /g, '').toLowerCase())));

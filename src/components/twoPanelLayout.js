@@ -69,7 +69,7 @@ class TwoPanelLayout extends Component {
         }
     };
 
-    move = (e) => {
+    move = e => {
         if (this.state.hold) {
             e.persist();
 
@@ -156,8 +156,7 @@ class TwoPanelLayout extends Component {
                             {rightPanelContent}
                         </div>
                     </Fragment>
-                )
-                }
+                )}
             </div>
         );
     }

@@ -249,7 +249,7 @@ class Input extends Component {
         } // else performed in the onChange
     }
 
-    handleFocus = (event) => {
+    handleFocus = event => {
         // Fix a bug with IE11 where the focus/blur events are triggered
         // while the input is disabled.
         if (formControlState(this.props, this.context).disabled) {
@@ -268,7 +268,7 @@ class Input extends Component {
         }
     };
 
-    handleBlur = (event) => {
+    handleBlur = event => {
         this.setState({focused: false});
         if (this.props.onBlur) {
             this.props.onBlur(event);
@@ -280,7 +280,7 @@ class Input extends Component {
         }
     };
 
-    handleChange = (event) => {
+    handleChange = event => {
         if (!this.isControlled) {
             this.checkDirty(this.inputRef);
         }
@@ -291,7 +291,7 @@ class Input extends Component {
         }
     };
 
-    handleRefInputWrapper = (ref) => {
+    handleRefInputWrapper = ref => {
         this.inputWrapperRef = ref;
 
         let refProp;
@@ -313,7 +313,7 @@ class Input extends Component {
         }
     };
 
-    handleRefInput = (ref) => {
+    handleRefInput = ref => {
         this.inputRef = ref;
 
         let refProp;
@@ -496,7 +496,8 @@ class Input extends Component {
                                         component="div"
                                         className={this.menuItem(suggestion.isLogic)}
                                     >
-                                        {suggestion.isLogic
+                                        {
+                                            suggestion.isLogic
                                             ? (
                                                 <Logic>
                                                     {suggestion.label}

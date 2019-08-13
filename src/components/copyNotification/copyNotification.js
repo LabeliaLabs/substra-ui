@@ -62,7 +62,7 @@ const withAddNotification = (WrappedComponent, Icon = Check) => {
 
         processNotificationQueue = () => {
             if (this.queuedNotification) {
-                this.setState((state) => {
+                this.setState(state => {
                     const queuedNotification = this.queuedNotification;
                     this.queuedNotification = undefined;
                     return {
