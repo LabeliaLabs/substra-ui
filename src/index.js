@@ -14,6 +14,7 @@ export {
 } from './components/tabs';
 export {PanelWrapper, PanelTop, PanelContent} from './components/panel';
 export TwoPanelLayout from './components/twoPanelLayout';
+export Select from './components/select';
 
 export {
     alertWrapper,
