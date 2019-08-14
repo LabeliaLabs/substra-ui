@@ -259,7 +259,7 @@ class SearchBar extends Component {
         return (
             <InputWrapper>
                 <Downshift
-                    {/* ids need to be explicitely set to avoid SSR issue */}
+                    /* ids need to be explicitly set to avoid SSR issue */
                     id="searchbar-autocomplete"
                     labelId="searchbar-autocomplete-label"
                     inputId="searchbar-autocomplete-input"
