@@ -5288,7 +5288,7 @@ exports[`Storyshots SearchBar default 1`] = `
     <div
       aria-expanded={false}
       aria-haspopup="listbox"
-      aria-labelledby="downshift-0-label"
+      aria-labelledby="searchbar-autocomplete-label"
       aria-owns={null}
       className="emotion-3"
       role="combobox"
@@ -5304,7 +5304,7 @@ exports[`Storyshots SearchBar default 1`] = `
             aria-activedescendant={null}
             aria-autocomplete="list"
             aria-controls={null}
-            aria-labelledby="downshift-0-label"
+            aria-labelledby="searchbar-autocomplete-label"
             className="emotion-2"
             disabled={false}
             margin="none"
@@ -5322,7 +5322,7 @@ exports[`Storyshots SearchBar default 1`] = `
                 autoFocus={false}
                 className="emotion-0"
                 disabled={false}
-                id="downshift-0-input"
+                id="searchbar-autocomplete-input"
                 name=""
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5518,7 +5518,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
     <div
       aria-expanded={false}
       aria-haspopup="listbox"
-      aria-labelledby="downshift-1-label"
+      aria-labelledby="searchbar-autocomplete-label"
       aria-owns={null}
       className="emotion-3"
       role="combobox"
@@ -5534,7 +5534,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
             aria-activedescendant={null}
             aria-autocomplete="list"
             aria-controls={null}
-            aria-labelledby="downshift-1-label"
+            aria-labelledby="searchbar-autocomplete-label"
             className="emotion-2"
             disabled={false}
             margin="none"
@@ -5552,7 +5552,7 @@ exports[`Storyshots SearchBar withMuiTheme 1`] = `
                 autoFocus={false}
                 className="emotion-0"
                 disabled={false}
-                id="downshift-1-input"
+                id="searchbar-autocomplete-input"
                 name=""
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -5939,6 +5939,18 @@ exports[`Storyshots TwoPanelsLayout two panels 1`] = `
   border-left: 1px solid #e7e8e8;
 }
 
+.emotion-2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
 .emotion-3 {
   margin: 0 40px 20px 40px;
   background-color: #ffffff;
@@ -5966,18 +5978,6 @@ exports[`Storyshots TwoPanelsLayout two panels 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-.emotion-2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6040,6 +6040,52 @@ exports[`Storyshots TwoPanelsLayout two panels with proper style 1`] = `
   border-left: 1px solid #e7e8e8;
 }
 
+.emotion-8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.emotion-9 {
+  margin: 0 40px 20px 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e8e8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.emotion-3 {
+  width: 40%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
 .emotion-2 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -6087,52 +6133,6 @@ exports[`Storyshots TwoPanelsLayout two panels with proper style 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.emotion-9 {
-  margin: 0 40px 20px 40px;
-  background-color: #ffffff;
-  border: 1px solid #e7e8e8;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  overflow: hidden;
-}
-
-.emotion-3 {
-  width: 40%;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-.emotion-8 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
 }
 
 <div

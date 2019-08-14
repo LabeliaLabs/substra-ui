@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Paper, withStyles} from '@material-ui/core';
 import classNames from 'classnames';
 
-export const styles = (theme) => {
+export const styles = theme => {
     const backgroundColor = theme.palette.background.default;
 
     return {

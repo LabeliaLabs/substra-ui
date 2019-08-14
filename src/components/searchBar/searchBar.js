@@ -67,7 +67,7 @@ class SearchBar extends Component {
 
             newSelectedItem = groups.reduce((p, group) => {
                 // create related chips
-                const chips = group.split(',').map((o) => {
+                const chips = group.split(',').map(o => {
                     const el = decodeUriComponent(o).split(':');
 
                     return {
@@ -102,7 +102,7 @@ class SearchBar extends Component {
         }
     }
 
-    handleKeyDown = (event) => {
+    handleKeyDown = event => {
         const {setState, inputValue, selectedItem} = this.props;
 
         if (selectedItem.length && !inputValue.length && keycode(event) === 'backspace') {
@@ -122,7 +122,7 @@ class SearchBar extends Component {
         }
     };
 
-    handleInputChange = (event) => {
+    handleInputChange = event => {
         const {setState} = this.props;
 
         setState({
@@ -131,7 +131,7 @@ class SearchBar extends Component {
         });
     };
 
-    handleChange = (item) => {
+    handleChange = item => {
         const {
             parentSuggestions, isParent, selectedItem,
             setState,
@@ -231,7 +231,7 @@ class SearchBar extends Component {
         }, 0);
     };
 
-    searchInput = (props) => {
+    searchInput = props => {
         const {suggestions, placeholder} = this.props;
 
         // due to ugly render props philosophy of Downshift, we have to extract the declaration in a function...
@@ -259,7 +259,7 @@ class SearchBar extends Component {
         return (
             <InputWrapper>
                 <Downshift
-                    {/* ids need to be explicitely set to avoid SSR issue */}
+                    /* ids need to be explicitly set to avoid SSR issue */
                     id="searchbar-autocomplete"
                     labelId="searchbar-autocomplete-label"
                     inputId="searchbar-autocomplete-input"

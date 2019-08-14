@@ -51,11 +51,8 @@ class TwoPanelLayout extends Component {
         this.contentRef = React.createRef();
     }
 
-    componentWillMount() {
-        this.updateDimensions();
-    }
-
     componentDidMount() {
+        this.updateDimensions();
         window.addEventListener('resize', this.updateDimensions);
     }
 
@@ -72,7 +69,7 @@ class TwoPanelLayout extends Component {
         }
     };
 
-    move = (e) => {
+    move = e => {
         if (this.state.hold) {
             e.persist();
 
@@ -159,8 +156,7 @@ class TwoPanelLayout extends Component {
                             {rightPanelContent}
                         </div>
                     </Fragment>
-                )
-                }
+                )}
             </div>
         );
     }

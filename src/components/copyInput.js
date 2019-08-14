@@ -51,12 +51,13 @@ const Prompt = () => <div className={prompt}>$</div>;
 const DefaultSuccessIcon = props => <Check color={tealish} {...props} />;
 
 class CopyInput extends Component {
+    state = {
+        clicked: false,
+    };
+
     constructor(props) {
         super(props);
         this.inputRef = React.createRef();
-        this.state = {
-            clicked: false,
-        };
     }
 
     componentWillUnmount() {
