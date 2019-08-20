@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import {css} from 'emotion';
 import PropTypes from '../utils/propTypes';
 import {ice} from '../variables/colors';
 
-export const RoundButton = styled.button`
+const roundButton = css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,22 @@ export const RoundButton = styled.button`
         transition: background-color 200ms ease-out;
     }
 `;
+
+export const RoundButton = ({className, ...props}) => (
+    <button
+        type="button"
+        className={css`${roundButton} ${className}`}
+        {...props}
+    />
+);
+
+RoundButton.propTypes = {
+    className: PropTypes.string,
+};
+
+RoundButton.defaultProps = {
+    className: '',
+};
 
 export const IconButton = ({Icon, iconSize, ...props}) => (
     <RoundButton {...props}>
