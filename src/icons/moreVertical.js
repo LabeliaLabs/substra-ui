@@ -14,9 +14,9 @@ const MoreVertical = ({
                            {...props}
                        >
                            <g fill={color} fillRule="evenodd">
-                               <circle cx="11.8" cy="4" r="2.1" />
-                               <circle cx="11.8" cy="12.5" r="2.1" />
-                               <circle cx="11.8" cy="21" r="2.1" />
+                               <circle cx="12" cy="5" r="2" />
+                               <circle cx="12" cy="13" r="2" />
+                               <circle cx="12" cy="21" r="2" />
                            </g>
                        </svg>
 );
