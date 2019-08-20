@@ -140,6 +140,10 @@ class SearchBar extends Component {
     };
 
     handleChange = item => {
+        if (!item) {
+            return;
+        }
+
         const {
             parentSuggestions, isParent, selectedItem,
             setState,
