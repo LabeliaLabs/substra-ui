@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const Book = ({
                   className, width, height, color, ...props
@@ -24,7 +25,7 @@ Book.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
 };
 
 Book.propTypes = {

@@ -1,0 +1,68 @@
+import React from 'react';
+import styled from '@emotion/styled';
+import {spacingSmall} from '../variables/spacing';
+import PropTypes from '../utils/propTypes';
+import {fontLarge} from '../variables/font';
+import {darkSkyBlue} from '../variables/colors';
+
+export const ChipWrapper = styled('span')`
+    background-color: #E0E0E0;
+    border-radius: 30px;
+    color: white;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 3px 3px;
+`;
+
+export const ChipTitle = styled('div')`
+    color: black;
+    margin: auto;
+    margin-left: ${spacingSmall};
+    font-size: ${fontLarge};
+`;
+
+export const ChipActions = styled('div')`
+    font-size: ${fontLarge};
+`;
+
+export const ChipButtonStyle = styled.button`
+    display: inline-flex;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    padding: 0;
+    border: 1px;
+    background-color: darkgray;
+    cursor: pointer;
+    outline: none;
+    margin: 6px 6px; // define the internal margin of the chip
+    
+    &:hover {
+        background-color: gray;
+        transition: background-color 200ms ease-out;
+    }
+    &:focus {
+        box-shadow: 0 0 3pt 3pt ${darkSkyBlue};
+    }
+`;
+
+export const ChipButton = ({
+Icon, iconSize, iconColor, ...props
+}) => (
+    <ChipButtonStyle {...props}>
+        <Icon width={iconSize} height={iconSize} color={iconColor} />
+    </ChipButtonStyle>
+);
+
+
+ChipButton.propTypes = {
+    Icon: PropTypes.component.isRequired,
+    iconSize: PropTypes.number,
+    iconColor: PropTypes.string,
+};
+
+ChipButton.defaultProps = {
+    iconSize: 15,
+    iconColor: '#E0E0E0',
+};

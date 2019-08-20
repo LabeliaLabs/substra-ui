@@ -1,77 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Paper, withStyles} from '@material-ui/core';
-import classNames from 'classnames';
+import {css} from 'emotion';
+import {white} from '../../variables/colors';
+import {fontNormal} from '../../variables/font';
 
-export const styles = theme => {
-    const backgroundColor = theme.palette.background.default;
+const paper = css`
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6px 24px;
+    min-width: 288px;
+    max-width: 568px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 1px #bdbdbd;
+    background-color: ${white};
+`;
 
-    return {
-        /* Styles applied to the root element. */
-        root: {
-            color: theme.palette.getContrastText(backgroundColor),
-            backgroundColor,
-            display: 'flex',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            padding: '6px 24px',
-            [theme.breakpoints.up('md')]: {
-                minWidth: 288,
-                maxWidth: 568,
-                borderRadius: theme.shape.borderRadius,
-            },
-            [theme.breakpoints.down('sm')]: {
-                flexGrow: 1,
-            },
-        },
-        /* Styles applied to the message wrapper element. */
-        message: {
-            padding: '8px 0',
-        },
-        /* Styles applied to the action wrapper element if `action` is provided. */
-        action: {
-            display: 'flex',
-            alignItems: 'center',
-            marginLeft: 'auto',
-            paddingLeft: 24,
-            marginRight: -8,
-        },
-    };
-};
+const messagePadding = css`
+    padding: 8px 0;
+    font-size: ${fontNormal};
+    line-height: 16px;
+`;
 
-function SnackbarMain(props) {
+function SnackbarContent(props) {
     const {
-        classes,
         message,
         className,
         ...other
     } = props;
     return (
-        <Paper
-            role="alertdialog"
-            square
-            elevation={6}
-            className={classNames(classes.root, className)}
+        <div
+            className={`${className} ${paper}`}
             {...other}
         >
-            <div className={classes.message}>
+            <div className={messagePadding}>
                 {message}
             </div>
-        </Paper>
+        </div>
     );
 }
 
-SnackbarMain.propTypes = {
+SnackbarContent.propTypes = {
     /**
-     * Override or extend the styles applied to the component.
-     * See [CSS API](#css-api) below for more details.
-     */
-    classes: PropTypes.shape({
-        root: PropTypes.string,
-        message: PropTypes.string,
-    }).isRequired,
-    /**
-     * @ignore
+     * The CSS class name of the wrapper element.
      */
     className: PropTypes.string,
     /**
@@ -81,10 +52,10 @@ SnackbarMain.propTypes = {
     key: PropTypes.string,
 };
 
-SnackbarMain.defaultProps = {
+SnackbarContent.defaultProps = {
     className: '',
     message: null,
     key: '',
 };
 
-export default withStyles(styles, {name: 'MuiSnackbarContent'})(SnackbarMain);
+export default SnackbarContent;

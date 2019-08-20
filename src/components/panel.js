@@ -24,4 +24,6 @@ export const PanelTop = styled('div')`
 export const PanelContent = styled('div')`
     overflow: auto;
     flex-grow: 1;
+    line-height: 16px;
+    margin: 0px 0px 1px 0px;
 `;

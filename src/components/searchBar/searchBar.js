@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import keycode from 'keycode';
-import Downshift from 'downshift';
 import uuidv4 from 'uuid/v4';
 import decodeUriComponent from 'decode-uri-component';
 import {isEqual, noop} from 'lodash';
 import styled from '@emotion/styled';
+import Downshift from 'downshift';
 import {css} from 'emotion';
 
-import ClearIcon from '@material-ui/icons/Clear';
+import ClearIcon from '../../icons/clear';
 import PropTypes from '../../utils/propTypes';
 
 import {IconButton} from '../iconButton';
 import SearchInput from './overrides/searchInput';
 
-import {ice, white} from '../../variables/colors';
+import {ice, darkSkyBlue, white} from '../../variables/colors';
 
 const InputWrapper = styled('div')`
     border: 1px solid ${ice};
@@ -23,16 +23,24 @@ const InputWrapper = styled('div')`
     justify-content: space-between;
     min-height: 40px;
     border-radius: 20px;
-    padding: 3px;
+    padding: 1px;
+    position: static;
 `;
 
 const searchInputWrapper = css`
     flex-grow: 1;
+    margin-left: 2px;
 `;
 
 const clearButton = css`
     border: none;
     z-index: 1;
+    outline: none;
+    margin-right: 2px;
+    
+    &:focus {
+        box-shadow: 0 0 3pt 3pt ${darkSkyBlue};
+    }
 `;
 
 // use getRootProps https://github.com/paypal/downshift#getrootprops
@@ -92,13 +100,13 @@ class SearchBar extends Component {
                     logic, // will add an extra logic el on the last iteration
                 ];
             }, []).slice(0, -1); // remove last added `-OR-`
-        }
 
-        if (!isEqual(selectedItem, newSelectedItem)) {
-            setState({
-                selectedItem: newSelectedItem,
-                toUpdate: false,
-            });
+            if (!isEqual(selectedItem, newSelectedItem)) {
+                setState({
+                    selectedItem: newSelectedItem,
+                    toUpdate: false,
+                });
+            }
         }
     }
 
@@ -227,7 +235,9 @@ class SearchBar extends Component {
         setTimeout(() => {
             // should appear after blur of input (need to call setTimeout as downshift does)
             // stay on focus
-            this.input.current.focus();
+            if (this.input.current) {
+                this.input.current.focus();
+            }
         }, 0);
     };
 
@@ -274,8 +284,9 @@ class SearchBar extends Component {
                 </Downshift>
 
                 <IconButton
+                    data-testid="button"
                     Icon={ClearIcon}
-                    iconSize={18}
+                    iconSize={24}
                     onClick={this.clear}
                     className={clearButton}
                 />

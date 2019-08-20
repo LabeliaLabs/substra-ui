@@ -3,14 +3,12 @@ import styled from '@emotion/styled';
 import {css} from 'emotion';
 import {noop} from 'lodash';
 
-import Popper from '@material-ui/core/Popper';
-import Paper from '@material-ui/core/Paper';
-import MenuItem from '@material-ui/core/MenuItem';
 import PropTypes from '../../../utils/propTypes';
 
 import {match, parse} from './utils/autosuggest-highlight';
 
-import {theme} from '../../../utils/muiTheme';
+import {ice} from '../../../variables/colors';
+import {fontNormal} from '../../../variables/font';
 
 const Logic = styled('span')`
     color: #1935a7;
@@ -18,49 +16,10 @@ const Logic = styled('span')`
     font-weight: bold;
 `;
 
-// Supports determination of isControlled().
-// Controlled input accepts its current value as a prop.
-//
-// @see https://facebook.github.io/react/docs/forms.html#controlled-components
-// @param value
-// @returns {boolean} true if string (including '') or number (including zero)
-export function hasValue(value) {
-    return value != null && !(Array.isArray(value) && value.length === 0);
-}
-
-// Determine if field is empty or filled.
-// Response determines if label is presented above field or as placeholder.
-//
-// @param obj
-// @param SSR
-// @returns {boolean} False when not present or empty string.
-//                    True when any number or string with length.
-export function isFilled(obj, SSR = false) {
-    return (
-        obj
-        && ((hasValue(obj.value) && obj.value !== '')
-            || (SSR && hasValue(obj.defaultValue) && obj.defaultValue !== ''))
-    );
-}
-
-// Determine if an Input is adorned on start.
-// It's corresponding to the left with LTR.
-//
-// @param obj
-// @returns {boolean} False when no adornments.
-//                    True when adorned at the start.
-export function isAdornedStart(obj) {
-    return obj.startAdornment;
-}
-
-const light = theme.palette.type === 'light';
 const placeholder = `
-        color: 'currentColor';
-        opacity: ${light ? 0.42 : 0.5};
-        transition: ${theme.transitions.create('opacity', {
-    duration: theme.transitions.duration.shorter,
-})};
-    `;
+    color: darkgray;
+    opacity: 0.7;
+`;
 
 const styles = {
     /* Styles applied to the root element. */
@@ -69,12 +28,11 @@ const styles = {
         display: block;
         position: relative;
         cursor: text;
-        font-family: ${theme.typography.fontFamily};
-        color: ${light ? 'rgba(0, 0, 0, 0.87)' : theme.palette.common.white};
-        font-size: ${theme.typography.pxToRem(16)};
+        font-family: 'Lato';
+        font-size: ${fontNormal};
         line-height: 1.1875em; // Reset (19px), match the native input line-height
         ${disabled ? `
-            color: ${theme.palette.text.disabled};
+            color: ${ice};
         ` : ''}
     `,
     /* Styles applied to the root element if `fullWidth={true}`. */
@@ -122,7 +80,7 @@ const styles = {
     `,
     /* Styles applied to the `input` element if `margin="dense"`. */
     inputMarginDense: css`
-        padding-top: ${4 - 1}px;
+        padding-top: 3px;
     `,
     /* Styles applied to the `input` element if `type` is not "text"`. */
     inputType: css`
@@ -136,186 +94,60 @@ const styles = {
         -webkit-appearance: textfield;
     `,
     paper: css`
-        //max-width: 200px;
+        color: black;
+        background-color: white;
+        box-shadow: 0px 1px 2px 0px darkgray;
     `,
-    popper: css`
+    popperOpen: css`
         z-index: 2;
+        position: absolute;
+    `,
+    popperClose: css`
+        display: none;
     `,
     highligthed: css`
         font-weight: bold;
     `,
 };
 
-function formControlState(props, context) {
-    let disabled = props.disabled;
-    let error = props.error;
-    let margin = props.margin;
-    let required = props.required;
-
-    if (context && context.muiFormControl) {
-        if (typeof disabled === 'undefined') {
-            disabled = context.muiFormControl.disabled;
-        }
-        if (typeof error === 'undefined') {
-            error = context.muiFormControl.error;
-        }
-        if (typeof margin === 'undefined') {
-            margin = context.muiFormControl.margin;
-        }
-        if (typeof required === 'undefined') {
-            required = context.muiFormControl.required;
-        }
-    }
-
-    return {
-        disabled,
-        error,
-        margin,
-        required,
+const menuItemDefaultCss = `
+    line-height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    &:hover {
+        background-color: #dfdfdf;
     };
-}
+`;
 
 class Input extends Component {
-    isControlled = this.props.value != null;
-
     input = null; // Holds the input reference
-
-    constructor(props, context) {
-        super(props, context);
-
-        if (this.isControlled) {
-            this.checkDirty(props);
-        }
-
-        const componentWillReceiveProps = (nextProps, nextContext) => {
-            // The blur won't fire when the disabled state is set on a focused input.
-            // We need to book keep the focused state manually.
-            if (
-                !formControlState(this.props, this.context).disabled
-                && formControlState(nextProps, nextContext).disabled
-            ) {
-                this.setState({
-                    focused: false,
-                });
-            }
-        };
-
-        const componentWillUpdate = (nextProps, nextState, nextContext) => {
-            // Book keep the focused state.
-            if (
-                !formControlState(this.props, this.context).disabled
-                && formControlState(nextProps, nextContext).disabled
-            ) {
-                const {muiFormControl} = this.context;
-                if (muiFormControl && muiFormControl.onBlur) {
-                    muiFormControl.onBlur();
-                }
-            }
-        };
-
-        // Support for react >= 16.3.0 && < 17.0.0
-        /* istanbul ignore else */
-        if (React.createContext) {
-            this.UNSAFE_componentWillReceiveProps = componentWillReceiveProps;
-            this.UNSAFE_componentWillUpdate = componentWillUpdate;
-        }
-        else {
-            this.componentWillReceiveProps = componentWillReceiveProps;
-            this.componentWillUpdate = componentWillUpdate;
-        }
-    }
-
-    state = {
-        focused: false,
-    };
-
-    getChildContext() {
-        // We are consuming the parent muiFormControl context.
-        // We don't want a child to consume it a second time.
-        return {
-            muiFormControl: null,
-        };
-    }
-
-    componentDidMount() {
-        if (!this.isControlled) {
-            this.checkDirty(this.inputRef);
-        }
-    }
-
-    componentDidUpdate() {
-        if (this.isControlled) {
-            this.checkDirty(this.props);
-        } // else performed in the onChange
-    }
 
     handleFocus = event => {
         // Fix a bug with IE11 where the focus/blur events are triggered
         // while the input is disabled.
-        if (formControlState(this.props, this.context).disabled) {
-            event.stopPropagation();
-            return;
-        }
 
-        this.setState({focused: true});
         if (this.props.onFocus) {
             this.props.onFocus(event);
-        }
-
-        const {muiFormControl} = this.context;
-        if (muiFormControl && muiFormControl.onFocus) {
-            muiFormControl.onFocus(event);
         }
     };
 
     handleBlur = event => {
-        this.setState({focused: false});
         if (this.props.onBlur) {
             this.props.onBlur(event);
-        }
-
-        const {muiFormControl} = this.context;
-        if (muiFormControl && muiFormControl.onBlur) {
-            muiFormControl.onBlur(event);
         }
     };
 
     handleChange = event => {
-        if (!this.isControlled) {
-            this.checkDirty(this.inputRef);
-        }
-
         // Perform in the willUpdate
         if (this.props.onChange) {
             this.props.onChange(event);
         }
     };
 
-    handleRefInputWrapper = ref => {
-        this.inputWrapperRef = ref;
-
-        let refProp;
-
-        if (this.props.inputWrapperRef) {
-            refProp = this.props.inputWrapperRef;
-        }
-        else if (this.props.inputWrapperProps && this.props.inputWrapperProps.ref) {
-            refProp = this.props.inputWrapperProps.ref;
-        }
-
-        if (refProp) {
-            if (typeof refProp === 'function') {
-                refProp(ref);
-            }
-            else {
-                refProp.current = ref;
-            }
-        }
-    };
-
     handleRefInput = ref => {
         this.inputRef = ref;
-
         let refProp;
 
         if (this.props.inputRef) {
@@ -335,59 +167,31 @@ class Input extends Component {
         }
     };
 
-    checkDirty(obj) {
-        const {muiFormControl} = this.context;
-
-        if (isFilled(obj)) {
-            if (muiFormControl && muiFormControl.onFilled) {
-                muiFormControl.onFilled();
-            }
-            if (this.props.onFilled) {
-                this.props.onFilled();
-            }
-            return;
-        }
-
-        if (muiFormControl && muiFormControl.onEmpty) {
-            muiFormControl.onEmpty();
-        }
-        if (this.props.onEmpty) {
-            this.props.onEmpty();
-        }
-    }
-
-    applyReactStyle = data => data;
-
-    modifiers = {
-        applyStyle: {fn: this.applyReactStyle}, // force positioning
-    };
-
     menuItem = isLogic => isLogic ? css`
-            border-bottom: 1px solid #dcdcdc;
-            padding: 4px 0;
-        ` : '';
+            ${menuItemDefaultCss};
+            text-align: center;
+        ` : css`${menuItemDefaultCss}`
+    ;
+
+    menuItemHighlighted = isLogic => isLogic ? css`
+            ${menuItemDefaultCss}
+            text-align: center;
+            background-color: #dfdfdf;
+        ` : css`
+            ${menuItemDefaultCss};
+            background-color: #dfdfdf;
+        `;
 
     render() {
         const {
-            autoComplete,
-            autoFocus,
             className: classNameProp, // eslint-disable-line no-unused-vars
             classes,
-            defaultValue,
-            disableUnderline,
             endAdornment,
-            fullWidth,
-            id,
             inputComponent,
             inputProps: {className: inputPropsClassName, ...inputPropsProp} = {}, // eslint-disable-line no-unused-vars
-            inputWrapperProps: {className: inputWrapperPropsClassName, ...inputWrapperPropsProp} = {}, // eslint-disable-line no-unused-vars
-            name,
             onKeyDown,
-            onKeyUp,
             placeholder,
-            readOnly,
             startAdornment,
-            type,
             value,
             isOpen,
             getItemProps,
@@ -396,28 +200,14 @@ class Input extends Component {
             suggestions,
             inputRef, // eslint-disable-line no-unused-vars
             inputWrapperRef, // eslint-disable-line no-unused-vars
-            error: errorProp, // eslint-disable-line no-unused-vars
-            onEmpty, // eslint-disable-line no-unused-vars
-            onFilled, // eslint-disable-line no-unused-vars
             ...other
         } = this.props;
 
-        const {muiFormControl} = this.context;
-        const {
-            disabled, error, margin, required,
-        } = formControlState(this.props, this.context);
-
         const className = css`
-            ${styles.root(disabled)};
-            ${fullWidth ? styles.fullWidth : ''};
-            ${muiFormControl ? styles.formControl : ''};
-            ${!disableUnderline ? styles.underline(disabled, this.state.focused, error) : ''};            
+            ${styles.formControl};           
         `;
         const inputClassName = css`
-            ${styles.input(disabled)};
-            ${type !== 'text' ? styles.inputType : ''};
-            ${type === 'search' ? styles.inputTypeSearch : ''};
-            ${margin === 'dense' ? styles.inputMarginDense : ''};
+            ${styles.input()};
             ${classes.input}
         `;
 
@@ -426,19 +216,13 @@ class Input extends Component {
             ${classes.inputWrapper}
         `;
 
-        const inputWrapperProps = {
-            ...inputWrapperPropsProp,
-            ref: this.handleRefInputWrapper,
-        };
-
-        let InputComponent = 'input';
+        const InputComponent = 'input';
         let inputProps = {
             ...inputPropsProp,
             ref: this.handleRefInput,
         };
 
         if (inputComponent) {
-            InputComponent = inputComponent;
             inputProps = {
                 // Rename ref to inputRef as we don't know the
                 // provided `inputComponent` structure.
@@ -451,37 +235,23 @@ class Input extends Component {
         return (
             <div className={className} {...other}>
                 {startAdornment}
-                <div className={inputwrapperClassName} {...inputWrapperProps}>
+                <div className={inputwrapperClassName}>
                     <InputComponent
-                        aria-invalid={error}
-                        autoComplete={autoComplete}
-                        autoFocus={autoFocus}
+                        data-testid="searchbar"
                         className={inputClassName}
-                        defaultValue={defaultValue}
-                        disabled={disabled}
-                        id={id}
-                        name={name}
                         onBlur={this.handleBlur}
                         onChange={this.handleChange}
                         onFocus={this.handleFocus}
                         onKeyDown={onKeyDown}
-                        onKeyUp={onKeyUp}
                         placeholder={placeholder}
-                        readOnly={readOnly}
-                        required={required}
-                        type={type}
                         value={value}
                         {...inputProps}
                     />
-                    <Popper
-                        open={isOpen}
-                        className={styles.popper}
-                        anchorEl={this.inputRef}
-                        container={this.inputWrapperRef}
-                        placement="bottom-start"
-                        modifiers={this.modifiers}
+                    <div
+                        data-testid="popper"
+                        className={isOpen ? styles.popperOpen : styles.popperClose}
                     >
-                        <Paper square className={styles.paper}>
+                        <div className={styles.paper}>
                             {suggestions(inputValue).map((suggestion, index) => {
                                 const isHighlighted = highlightedIndex === index;
                                 const itemProps = getItemProps({item: suggestion});
@@ -489,12 +259,10 @@ class Input extends Component {
                                 const highlighted = parse(suggestion.label, match(suggestion.label, inputValue, {insideWords: true}));
 
                                 return (
-                                    <MenuItem
+                                    <div
                                         {...itemProps}
                                         key={suggestion.uuid || suggestion.label}
-                                        selected={isHighlighted}
-                                        component="div"
-                                        className={this.menuItem(suggestion.isLogic)}
+                                        className={isHighlighted ? this.menuItemHighlighted(suggestion.isLogic) : this.menuItem(suggestion.isLogic)}
                                     >
                                         {
                                             suggestion.isLogic
@@ -502,21 +270,21 @@ class Input extends Component {
                                                 <Logic>
                                                     {suggestion.label}
                                                 </Logic>
-)
+                                            )
 
                                             : highlighted.map((o, i) => o.highlight
                                                 ? (
                                                     <span key={i} className={styles.highligthed}>
                                                         {decodeURIComponent(o.text)}
                                                     </span>
-)
+                                                )
                                                 : decodeURIComponent(o.text))
                                         }
-                                    </MenuItem>
+                                    </div>
                                 );
                             })}
-                        </Paper>
-                    </Popper>
+                        </div>
+                    </div>
                 </div>
                 {endAdornment}
             </div>
@@ -525,18 +293,6 @@ class Input extends Component {
 }
 
 Input.propTypes = {
-    /**
-     * This property helps users to fill forms faster, especially on mobile devices.
-     * The name can be confusing, as it's more like an autofill.
-     * You can learn more about it here:
-     * https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill
-     */
-    autoComplete: PropTypes.string,
-    /**
-     * If `
-     true`, the input will be focused during the first mount.
-     */
-    autoFocus: PropTypes.bool,
     /**
      * Override or extend the styles applied to the component.
      * See [CSS API](#css-api) below for more details.
@@ -550,41 +306,10 @@ Input.propTypes = {
      */
     className: PropTypes.string,
     /**
-     * The default input value, useful when not controlling the component.
-     */
-    // eslint-disable-next-line react/require-default-props
-    defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    /**
-     * If `
-     true`, the input will be disabled.
-     */
-    disabled: PropTypes.bool,
-    /**
-     * If `
-     true`, the input will not have an underline.
-     */
-    disableUnderline: PropTypes.bool,
-    /**
      * End `
      InputAdornment` for this component.
      */
     endAdornment: PropTypes.node,
-    /**
-     * If `
-     true`, the input will indicate an error. This is normally obtained via context from
-     * FormControl.
-     */
-    error: PropTypes.bool,
-    /**
-     * If `
-     true`, the input will take up the full width of its container.
-     */
-    fullWidth: PropTypes.bool,
-    /**
-     * The id of the `
-     input` element.
-     */
-    id: PropTypes.string,
     /**
      * The component used for the native input.
      * Either a string to use a DOM element or a component.
@@ -595,13 +320,6 @@ Input.propTypes = {
      input` element.
      */
     inputProps: PropTypes.shape({
-        ref: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({})]),
-    }),
-    /**
-     * Attributes applied to the wrapper of the `
-     input` element.
-     */
-    inputWrapperProps: PropTypes.shape({
         ref: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({})]),
     }),
     /**
@@ -619,11 +337,6 @@ Input.propTypes = {
      */
     margin: PropTypes.oneOf(['dense', 'none']),
     /**
-     * Name attribute of the `
-     input` element.
-     */
-    name: PropTypes.string,
-    /**
      * @ignore
      */
     onBlur: PropTypes.func,
@@ -638,46 +351,20 @@ Input.propTypes = {
     /**
      * @ignore
      */
-    onEmpty: PropTypes.func,
-    /**
-     * @ignore
-     */
-    onFilled: PropTypes.func,
-    /**
-     * @ignore
-     */
     onFocus: PropTypes.func,
     /**
      * @ignore
      */
     onKeyDown: PropTypes.func,
     /**
-     * @ignore
-     */
-    onKeyUp: PropTypes.func,
-    /**
      * The short hint displayed in the input before the user enters a value.
      */
     placeholder: PropTypes.string,
-    /**
-     * It prevents the user from changing the value of the field
-     * (not from interacting with the field).
-     */
-    readOnly: PropTypes.bool,
-    /**
-     * If `
-     true`, the input will be required.
-     */
-    required: PropTypes.bool,
     /**
      * Start `
      InputAdornment` for this component.
      */
     startAdornment: PropTypes.node,
-    /**
-     * Type of the input element. It should be a valid HTML5 input type.
-     */
-    type: PropTypes.string,
     /**
      * The input value, required for a controlled component.
      */
@@ -709,52 +396,25 @@ Input.propTypes = {
     suggestions: PropTypes.func,
 };
 
-Input.muiName = 'Input';
-
 Input.defaultProps = {
-    disableUnderline: false,
-    fullWidth: false,
-    type: 'text',
-
-    autoComplete: 'off',
-    autoFocus: false,
     className: '',
-    disabled: false,
     endAdornment: '',
-    error: false,
-    id: '',
     inputComponent: '',
     inputProps: {},
-    inputWrapperProps: {},
     inputRef: noop,
     inputWrapperRef: noop,
     margin: 'none',
-    name: '',
     onBlur: noop,
     onChange: noop,
-    onEmpty: noop,
-    onFilled: noop,
     onFocus: noop,
     onKeyDown: noop,
-    onKeyUp: noop,
     placeholder: '',
-    readOnly: false,
-    required: false,
     startAdornment: '',
-
     isOpen: false,
     getItemProps: noop,
     inputValue: '',
     highlightedIndex: 0,
     suggestions: noop,
-};
-
-Input.contextTypes = {
-    muiFormControl: PropTypes.shape({}),
-};
-
-Input.childContextTypes = {
-    muiFormControl: PropTypes.shape({}),
 };
 
 export default Input;

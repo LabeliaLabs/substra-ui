@@ -8,6 +8,7 @@ import {
     Algo,
     Book,
     Check,
+    ClearIcon,
     Clipboard,
     Collapse,
     CopyDrop,
@@ -27,7 +28,6 @@ import {
 } from './index';
 import {slate, tealish} from '../variables/colors';
 import {spacingSmall} from '../variables/spacing';
-
 
 const Dl = styled.dl`
     display: grid;
@@ -76,6 +76,12 @@ storiesOf('Icons', module)
                     </Dt>
                     <Dd>
                         Check
+                    </Dd>
+                    <Dt>
+                        <ClearIcon color={colorKnob} />
+                    </Dt>
+                    <Dd>
+                        ClearIcon
                     </Dd>
                     <Dt>
                         <Clipboard color={colorKnob} />

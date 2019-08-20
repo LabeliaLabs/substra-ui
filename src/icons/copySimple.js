@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const CopySimple = ({
                        className, width, height, color, ...props
@@ -33,7 +34,7 @@ CopySimple.defaultProps = {
     className: '',
     width: 28,
     height: 29,
-    color: '#4B6073',
+    color: slate,
 };
 
 CopySimple.propTypes = {
