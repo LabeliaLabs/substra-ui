@@ -31,7 +31,7 @@ const styles = placeholder => ({
         flex-grow: 1; 
     `,
     input: css`
-        ${placeholder ? '' : 'width: 400px'}; // needed to display the entire placeholder
+        ${placeholder ? '' : 'width: 400px;'} // needed to display the entire placeholder
         font-size: ${fontLarge};
         height: 30px;
     `,

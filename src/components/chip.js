@@ -4,9 +4,12 @@ import {spacingSmall} from '../variables/spacing';
 import PropTypes from '../utils/propTypes';
 import {fontLarge} from '../variables/font';
 import {darkSkyBlue} from '../variables/colors';
+import {ClearIcon} from '../icons';
+
+export const chipBackgroundColor = '#E0E0E0';
 
 export const ChipWrapper = styled('span')`
-    background-color: #E0E0E0;
+    background-color: ${chipBackgroundColor};
     border-radius: 30px;
     color: white;
     display: inline-flex;
@@ -46,23 +49,23 @@ export const ChipButtonStyle = styled.button`
         box-shadow: 0 0 3pt 3pt ${darkSkyBlue};
     }
 `;
+const DefaultIcon = props => <ClearIcon color={chipBackgroundColor} {...props} />;
 
 export const ChipButton = ({
-Icon, iconSize, iconColor, ...props
+Icon, iconSize, ...props
 }) => (
     <ChipButtonStyle {...props}>
-        <Icon width={iconSize} height={iconSize} color={iconColor} />
+        <Icon width={iconSize} height={iconSize} />
     </ChipButtonStyle>
 );
 
 
 ChipButton.propTypes = {
-    Icon: PropTypes.component.isRequired,
+    Icon: PropTypes.component,
     iconSize: PropTypes.number,
-    iconColor: PropTypes.string,
 };
 
 ChipButton.defaultProps = {
+    Icon: DefaultIcon,
     iconSize: 15,
-    iconColor: '#E0E0E0',
 };
