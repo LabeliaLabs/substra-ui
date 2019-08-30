@@ -140,45 +140,44 @@ class SearchBar extends Component {
     };
 
     handleChange = item => {
-        if (!item) {
-            return;
+        // item may be null when handleChange is triggered by hitting the ESC key
+        if (item) {
+            const {
+                parentSuggestions, isParent, selectedItem,
+                setState,
+            } = this.props;
+
+            let newSelectedItem,
+                toUpdate = false;
+
+            if (!isParent) { // remove precedent parent and add child
+                const prev = selectedItem.pop();
+                newSelectedItem = [...selectedItem, {...prev, child: item.label}];
+                toUpdate = true;
+            }
+            // if is parent, simply add
+            else {
+                newSelectedItem = [
+                    ...selectedItem, {
+                        parent: item.label,
+                        child: '',
+                        uuid: uuidv4(),
+                        isLogic: item.isLogic,
+                    }];
+            }
+
+            // calculate if previous in parent menu
+            const selectedParent = parentSuggestions.map(o => o.label).includes(item.label);
+
+            // set item in redux, and launch related sagas for fetching list if needed
+            setState({
+                isParent: item.isLogic || !selectedParent,
+                inputValue: '',
+                selectedItem: newSelectedItem,
+                item: selectedParent || item.isLogic ? item.label : '',
+                toUpdate,
+            });
         }
-
-        const {
-            parentSuggestions, isParent, selectedItem,
-            setState,
-        } = this.props;
-
-        let newSelectedItem,
-            toUpdate = false;
-
-        if (!isParent) { // remove precedent parent and add child
-            const prev = selectedItem.pop();
-            newSelectedItem = [...selectedItem, {...prev, child: item.label}];
-            toUpdate = true;
-        }
-        // if is parent, simply add
-        else {
-            newSelectedItem = [
-                ...selectedItem, {
-                    parent: item.label,
-                    child: '',
-                    uuid: uuidv4(),
-                    isLogic: item.isLogic,
-                }];
-        }
-
-        // calculate if previous in parent menu
-        const selectedParent = parentSuggestions.map(o => o.label).includes(item.label);
-
-        // set item in redux, and launch related sagas for fetching list if needed
-        setState({
-            isParent: item.isLogic || !selectedParent,
-            inputValue: '',
-            selectedItem: newSelectedItem,
-            item: selectedParent || item.isLogic ? item.label : '',
-            toUpdate,
-        });
     };
 
     handleDelete = item => () => {
