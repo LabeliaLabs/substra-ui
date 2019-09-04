@@ -109,8 +109,3 @@ export const parse = (t, matches) => {
 
     return result;
 };
-
-export default {
-    match,
-    parse,
-};

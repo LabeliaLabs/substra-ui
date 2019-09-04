@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
-const Clipboard = ({
+const MoreVertical = ({
                        className, width, height, color, ...props
                    }) => (
                        <svg
@@ -20,18 +21,18 @@ const Clipboard = ({
                        </svg>
 );
 
-Clipboard.defaultProps = {
+MoreVertical.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
 };
 
-Clipboard.propTypes = {
+MoreVertical.propTypes = {
     className: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
     color: PropTypes.string,
 };
 
-export default Clipboard;
+export default MoreVertical;

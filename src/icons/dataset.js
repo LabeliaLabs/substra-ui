@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const Dataset = ({
                        className, width, height, color, ...props
@@ -25,7 +26,7 @@ Dataset.defaultProps = {
     className: '',
     width: 23,
     height: 25,
-    color: '#4B6073',
+    color: slate,
 };
 
 Dataset.propTypes = {

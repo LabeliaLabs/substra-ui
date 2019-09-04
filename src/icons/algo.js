@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const Algo = ({
                   className, width, height, color, ...props
@@ -37,7 +38,7 @@ Algo.defaultProps = {
     className: '',
     width: 45,
     height: 25,
-    color: '#000',
+    color: slate,
 };
 
 Algo.propTypes = {

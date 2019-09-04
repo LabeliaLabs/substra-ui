@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const Search = ({
                   className, width, height, color, ...props
@@ -26,7 +27,7 @@ Search.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
 };
 
 Search.propTypes = {
