@@ -247,18 +247,6 @@ exports[`Storyshots Chip default 1`] = `
 `;
 
 exports[`Storyshots CodeSample collapsible 1`] = `
-.emotion-2 {
-  margin-left: 5px;
-}
-
-.emotion-0 {
-  padding: 5px 20px;
-}
-
-.emotion-4 {
-  padding: 5px;
-}
-
 .emotion-1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -287,7 +275,44 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   transition: background-color 200ms ease-out;
 }
 
-.emotion-6 {
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.emotion-2:hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
+.emotion-0 {
+  padding: 5px 20px;
+}
+
+.emotion-3 {
+  padding: 5px;
+}
+
+.emotion-5 {
   border: 1px solid #e7e8e8;
   border-radius: 3px;
   display: -webkit-box;
@@ -300,7 +325,7 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   max-height: 150px;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -325,11 +350,11 @@ exports[`Storyshots CodeSample collapsible 1`] = `
   id="app-root"
 >
   <div
-    className=" emotion-6"
+    className=" emotion-5"
     data-testid="wrapper"
   >
     <div
-      className="emotion-5"
+      className="emotion-4"
       onClick={[Function]}
     >
       <div
@@ -338,13 +363,14 @@ exports[`Storyshots CodeSample collapsible 1`] = `
         opener.py
       </div>
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <button
           className="emotion-1"
           data-testid="download"
           onClick={[Function]}
           title="Download opener.py"
+          type="button"
         >
           <svg
             className=""
@@ -378,10 +404,11 @@ exports[`Storyshots CodeSample collapsible 1`] = `
           </svg>
         </button>
         <button
-          className="emotion-2 emotion-1"
+          className="emotion-2"
           data-testid="toggle"
           onClick={[Function]}
           title="Expand"
+          type="button"
         >
           <svg
             className=""
@@ -1890,6 +1917,34 @@ exports[`Storyshots CodeSample collapsible 1`] = `
 `;
 
 exports[`Storyshots CodeSample default 1`] = `
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e7e8e8;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.emotion-1:hover {
+  background-color: #e7e8e8;
+  -webkit-transition: background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
+}
+
 .emotion-4 {
   border: 1px solid #e7e8e8;
   border-radius: 3px;
@@ -1930,34 +1985,6 @@ exports[`Storyshots CodeSample default 1`] = `
   padding: 5px;
 }
 
-.emotion-1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  border: 1px solid #e7e8e8;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.emotion-1:hover {
-  background-color: #e7e8e8;
-  -webkit-transition: background-color 200ms ease-out;
-  transition: background-color 200ms ease-out;
-}
-
 <div
   id="app-root"
 >
@@ -1982,6 +2009,7 @@ exports[`Storyshots CodeSample default 1`] = `
           data-testid="download"
           onClick={[Function]}
           title="Download opener.py"
+          type="button"
         >
           <svg
             className=""
@@ -3502,12 +3530,6 @@ exports[`Storyshots CodeSample default 1`] = `
 `;
 
 exports[`Storyshots CopyInput color override 1`] = `
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .emotion-1 {
   opacity: 1;
 }
@@ -3517,7 +3539,7 @@ exports[`Storyshots CopyInput color override 1`] = `
   opacity: 0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3537,15 +3559,18 @@ exports[`Storyshots CopyInput color override 1`] = `
   padding: 0;
   background: none;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   background-color: #e7e8e8;
   -webkit-transition: background-color 200ms ease-out;
   transition: background-color 200ms ease-out;
 }
 
-.emotion-5 {
+.emotion-4 {
   position: relative;
 }
 
@@ -3568,7 +3593,7 @@ exports[`Storyshots CopyInput color override 1`] = `
   id="app-root"
 >
   <div
-    className="emotion-5"
+    className="emotion-4"
   >
     <input
       className="emotion-0"
@@ -3578,9 +3603,10 @@ exports[`Storyshots CopyInput color override 1`] = `
       value=""
     />
     <button
-      className="emotion-3 emotion-4"
+      className="emotion-3"
       data-testid="button"
       onClick={[Function]}
+      type="button"
     >
       <svg
         className="emotion-1"
@@ -3664,12 +3690,6 @@ exports[`Storyshots CopyInput color override 1`] = `
 `;
 
 exports[`Storyshots CopyInput default 1`] = `
-.emotion-3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .emotion-1 {
   opacity: 1;
 }
@@ -3679,7 +3699,7 @@ exports[`Storyshots CopyInput default 1`] = `
   opacity: 0;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3699,15 +3719,18 @@ exports[`Storyshots CopyInput default 1`] = `
   padding: 0;
   background: none;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   background-color: #e7e8e8;
   -webkit-transition: background-color 200ms ease-out;
   transition: background-color 200ms ease-out;
 }
 
-.emotion-5 {
+.emotion-4 {
   position: relative;
 }
 
@@ -3730,7 +3753,7 @@ exports[`Storyshots CopyInput default 1`] = `
   id="app-root"
 >
   <div
-    className="emotion-5"
+    className="emotion-4"
   >
     <input
       className="emotion-0"
@@ -3740,9 +3763,10 @@ exports[`Storyshots CopyInput default 1`] = `
       value="Lorem ipsum dolor sit amet"
     />
     <button
-      className="emotion-3 emotion-4"
+      className="emotion-3"
       data-testid="button"
       onClick={[Function]}
+      type="button"
     >
       <svg
         className="emotion-1"
@@ -4233,6 +4257,7 @@ exports[`Storyshots IconButton default 1`] = `
 >
   <button
     className="emotion-0"
+    type="button"
   >
     <svg
       className=""
@@ -4317,9 +4342,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={25}
+        height={24}
         viewBox="0 0 50 25"
-        width={45}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -4470,9 +4495,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={22}
+        height={24}
         viewBox="0 0 22 22"
-        width={22}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -4611,9 +4636,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={29}
+        height={24}
         viewBox="0 0 28 29"
-        width={28}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -4688,9 +4713,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={25}
+        height={24}
         viewBox="0 0 23 25"
-        width={23}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -4823,9 +4848,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={22}
+        height={24}
         viewBox="0 0 22 22"
-        width={22}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -4922,7 +4947,7 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={22}
+        height={24}
         viewBox="0 0 24 22"
         width={24}
         xmlns="http://www.w3.org/2000/svg"
@@ -5004,19 +5029,19 @@ exports[`Storyshots Icons default 1`] = `
           fillRule="evenodd"
         >
           <circle
-            cx="11.8"
-            cy="4"
-            r="2.1"
+            cx="12"
+            cy="5"
+            r="2"
           />
           <circle
-            cx="11.8"
-            cy="12.5"
-            r="2.1"
+            cx="12"
+            cy="13"
+            r="2"
           />
           <circle
-            cx="11.8"
+            cx="12"
             cy="21"
-            r="2.1"
+            r="2"
           />
         </g>
       </svg>
@@ -5031,9 +5056,9 @@ exports[`Storyshots Icons default 1`] = `
     >
       <svg
         className=""
-        height={9}
+        height={24}
         viewBox="0 0 8 9"
-        width={8}
+        width={24}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
@@ -5402,8 +5427,6 @@ exports[`Storyshots Panel default 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  line-height: 16px;
-  margin: 0px 0px 1px 0px;
 }
 
 <div
@@ -5638,17 +5661,6 @@ exports[`Storyshots SearchBar default 1`] = `
   margin-left: 2px;
 }
 
-.emotion-8 {
-  border: none;
-  z-index: 1;
-  outline: none;
-  margin-right: 2px;
-}
-
-.emotion-8:focus {
-  box-shadow: 0 0 3pt 3pt #4ba5d2;
-}
-
 .emotion-0 {
   font: inherit;
   color: currentColor;
@@ -5726,7 +5738,7 @@ exports[`Storyshots SearchBar default 1`] = `
   background-color: #dfdfdf;
 }
 
-.emotion-9 {
+.emotion-8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5746,15 +5758,23 @@ exports[`Storyshots SearchBar default 1`] = `
   padding: 0;
   background: none;
   cursor: pointer;
+  border: none;
+  z-index: 1;
+  outline: none;
+  margin-right: 2px;
 }
 
-.emotion-9:hover {
+.emotion-8:hover {
   background-color: #e7e8e8;
   -webkit-transition: background-color 200ms ease-out;
   transition: background-color 200ms ease-out;
 }
 
-.emotion-10 {
+.emotion-8:focus {
+  box-shadow: 0 0 3pt 3pt #4ba5d2;
+}
+
+.emotion-9 {
   border: 1px solid #e7e8e8;
   background-color: #ffffff;
   display: -webkit-box;
@@ -5779,7 +5799,7 @@ exports[`Storyshots SearchBar default 1`] = `
   id="app-root"
 >
   <div
-    className="emotion-10"
+    className="emotion-9"
   >
     <div
       aria-expanded={false}
@@ -5859,9 +5879,10 @@ exports[`Storyshots SearchBar default 1`] = `
       </div>
     </div>
     <button
-      className="emotion-8 emotion-9"
+      className="emotion-8"
       data-testid="button"
       onClick={[Function]}
+      type="button"
     >
       <svg
         className=""
@@ -6503,8 +6524,6 @@ exports[`Storyshots TwoPanelsLayout two panels with proper style 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  line-height: 16px;
-  margin: 0px 0px 1px 0px;
 }
 
 <div
