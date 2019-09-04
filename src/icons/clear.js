@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {gold} from '../variables/colors';
+import {slate} from '../variables/colors';
 
-const Alert = ({
+const ClearIcon = ({
                    className, width, height, color, ...props
                }) => (
                    <svg
@@ -14,30 +14,30 @@ const Alert = ({
                        {...props}
                    >
                        <g fill="none" fillRule="evenodd">
-                           <mask id="alert-b" fill="#fff">
+                           <mask id="delete-b" fill="#fff">
                                <path
-                                   d="M9.88 3.449a3.002 3.002 0 0 1 5.135 0l8.478 14.154a3 3 0 0 1-2.576 4.5H3.966a3 3 0 0 1-2.557-4.514l8.47-14.14zM3.132 18.603a1 1 0 0 0 .844 1.5h16.929a1 1 0 0 0 .863-1.486L13.302 4.48a1 1 0 0 0-1.709-.002l-8.46 14.124zm8.314-9.5a1 1 0 0 1 2 0v4a1 1 0 1 1-2 0v-4zm.293 7.707a1 1 0 1 1 1.414-1.414 1 1 0 0 1-1.414 1.414z"
+                                   d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
                                />
                            </mask>
-                           <g fill={color} mask="url(#alert-b)">
+                           <g fill={color} mask="url(#delete-b)">
                                <path d="M0 0h24v24H0z" />
                            </g>
                        </g>
                    </svg>
 );
 
-Alert.defaultProps = {
+ClearIcon.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: gold,
+    color: slate,
 };
 
-Alert.propTypes = {
+ClearIcon.propTypes = {
     className: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
     color: PropTypes.string,
 };
 
-export default Alert;
+export default ClearIcon;

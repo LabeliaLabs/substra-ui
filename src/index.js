@@ -14,6 +14,7 @@ export {
 } from './components/tabs';
 export {PanelWrapper, PanelTop, PanelContent} from './components/panel';
 export TwoPanelLayout from './components/twoPanelLayout';
+export Select from './components/select';
 
 export {
     alertWrapper,
@@ -48,10 +49,6 @@ export {
     Search,
     SubstraLogo,
 } from './icons';
-
-// Utils
-
-export {theme as muiTheme, withMuiTheme} from './utils/muiTheme';
 
 // Variables
 export colors from './variables/colors';

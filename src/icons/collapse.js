@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const Collapse = ({
                       className, width, height, color, ...props
@@ -29,7 +30,7 @@ Collapse.defaultProps = {
     className: '',
     width: 22,
     height: 22,
-    color: '#4B6073',
+    color: slate,
 };
 
 Collapse.propTypes = {

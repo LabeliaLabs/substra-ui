@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {slate} from '../variables/colors';
 
 const DownloadSimple = ({
                        className, width, height, color, ...props
@@ -35,7 +36,7 @@ DownloadSimple.defaultProps = {
     className: '',
     width: 24,
     height: 24,
-    color: '#4B6073',
+    color: slate,
 };
 
 DownloadSimple.propTypes = {

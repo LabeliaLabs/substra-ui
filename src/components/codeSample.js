@@ -51,14 +51,14 @@ class CodeSample extends Component {
         collapsed: true,
     };
 
-    downloadCode = (e) => {
+    downloadCode = e => {
         e.stopPropagation();
         const {codeString, filename} = this.props;
         const jsonBlob = new Blob([codeString], {type: mime.lookup(filename) || 'text/plain'});
         saveAs(jsonBlob, filename);
     };
 
-    toggleCollapsed = (e) => {
+    toggleCollapsed = e => {
         e.stopPropagation();
         this.setState(state => ({collapsed: !state.collapsed}));
     };

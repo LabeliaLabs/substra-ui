@@ -10,7 +10,6 @@ import {
 
 
 test('A function can be called by the button', () => {
-    let test = 1;
     const AlertWrapper = styled('div')`
             ${alertWrapper}
         `;
@@ -21,22 +20,18 @@ test('A function can be called by the button', () => {
             ${alertInlineButton}
         `;
 
-    function increment() {
-        test = 2;
-    }
+    const mock = jest.fn();
 
     const {getByTestId} = render(
         <AlertWrapper>
             <AlertTitle>This model has not been tested yet</AlertTitle>
             <AlertActions>
-                <AlertInlineButton data-testid="button" onClick={() => increment()}>learn more</AlertInlineButton>
+                <AlertInlineButton data-testid="button" onClick={mock}>learn more</AlertInlineButton>
             </AlertActions>
         </AlertWrapper>,
     );
 
-    expect(test).toEqual(1);
-
+    expect(mock).not.toHaveBeenCalled();
     fireEvent.click(getByTestId('button'));
-
-    expect(test).toEqual(2);
+    expect(mock).toHaveBeenCalledTimes(1);
 });

@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import keycode from 'keycode';
-import Downshift from 'downshift';
 import uuidv4 from 'uuid/v4';
 import decodeUriComponent from 'decode-uri-component';
 import {isEqual, noop} from 'lodash';
 import styled from '@emotion/styled';
+import Downshift from 'downshift';
 import {css} from 'emotion';
 
-import ClearIcon from '@material-ui/icons/Clear';
+import ClearIcon from '../../icons/clear';
 import PropTypes from '../../utils/propTypes';
 
 import {IconButton} from '../iconButton';
 import SearchInput from './overrides/searchInput';
 
-import {ice, white} from '../../variables/colors';
+import {ice, darkSkyBlue, white} from '../../variables/colors';
 
 const InputWrapper = styled('div')`
     border: 1px solid ${ice};
@@ -23,16 +23,24 @@ const InputWrapper = styled('div')`
     justify-content: space-between;
     min-height: 40px;
     border-radius: 20px;
-    padding: 3px;
+    padding: 1px;
+    position: static;
 `;
 
 const searchInputWrapper = css`
     flex-grow: 1;
+    margin-left: 2px;
 `;
 
 const clearButton = css`
     border: none;
     z-index: 1;
+    outline: none;
+    margin-right: 2px;
+    
+    &:focus {
+        box-shadow: 0 0 3pt 3pt ${darkSkyBlue};
+    }
 `;
 
 // use getRootProps https://github.com/paypal/downshift#getrootprops
@@ -67,7 +75,7 @@ class SearchBar extends Component {
 
             newSelectedItem = groups.reduce((p, group) => {
                 // create related chips
-                const chips = group.split(',').map((o) => {
+                const chips = group.split(',').map(o => {
                     const el = decodeUriComponent(o).split(':');
 
                     return {
@@ -92,17 +100,17 @@ class SearchBar extends Component {
                     logic, // will add an extra logic el on the last iteration
                 ];
             }, []).slice(0, -1); // remove last added `-OR-`
-        }
 
-        if (!isEqual(selectedItem, newSelectedItem)) {
-            setState({
-                selectedItem: newSelectedItem,
-                toUpdate: false,
-            });
+            if (!isEqual(selectedItem, newSelectedItem)) {
+                setState({
+                    selectedItem: newSelectedItem,
+                    toUpdate: false,
+                });
+            }
         }
     }
 
-    handleKeyDown = (event) => {
+    handleKeyDown = event => {
         const {setState, inputValue, selectedItem} = this.props;
 
         if (selectedItem.length && !inputValue.length && keycode(event) === 'backspace') {
@@ -122,7 +130,7 @@ class SearchBar extends Component {
         }
     };
 
-    handleInputChange = (event) => {
+    handleInputChange = event => {
         const {setState} = this.props;
 
         setState({
@@ -131,42 +139,45 @@ class SearchBar extends Component {
         });
     };
 
-    handleChange = (item) => {
-        const {
-            parentSuggestions, isParent, selectedItem,
-            setState,
-        } = this.props;
+    handleChange = item => {
+        // item may be null when handleChange is triggered by hitting the ESC key
+        if (item) {
+            const {
+                parentSuggestions, isParent, selectedItem,
+                setState,
+            } = this.props;
 
-        let newSelectedItem,
-            toUpdate = false;
+            let newSelectedItem,
+                toUpdate = false;
 
-        if (!isParent) { // remove precedent parent and add child
-            const prev = selectedItem.pop();
-            newSelectedItem = [...selectedItem, {...prev, child: item.label}];
-            toUpdate = true;
+            if (!isParent) { // remove precedent parent and add child
+                const prev = selectedItem.pop();
+                newSelectedItem = [...selectedItem, {...prev, child: item.label}];
+                toUpdate = true;
+            }
+            // if is parent, simply add
+            else {
+                newSelectedItem = [
+                    ...selectedItem, {
+                        parent: item.label,
+                        child: '',
+                        uuid: uuidv4(),
+                        isLogic: item.isLogic,
+                    }];
+            }
+
+            // calculate if previous in parent menu
+            const selectedParent = parentSuggestions.map(o => o.label).includes(item.label);
+
+            // set item in redux, and launch related sagas for fetching list if needed
+            setState({
+                isParent: item.isLogic || !selectedParent,
+                inputValue: '',
+                selectedItem: newSelectedItem,
+                item: selectedParent || item.isLogic ? item.label : '',
+                toUpdate,
+            });
         }
-        // if is parent, simply add
-        else {
-            newSelectedItem = [
-                ...selectedItem, {
-                    parent: item.label,
-                    child: '',
-                    uuid: uuidv4(),
-                    isLogic: item.isLogic,
-                }];
-        }
-
-        // calculate if previous in parent menu
-        const selectedParent = parentSuggestions.map(o => o.label).includes(item.label);
-
-        // set item in redux, and launch related sagas for fetching list if needed
-        setState({
-            isParent: item.isLogic || !selectedParent,
-            inputValue: '',
-            selectedItem: newSelectedItem,
-            item: selectedParent || item.isLogic ? item.label : '',
-            toUpdate,
-        });
     };
 
     handleDelete = item => () => {
@@ -227,11 +238,13 @@ class SearchBar extends Component {
         setTimeout(() => {
             // should appear after blur of input (need to call setTimeout as downshift does)
             // stay on focus
-            this.input.current.focus();
+            if (this.input.current) {
+                this.input.current.focus();
+            }
         }, 0);
     };
 
-    searchInput = (props) => {
+    searchInput = props => {
         const {suggestions, placeholder} = this.props;
 
         // due to ugly render props philosophy of Downshift, we have to extract the declaration in a function...
@@ -259,6 +272,11 @@ class SearchBar extends Component {
         return (
             <InputWrapper>
                 <Downshift
+                    /* ids need to be explicitly set to avoid SSR issue */
+                    id="searchbar-autocomplete"
+                    labelId="searchbar-autocomplete-label"
+                    inputId="searchbar-autocomplete-input"
+                    menuId="searchbar-autocomplete-menu"
                     inputValue={inputValue}
                     onChange={this.handleChange}
                     onOuterClick={this.handleOuterClick}
@@ -269,8 +287,9 @@ class SearchBar extends Component {
                 </Downshift>
 
                 <IconButton
+                    data-testid="button"
                     Icon={ClearIcon}
-                    iconSize={18}
+                    iconSize={24}
                     onClick={this.clear}
                     className={clearButton}
                 />

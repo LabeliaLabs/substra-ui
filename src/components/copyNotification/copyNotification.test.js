@@ -25,9 +25,9 @@ const Main = withAddNotification(addNotificationButton);
 test('The notification appears', () => {
     const {getByTestId} = render(<Main />);
 
-    expect(() => getByTestId('notification')).toThrow();
+    expect(getByTestId('notification')).toHaveStyle('bottom: -80px');
     fireEvent.click(getByTestId('button'));
-    expect(getByTestId('notification')).toBeDefined();
+    expect(getByTestId('notification')).toHaveStyle('bottom: 25px');
 });
 
 test('Key copied to the clipboard', () => {

@@ -1,29 +1,28 @@
 import React, {Component, Fragment} from 'react';
-import styled from '@emotion/styled';
 import {css} from 'emotion';
 import copy from 'copy-to-clipboard';
 
-import {Snackbar} from '@material-ui/core';
 import {Check} from '../../icons';
 import SnackbarContent from './snackbarContent';
 
-import {tealish, ice} from '../../variables/colors';
+import {slate, tealish} from '../../variables/colors';
+import PropTypes from '../../utils/propTypes';
 
-export const middle = css`
+export const middle = `
     display: inline-block;
     vertical-align: top;
 `;
 
-export const snackbarContent = css`
+export const snackbarContentCSS = `
     color: ${tealish};
-    background-color: ${ice};
     
     @media (min-width: 960px) {
         min-width: 200px;
     }    
 `;
 
-export const ClipboardContent = styled('div')`
+export const clipboardContentCSS = `
+    ${middle};
     margin-left: 15px;
     input {
         display: block;
@@ -36,123 +35,132 @@ export const ClipboardContent = styled('div')`
     }
     
     p {
-        color: #4b6073;
+        color: ${slate};
         font-size: 13px;
         margin: 4px 0 0;
     }
 `;
 
-export const anchorOrigin = {
-    vertical: 'bottom',
-    horizontal: 'left',
-};
-
-
 const withAddNotification = (WrappedComponent, Icon = Check) => {
     class CopyNotification extends Component {
-        queuedNotification;
-
         state = {
-            clipboard: {
-                open: false,
-                key: '',
-                text: '',
-            },
+            open: false,
+            key: '',
+            text: '',
         };
+
+        componentWillUnmount() {
+            if (this.timeout) {
+                clearTimeout(this.timeout);
+            }
+            if (this.queueTimeout) {
+                clearTimeout(this.queueTimeout);
+            }
+        }
 
         processNotificationQueue = () => {
-            if (this.queuedNotification) {
-                this.setState((state) => {
-                    const queuedNotification = this.queuedNotification;
-                    this.queuedNotification = undefined;
-                    return {
-                        ...state,
-                        clipboard: {
-                            ...queuedNotification,
-                            open: true,
-                        },
-                    };
-                });
-            }
-        };
-
-        handleClose = (event, reason) => {
-            if (reason === 'clickaway') {
-                return;
-            }
-
+            const {delay: {display}} = this.props;
             this.setState(state => ({
                 ...state,
-                clipboard: {
-                    ...state.clipboard,
-                    open: false,
-                },
+                ...this.queuedNotification,
+                open: true,
             }));
-        };
-
-
-        handleExited = () => {
-            this.processNotificationQueue();
+            this.timeout = setTimeout(() => {
+                this.setState(state => ({
+                    ...state,
+                    open: false,
+                }));
+            }, display);
         };
 
         addNotification = (key, text) => {
+            const {open} = this.state;
+            const {delay: {animation}} = this.props;
             copy(key);
             this.queuedNotification = {
                 key,
                 text,
             };
-
-            if (this.state.clipboard.open) {
-                // immediately begin dismissing current message
-                // to start showing new one
+            if (this.timeout) {
+                clearTimeout(this.timeout);
+            }
+            if (open) {
                 this.setState(state => ({
                     ...state,
-                    clipboard: {
-                        ...state.clipboard,
-                        open: false,
-                    },
+                    open: false,
                 }));
+                this.queueTimeout = setTimeout(() => {
+                    this.queueTimeout = undefined;
+                    this.processNotificationQueue();
+                }, animation);
             }
-            else {
+            else if (!this.queueTimeout) { // we click when the notification is closing (open = false but animation still running)
                 this.processNotificationQueue();
             }
         };
 
+        snackbar = () => {
+            const {open} = this.state;
+            const {delay: {animation}} = this.props;
+                return css`
+                    position: fixed;
+                    left: 25px;
+                    bottom: ${open ? '25px' : '-80px'};
+                    opacity: ${open ? 1 : 0};
+                    transition: all ${animation}ms linear;
+                `;
+        };
+
         render() {
-            const {clipboard: {open, text, key}} = this.state;
+            const {
+                text,
+                key,
+            } = this.state;
+            const {clipboardContentCSS, snackbarContentCSS} = this.props;
 
             return (
                 <Fragment>
                     <WrappedComponent addNotification={this.addNotification} {...this.props} />
 
-                    <Snackbar
+                    <div
                         data-testid="notification"
-                        anchorOrigin={anchorOrigin}
-                        open={open}
-                        onClose={this.handleClose}
-                        onExited={this.handleExited}
-                        autoHideDuration={2000}
+                        className={this.snackbar()}
                     >
                         <SnackbarContent
-                            className={snackbarContent}
+                            className={css`${snackbarContentCSS}`}
                             message={(
                                 <div>
                                     <Icon />
-                                    <ClipboardContent className={middle}>
+                                    <div className={css`${clipboardContentCSS}`}>
                                         <input disabled value={key} />
                                         <p>
                                             {text}
                                         </p>
-                                    </ClipboardContent>
+                                    </div>
                                 </div>
                             )}
                         />
-                    </Snackbar>
+                    </div>
                 </Fragment>
 
             );
         }
     }
+    CopyNotification.defaultProps = {
+        delay: {
+            animation: 150,
+            display: 2500,
+        },
+        clipboardContentCSS,
+        snackbarContentCSS,
+    };
+
+    CopyNotification.propTypes = {
+        delay: PropTypes.objectOf(PropTypes.number),
+        clipboardContentCSS: PropTypes.string,
+        snackbarContentCSS: PropTypes.string,
+    };
+
     return CopyNotification;
 };
 
