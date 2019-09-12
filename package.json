@@ -39,10 +39,12 @@
     "keycode": "2.2.0",
     "mime-types": "2.1.24",
     "prop-types": "15.7.2",
-    "react": "16.9.0",
-    "react-is": "16.9.0",
     "react-syntax-highlighter": "11.0.2",
     "react-tabs": "3.0.0"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-is": "16.x"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
