@@ -29,7 +29,6 @@
   "dependencies": {
     "@emotion/core": "10.0.15",
     "@emotion/styled": "10.0.15",
-    "classnames": "2.2.6",
     "copy-to-clipboard": "3.2.0",
     "diacritic": "0.0.2",
     "downshift": "3.2.12",
@@ -81,7 +80,6 @@
     "jest": "24.8.0",
     "jest-dom": "4.0.0",
     "jest-emotion": "10.0.14",
-    "react-dom": "16.9.0",
     "react-redux": "7.1.0",
     "react-test-renderer": "16.9.0",
     "redux": "4.0.4",
