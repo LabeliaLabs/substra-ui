@@ -24,7 +24,7 @@
     "build-storybook": "build-storybook"
   },
   "publishConfig": {
-    "registry": "https://substra-npm.owkin.com/"
+    "access": "public"
   },
   "dependencies": {
     "@emotion/core": "10.0.15",
