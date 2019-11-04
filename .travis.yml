@@ -2,11 +2,6 @@ language: node_js
 node_js:
   - lts/*
 
-branches:
-  only:
-    - master
-    - dev
-
 deploy:
   provider: npm
   email: clement@gautier.im
