@@ -18,6 +18,10 @@ deploy:
 
 cache: yarn
 
+before_deploy:
+  - yarn install
+  - yarn build
+
 script:
   - yarn eslint
   - yarn test
