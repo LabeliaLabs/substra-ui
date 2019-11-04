@@ -5,6 +5,7 @@ node_js:
 deploy:
   provider: npm
   email: clement@gautier.im
+  skip_cleanup: true
   api_key:
     secure: aTHnlgYOnpZ0HVYByrRaXH06sFhe7bPYye6YQG4Rh4gJj7YMmuw/c1SaAUj7fw5/ruuaV8zuD8aEZFV8E3icO2VI4YRP7c48JAEotizQVoj1QicPtEHev0y5SvsKiTWv6c1+PPAhItC3PChbV3W4L3JqQc6QkNlrmimWVDXjbobWjIKReM5gggTN3N2F1QA3B6WE+eXFENLORdiH1+MUaVnsJQ6ID8ZUo/Fi1uB0fG4PmepIoQKVwU1sA7kOumnKcvlibP2CHvOIP6Gb1inaO+/qNPWg/MOanWOHveRmYJvlBQghQwM0BbBGe6cwwOzzu/1KIcQEf8pctJwfbWtQAl6YHCv7lT6CJz19adonkCIaH7QI0ITfhnzsztDZ5cMFzDTt1eI2GvZIDQFgP5O/EZADB6OTKY7VvhL77g06q2ZOhhBrU+LPGn5kbFhoY4jLNwTtxcUM8YqbRdu1e9IjIZZGobT51kRSQElzRNr05Zw5NQJ3VNsrJiCGVThThWppaqiNA+eeHVX7H/i8pAGVCZZB5h9eYhIxZR6fnIRaVnCpx0SnjbUqf8FPxRRa2OUKhROsTrvKJyJHQVdU39vCmO2Eyh4TcLo4Rz65tnS6nsWv7UW9sbwPbeAuMp/FyEsiISnvD8XVP4PRZus9beVl2m6VAsDwGWPY5Na0DhOR6mM=
   on:
@@ -12,10 +13,6 @@ deploy:
     repo: SubstraFoundation/substra-ui
 
 cache: yarn
-
-before_deploy:
-  - yarn install
-  - yarn build
 
 script:
   - yarn eslint
