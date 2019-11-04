@@ -23,9 +23,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "@emotion/core": "10.0.15",
     "@emotion/styled": "10.0.15",
