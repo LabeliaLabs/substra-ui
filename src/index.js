@@ -47,6 +47,7 @@ export {
     OwkestraLogo,
     Permission,
     Search,
+    SignOut,
     SubstraLogo,
 } from './icons';
 

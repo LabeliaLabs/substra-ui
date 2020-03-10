@@ -23,6 +23,7 @@ import {
     MoreVertical,
     OwkestraLogo,
     Permission,
+    SignOut,
     Search,
     SubstraLogo,
 } from './index';
@@ -168,6 +169,12 @@ storiesOf('Icons', module)
                     </Dt>
                     <Dd>
                         Search
+                    </Dd>
+                    <Dt>
+                        <SignOut color={colorKnob} height={heightKnob} width={widthKnob} />
+                    </Dt>
+                    <Dd>
+                        SignOut
                     </Dd>
                 </Dl>
             </Fragment>
