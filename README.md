@@ -1,4 +1,6 @@
-# Substra-ui
+# Substra-ui :warning: DEPRECATED :warning:
+
+> The contents of this library have been merged in the main [substra-frontend](https://github.com/substrafoundation/substra-frontend/) repository. This library isn't maintained anymore and all future development will occur in the [substra-frontend](https://github.com/substrafoundation/substra-frontend/) repository.
 
 A shared UI components library for the Substra project.
 
